@@ -18,6 +18,7 @@ public class LocalReader extends Reader {
 
 	@Override
 	public void chooseReadingSource(int sourceID) {
+		this.sourceID = sourceID;
 		switch (sourceID) {
 		case SMALL_DATASET:
 			readSmallDataset();
@@ -44,6 +45,7 @@ public class LocalReader extends Reader {
 		String datasetFolder = "dataset/small/original";
 		File dataset = new File(datasetFolder);
 		String article = getWhichArticle(dataset);
+		sourceName = article;
 		setSourceURI(datasetFolder + "/" + article);
 		try {
 			BufferedReader br = new BufferedReader(new FileReader(new File(
@@ -55,7 +57,23 @@ public class LocalReader extends Reader {
 				temp = br.readLine();
 			}
 			this.article.setTopic(new Comment(sb.toString(), Comment.ORIGINAL));
-			
+
+			sb.setLength(0);
+			br.readLine();
+			temp = br.readLine();
+			while (true) {
+				if (temp == null || temp.startsWith("===")) {
+					this.article.getListOfComments().add(
+							new Comment(sb.toString(), Comment.ORIGINAL));
+					if (temp == null)
+						break;
+					sb.setLength(0);
+					br.readLine(); // skip the Comment # part
+				} else {
+					sb.append(temp + "\n");
+				}
+				temp = br.readLine();
+			}
 			br.close();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -68,11 +86,8 @@ public class LocalReader extends Reader {
 
 	private String getWhichArticle(File dataset) {
 		// TODO create user-chosen file
-		String[] articleList = {"Celebrity.txt", 
-								"Healthcare.txt", 
-								"Politics.txt",
-								"Sport.txt",
-								"Tech.txt"};
+		String[] articleList = { "Celebrity.txt", "Healthcare.txt",
+				"Politics.txt", "Sport.txt", "Tech.txt" };
 		return articleList[0];
 	}
 

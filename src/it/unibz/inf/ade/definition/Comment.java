@@ -21,6 +21,22 @@ public class Comment {
 	private int mode = -1;
 	
 	private ArrayList<Entity> entities = new ArrayList<Entity>();
+	public ArrayList<Entity> getEntities() {
+		return entities;
+	}
+
+	public void setEntities(ArrayList<Entity> entities) {
+		this.entities = entities;
+	}
+
+	public ArrayList<Integer> getEntityAppearances() {
+		return entityAppearances;
+	}
+
+	public void setEntityAppearances(ArrayList<Integer> entityAppearances) {
+		this.entityAppearances = entityAppearances;
+	}
+
 	private ArrayList<Integer> entityAppearances = new ArrayList<Integer>();
 	
 	public Comment(String text, int mode) {
