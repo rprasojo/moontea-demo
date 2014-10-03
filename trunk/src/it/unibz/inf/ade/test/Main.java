@@ -1,5 +1,7 @@
 package it.unibz.inf.ade.test;
 
+import it.unibz.inf.ade.extractor.EntityExtractor;
+import it.unibz.inf.ade.extractor.ZemantaExtractor;
 import it.unibz.inf.ade.reader.LocalReader;
 import it.unibz.inf.ade.reader.Reader;
 
@@ -10,6 +12,9 @@ public class Main {
 		
 		Reader localReader = new LocalReader();
 		localReader.chooseReadingSource(LocalReader.SMALL_DATASET);
+		
+		EntityExtractor zemantaExtractor = new ZemantaExtractor(localReader, false, "thkhkzot2vjtx6dzsamyxhrr");
+		zemantaExtractor.extract();
 	}
 
 }
