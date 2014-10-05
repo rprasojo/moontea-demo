@@ -14,7 +14,7 @@ public class Main {
 		localReader.chooseReadingSource(LocalReader.SMALL_DATASET);
 		
 		EntityExtractor zemantaExtractor = new ZemantaExtractor(localReader, false, "thkhkzot2vjtx6dzsamyxhrr");
-		zemantaExtractor.extract();
+		zemantaExtractor.extractTopic();
 	}
 
 }
