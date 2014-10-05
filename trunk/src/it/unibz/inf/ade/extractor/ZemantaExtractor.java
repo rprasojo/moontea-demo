@@ -65,6 +65,9 @@ public class ZemantaExtractor extends EntityExtractor {
 			if (this.reader.getArticle().getListOfComments().get(0).getMode() == Comment.ORIGINAL) {
 				file = "result/small/original/entity/zemanta/"
 						+ this.reader.getSourceName();
+			} else if (this.reader.getArticle().getListOfComments().get(0).getMode() == Comment.EXTENDED) {
+				file = "result/small/extended/entity/zemanta/"
+						+ this.reader.getSourceName();
 			}
 			bw = new BufferedWriter(new FileWriter(new File(file)));
 			bw.write(sb.toString());
@@ -143,7 +146,7 @@ public class ZemantaExtractor extends EntityExtractor {
 				for (int j = 0; j < aliases.length; j++) {
 					String alias = (String) aliases[j];
 					e.getAliases().add(alias);
-					// System.out.print(aliases[j] + " *** ");
+					addPartOfPersonNames(e, alias);
 					if (alias.length() > 1 && !alias.equalsIgnoreCase(anchor)
 							&& temp.contains(alias)) {
 						newCount += countSubstring(alias, temp);
@@ -164,8 +167,8 @@ public class ZemantaExtractor extends EntityExtractor {
 
 	@Override
 	public void extractTopic() {
-		System.out.println(callZemanta(this.reader.getArticle().getTopic()
-				.getText(), this.reader.getArticle().getTopic()));
+		callZemanta(this.reader.getArticle().getTopic()
+				.getText(), this.reader.getArticle().getTopic());
 	}
 
 }

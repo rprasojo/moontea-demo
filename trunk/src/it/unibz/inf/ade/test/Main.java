@@ -1,5 +1,6 @@
 package it.unibz.inf.ade.test;
 
+import it.unibz.inf.ade.extender.Extender;
 import it.unibz.inf.ade.extractor.EntityExtractor;
 import it.unibz.inf.ade.extractor.ZemantaExtractor;
 import it.unibz.inf.ade.reader.LocalReader;
@@ -15,6 +16,12 @@ public class Main {
 		
 		EntityExtractor zemantaExtractor = new ZemantaExtractor(localReader, false, "thkhkzot2vjtx6dzsamyxhrr");
 		zemantaExtractor.extractTopic();
+		
+		Extender extender = new Extender(localReader);
+		extender.extend();
+		extender.writeExtendedArticleLocally();
+		
+		zemantaExtractor.extractComment();
 	}
 
 }
