@@ -2,9 +2,6 @@ package it.unibz.inf.ade.definition;
 
 import java.util.ArrayList;
 
-import it.unibz.inf.ade.cleaner.Cleaner;
-import it.unibz.inf.ade.extender.Extender;
-
 public class Comment {
 
 	public static final int ORIGINAL = 0;
@@ -14,13 +11,48 @@ public class Comment {
 
 	private String text;
 	private String originalText;
+
+	public String getOriginalText() {
+		return originalText;
+	}
+
+	public void setOriginalText(String originalText) {
+		this.originalText = originalText;
+	}
+
 	private String cleanedText;
+
+	public String getCleanedText() {
+		return cleanedText;
+	}
+
+	public void setCleanedText(String cleanedText) {
+		this.cleanedText = cleanedText;
+	}
+
+	public String getExtendedText() {
+		return extendedText;
+	}
+
+	public void setExtendedText(String extendedText) {
+		this.extendedText = extendedText;
+	}
+
+	public String getCleanedAndExtendedText() {
+		return cleanedAndExtendedText;
+	}
+
+	public void setCleanedAndExtendedText(String cleanedAndExtendedText) {
+		this.cleanedAndExtendedText = cleanedAndExtendedText;
+	}
+
 	private String extendedText;
 	private String cleanedAndExtendedText;
 
 	private int mode = -1;
-	
+
 	private ArrayList<Entity> entities = new ArrayList<Entity>();
+
 	public ArrayList<Entity> getEntities() {
 		return entities;
 	}
@@ -38,16 +70,16 @@ public class Comment {
 	}
 
 	private ArrayList<Integer> entityAppearances = new ArrayList<Integer>();
-	
+
 	public Comment(String text, int mode) {
 		initText(text, mode);
 	}
 
-	private void initText (String text, int mode) {
+	private void initText(String text, int mode) {
 		originalText = text;
 		changeMode(mode);
 	}
-	
+
 	public void renewText(String text, int mode) {
 		this.text = this.originalText = this.cleanedAndExtendedText = this.cleanedText = "";
 		initText(text, mode);
@@ -73,30 +105,30 @@ public class Comment {
 			text = originalText;
 			break;
 		case CLEANED:
-			if (cleanedText.isEmpty())
-				cleanedText = Cleaner.clean(originalText);
+			// if (cleanedText.isEmpty())
+			// cleanedText = Cleaner.clean(originalText);
 			text = cleanedText;
 			break;
 		case EXTENDED:
-			if (extendedText.isEmpty())
-				extendedText = Extender.extend(originalText);
+			// if (extendedText.isEmpty())
+			// extendedText = Extender.extend(originalText);
 			text = extendedText;
 			break;
 		case CLEANED_AND_EXTENDED:
 		default:
-			if (cleanedText.isEmpty())
-				cleanedText = Cleaner.clean(originalText);
-			if (cleanedAndExtendedText.isEmpty())
-				cleanedAndExtendedText = Extender.extend(cleanedText);
+			// if (cleanedText.isEmpty())
+			// cleanedText = Cleaner.clean(originalText);
+			// if (cleanedAndExtendedText.isEmpty())
+			// cleanedAndExtendedText = Extender.extend(cleanedText);
 			text = cleanedAndExtendedText;
 			break;
 		}
 	}
-	
+
 	public String getText() {
 		return text;
 	}
-	
+
 	public int getMode() {
 		return mode;
 	}

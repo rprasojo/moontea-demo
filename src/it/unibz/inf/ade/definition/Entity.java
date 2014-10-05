@@ -3,20 +3,35 @@ package it.unibz.inf.ade.definition;
 import java.util.ArrayList;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.UUID;
 
 public class Entity implements Comparable<Entity> {
+	static Set<String> setOfUUID = new TreeSet<String>();
 	private String URI, anchorName;
 	private Set<String> aliases = new TreeSet<String>();
 	private Set<String> types = new TreeSet<String>();
 	private Set<String> appearingAliasesInComment = new TreeSet<String>();
+	private Set<String> partOfNames = new TreeSet<String>();
 	private boolean isAPerson = false;
+	private String uuid;
 
+	public String getUuid() {
+		return uuid;
+	}
+	public String toString() {
+		return URI;
+	}
 	public Set<String> getAppearingAliasesInComment() {
 		return appearingAliasesInComment;
 	}
 
 	public Entity(String URI) {
 		this.URI = URI;
+		uuid = UUID.randomUUID().toString();
+		while(setOfUUID.contains(uuid)) {
+			uuid = UUID.randomUUID().toString();
+		}
+		setOfUUID.add(uuid);
 	}
 
 	@Override
@@ -111,6 +126,14 @@ public class Entity implements Comparable<Entity> {
 
 	public void setPerson(boolean isAPerson) {
 		this.isAPerson = isAPerson;
+	}
+
+	public Set<String> getPartOfNames() {
+		return partOfNames;
+	}
+
+	public void setPartOfNames(Set<String> partOfNames) {
+		this.partOfNames = partOfNames;
 	}
 
 }
