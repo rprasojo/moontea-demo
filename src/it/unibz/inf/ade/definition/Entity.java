@@ -1,26 +1,29 @@
 package it.unibz.inf.ade.definition;
 
 import java.util.ArrayList;
+import java.util.Set;
 import java.util.TreeSet;
 
-public class Entity implements Comparable {
-	private String URL;
-	private TreeSet<String> aliases = new TreeSet<String>();
-	private TreeSet<String> appearingAliasesInComment = new TreeSet<String>();
+public class Entity implements Comparable<Entity> {
+	private String URI, anchorName;
+	private Set<String> aliases = new TreeSet<String>();
+	private Set<String> types = new TreeSet<String>();
+	private Set<String> appearingAliasesInComment = new TreeSet<String>();
+	private boolean isAPerson = false;
 
-	public TreeSet<String> getAppearingAliasesInComment() {
+	public Set<String> getAppearingAliasesInComment() {
 		return appearingAliasesInComment;
 	}
 
-	public Entity(String URL) {
-		this.URL = URL;
+	public Entity(String URI) {
+		this.URI = URI;
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((URL == null) ? 0 : URL.hashCode());
+		result = prime * result + ((URI == null) ? 0 : URI.hashCode());
 		return result;
 	}
 
@@ -33,10 +36,10 @@ public class Entity implements Comparable {
 		if (getClass() != obj.getClass())
 			return false;
 		Entity other = (Entity) obj;
-		if (URL == null) {
-			if (other.URL != null)
+		if (URI == null) {
+			if (other.URI != null)
 				return false;
-		} else if (!URL.equals(other.URL))
+		} else if (!URI.equals(other.URI))
 			return false;
 		return true;
 	}
@@ -49,15 +52,15 @@ public class Entity implements Comparable {
 	private ArrayList<Aspect> aspects = new ArrayList<Aspect>();
 	private ArrayList<Integer> aspectsAppearances = new ArrayList<Integer>();
 
-	public String getURL() {
-		return URL;
+	public String getURI() {
+		return URI;
 	}
 
-	public void setURL(String uRL) {
-		URL = uRL;
+	public void setURI(String uRI) {
+		URI = uRI;
 	}
 
-	public TreeSet<String> getAliases() {
+	public Set<String> getAliases() {
 		return aliases;
 	}
 
@@ -82,9 +85,32 @@ public class Entity implements Comparable {
 	}
 
 	@Override
-	public int compareTo(Object obj) {
-		Entity other = (Entity) obj;
-		return this.URL.compareTo(other.URL);
+	public int compareTo(Entity obj) {
+		return this.URI.compareTo(obj.URI);
+	}
+
+	public String getAnchorName() {
+		return anchorName;
+	}
+
+	public void setAnchorName(String anchorName) {
+		this.anchorName = anchorName;
+	}
+
+	public Set<String> getTypes() {
+		return types;
+	}
+
+	public void setTypes(Set<String> types) {
+		this.types = types;
+	}
+
+	public boolean isAPerson() {
+		return isAPerson;
+	}
+
+	public void setPerson(boolean isAPerson) {
+		this.isAPerson = isAPerson;
 	}
 
 }

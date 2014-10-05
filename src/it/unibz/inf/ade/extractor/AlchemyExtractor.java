@@ -9,7 +9,13 @@ public class AlchemyExtractor extends EntityExtractor {
 	}
 
 	@Override
-	public void extract() {
+	public void extractComment() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void extractTopic() {
 		// TODO Auto-generated method stub
 		
 	}

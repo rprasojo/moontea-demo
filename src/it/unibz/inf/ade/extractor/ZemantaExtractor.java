@@ -5,7 +5,6 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Set;
 
 import com.zemanta.api.Zemanta;
@@ -28,18 +27,18 @@ public class ZemantaExtractor extends EntityExtractor {
 	}
 
 	@Override
-	public void extract() {
-		zemantaExtract();
+	public void extractComment() {
+		zemantaExtractComment();
 	}
 
-	private void zemantaExtract() {
+	private void zemantaExtractComment() {
 		if (useLocal)
 			zemantaLocalCrawl();
 		else
-			callZemanta();
+			callZemantaCommentExtractor();
 	}
 
-	private void callZemanta() {
+	private void callZemantaCommentExtractor() {
 		int numberOfComment = 1;
 		StringBuilder sb = new StringBuilder();
 		for (Comment c : this.reader.getArticle().getListOfComments()) {
@@ -47,13 +46,11 @@ public class ZemantaExtractor extends EntityExtractor {
 			sb.append(callZemanta(c.getText(), c));
 			sb.append("}\n");
 			numberOfComment++;
-//			break;
 		}
-		if(this.reader instanceof LocalReader) {
+		if (this.reader instanceof LocalReader) {
 			try {
 				writeLocalResult(sb);
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
@@ -61,13 +58,13 @@ public class ZemantaExtractor extends EntityExtractor {
 	}
 
 	private void writeLocalResult(StringBuilder sb) throws IOException {
-		switch(this.reader.getSourceID()) {
+		switch (this.reader.getSourceID()) {
 		case LocalReader.SMALL_DATASET:
 			BufferedWriter bw;
 			String file = "";
-			if(this.reader.getArticle().getListOfComments().get(0).getMode() == Comment.ORIGINAL){
-				file = "result/small/original/entity/zemanta/" + this.reader.getSourceName();
-				System.out.println(file);
+			if (this.reader.getArticle().getListOfComments().get(0).getMode() == Comment.ORIGINAL) {
+				file = "result/small/original/entity/zemanta/"
+						+ this.reader.getSourceName();
 			}
 			bw = new BufferedWriter(new FileWriter(new File(file)));
 			bw.write(sb.toString());
@@ -75,7 +72,7 @@ public class ZemantaExtractor extends EntityExtractor {
 			bw.close();
 			break;
 		}
-		
+
 	}
 
 	private void zemantaLocalCrawl() {
@@ -111,17 +108,31 @@ public class ZemantaExtractor extends EntityExtractor {
 						url = l.targets.get(i).url;
 						i++;
 					} catch (Exception e) {
+						url = l.targets.get(0).url;
 						System.out.println("Entity " + anchor
 								+ " doesn't have a url from wikipedia");
 						break;
 					}
 				}
 
-				String q = createEntityAliasesQuery(url);
-				Set<String> result = SPARQLQueryPoster.executeSelectQuery(q,
+				if(url.endsWith("/"))
+					url = url.substring(0, url.length()-1);
+				String uri = SPARQLQueryPoster.retrieveURIfromWikipedia(url, anchor,
+						SPARQLQueryPoster.DBPEDIA);
+				Set<String> result = SPARQLQueryPoster.retrieveEntityAliases(
+						uri, SPARQLQueryPoster.DBPEDIA);
+				Set<String> types = SPARQLQueryPoster.retrieveEntityType(uri,
 						SPARQLQueryPoster.DBPEDIA);
 
-				Entity e = new Entity(url);
+				Entity e = new Entity(uri);
+				e.setAnchorName(anchor);
+				e.getTypes().addAll(types);
+				for (String s : types) {
+					if (s.toLowerCase().contains("person")) {
+						e.setPerson(true);
+					}
+				}
+
 				Object[] aliases = result.toArray();
 				int newCount = 0;
 				String temp = new String(c.getText());
@@ -143,27 +154,18 @@ public class ZemantaExtractor extends EntityExtractor {
 				c.getEntities().add(e);
 				c.getEntityAppearances().add(newCount);
 				reader.getArticle().getSetOfEntities().add(e);
-				sb.append("\t" + anchor + " " + newCount + "\n\t{\n\t}\n");
+				sb.append("\t" + anchor + " " + newCount + " * "
+						+ e.isAPerson() + " * " + uri + "\n\t{\n\t}\n");
 			}
 
 		}
 		return sb.toString();
 	}
 
-	private String createEntityAliasesQuery(String url) {
-		String prefix = "prefix foaf:  <http://xmlns.com/foaf/0.1/>\n"
-				+ "prefix dbpedia-owl: <http://dbpedia.org/ontology/>\n"
-				+ "prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n"
-				+ "prefix dbpprop: <http://dbpedia.org/property/>\n";
-		return prefix
-				+ "select distinct ?alias where {?a foaf:isPrimaryTopicOf <"
-				+ url
-				+ "> . { { ?a rdfs:label ?alias . } UNION { ?x dbpedia-owl:wikiPageDisambiguates ?a . ?x rdfs:label ?alias . } UNION { ?a dbpedia-owl:longName ?alias . } UNION { ?a dbpprop:countryCode ?alias . } UNION { ?a dbpedia-owl:longName ?alias . } UNION { ?a dbpprop:commonName ?alias . } UNION { ?a dbpprop:conventionalLongName ?alias . } UNION { ?a foaf:name ?alias . } UNION { ?a dbpprop:linkingName ?alias . } UNION { ?a dbpprop:name ?alias . } UNION { ?a dbpedia-owl:birthName ?alias . } UNION { ?a dbpprop:alternativeNames ?alias . } UNION { ?a dbpprop:name ?alias . } UNION { ?a dbpprop:birthname ?alias . } UNION { ?a foaf:name ?alias . } } FILTER(LANG(?alias ) = \"\" || LANGMATCHES(LANG(?alias ), \"en\")) . } LIMIT 100";
-	}
-
-	private int countSubstring(String subStr, String str) {
-		return (str.length() - str.replace(subStr, "").length())
-				/ subStr.length();
+	@Override
+	public void extractTopic() {
+		System.out.println(callZemanta(this.reader.getArticle().getTopic()
+				.getText(), this.reader.getArticle().getTopic()));
 	}
 
 }

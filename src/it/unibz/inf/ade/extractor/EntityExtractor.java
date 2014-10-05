@@ -13,5 +13,14 @@ public abstract class EntityExtractor implements Extractor {
 			this.useLocal = true;
 	}
 	
-	public abstract void extract();
+	public abstract void extractComment();
+	
+	public abstract void extractTopic();
+	
+	public void extract() { extractComment(); extractTopic(); }
+	
+	protected int countSubstring(String subStr, String str) {
+		return (str.length() - str.replace(subStr, "").length())
+				/ subStr.length();
+	}
 }
