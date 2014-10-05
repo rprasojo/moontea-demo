@@ -60,19 +60,13 @@ public class PersonNameExtender {
 				Set<Entity> tempEntitySet = nameExtenderMapper.get(x);
 				if (tempEntitySet.size() == 1) {
 					Entity e = (Entity) tempEntitySet.toArray()[0];
-					tempStr = tempStr.replaceAll(" " + x, " " + e.getUuid());
-					tempStr = tempStr.replaceAll(x + " ", e.getUuid() + " ");
-					tempStr = tempStr.replaceAll(x + "\\)", e.getUuid() + ")");
-					tempStr = tempStr.replaceAll(x + "\\}", e.getUuid() + "}");
-					tempStr = tempStr.replaceAll(x + "\\]", e.getUuid() + "]");
-					tempStr = tempStr.replaceAll(x + "\"", e.getUuid() + "\"");
-					tempStr = tempStr.replaceAll(x + "'", e.getUuid() + "'");
+					tempStr = tempStr.replaceAll("\\b" + x + "\\b", e.getUuid() );
 				}
 			}
 			c.setExtendedText(tempStr);
 			c.changeMode(Comment.EXTENDED);
 		}
-		
+
 		for (Comment c : this.getReader().getArticle().getListOfComments()) {
 			Iterator<Entity> i = this.getReader().getArticle()
 					.getSetOfEntities().iterator();
@@ -93,21 +87,23 @@ public class PersonNameExtender {
 			if (e.isAPerson()) {
 				Set<Entity> temp;
 				for (String partOfAlias : e.getPartOfNames()) {
-					setOfNames.add(partOfAlias);
-					if (!nameExtenderMapper.containsKey(partOfAlias)) {
-						temp = new TreeSet<Entity>();
-						temp.add(e);
-						nameExtenderMapper.put(partOfAlias, temp);
-						// if(partOfAlias.equals("Bieber")) {
-						// System.out.println(e);
-						// System.out.println(nameExtenderMapper.get(partOfAlias).toArray()[0]);
-						// }
-					} else {
-						temp = nameExtenderMapper.get(partOfAlias);
-						temp.add(e);
-						// if(partOfAlias.equals("Bieber")) {
-						// System.out.println(e.getURI() + " added");
-						// }
+					if (partOfAlias.length() > 1) {
+						setOfNames.add(partOfAlias);
+						if (!nameExtenderMapper.containsKey(partOfAlias)) {
+							temp = new TreeSet<Entity>();
+							temp.add(e);
+							nameExtenderMapper.put(partOfAlias, temp);
+							// if(partOfAlias.equals("Bieber")) {
+							// System.out.println(e);
+							// System.out.println(nameExtenderMapper.get(partOfAlias).toArray()[0]);
+							// }
+						} else {
+							temp = nameExtenderMapper.get(partOfAlias);
+							temp.add(e);
+							// if(partOfAlias.equals("Bieber")) {
+							// System.out.println(e.getURI() + " added");
+							// }
+						}
 					}
 				}
 			}

@@ -1,186 +1,252 @@
 Comment 1
 {
-	Orlando Bloom 1
+	Justin Bieber 2 * true * http://dbpedia.org/resource/Justin_Bieber
 	{
 	}
-	Simpsons 1
+	Orlando Bloom 1 * true * http://dbpedia.org/resource/Orlando_Bloom
 	{
 	}
-	films 3
+	Simpsons 1 * false * http://dbpedia.org/resource/The_Simpsons
+	{
+	}
+	films 3 * false * http://dbpedia.org/resource/Film
 	{
 	}
 }
 Comment 2
 {
-	Miranda Kerr 1
+	Miranda Kerr 1 * true * http://dbpedia.org/resource/Miranda_Kerr
 	{
 	}
-	Orlando 1
+	Orlando Bloom 1 * true * http://dbpedia.org/resource/Orlando_Bloom
+	{
+	}
+	Justin Bieber 1 * true * http://dbpedia.org/resource/Justin_Bieber
 	{
 	}
 }
 Comment 3
 {
-	Justin Bieber 1
+	Justin Bieber 1 * true * http://dbpedia.org/resource/Justin_Bieber
 	{
 	}
-	Ibiza 1
+	Ibiza 1 * false * http://dbpedia.org/resource/Ibiza
 	{
 	}
-	the Summer 1
+	the Summer 1 * false * http://dbpedia.org/resource/The_Summer
 	{
 	}
 }
 Comment 4
 {
-	Liam Gallagher 1
+	Liam Gallagher 1 * true * http://dbpedia.org/resource/Liam_Gallagher
 	{
 	}
-	Italy 1
+	Justin Bieber 1 * true * http://dbpedia.org/resource/Justin_Bieber
+	{
+	}
+	Italy 1 * false * http://dbpedia.org/resource/Italy
 	{
 	}
 }
 Comment 5
 {
-	Rocky Balboa 1
+	Orlando Bloom 1 * true * http://dbpedia.org/resource/Orlando_Bloom
+	{
+	}
+	Justin Bieber 1 * true * http://dbpedia.org/resource/Justin_Bieber
+	{
+	}
+	Rocky Balboa 1 * false * 
 	{
 	}
 }
 Comment 6
 {
-	Rocky Balboa 1
+	Orlando Bloom 1 * true * http://dbpedia.org/resource/Orlando_Bloom
+	{
+	}
+	Justin Bieber 1 * true * http://dbpedia.org/resource/Justin_Bieber
+	{
+	}
+	Rocky Balboa 1 * false * 
 	{
 	}
 }
 Comment 7
 {
-	recyclable 1
+	Orlando Bloom 1 * true * http://dbpedia.org/resource/Orlando_Bloom
+	{
+	}
+	Justin Bieber 1 * true * http://dbpedia.org/resource/Justin_Bieber
+	{
+	}
+	recyclable 1 * false * http://dbpedia.org/resource/Recycling
 	{
 	}
 }
 Comment 8
 {
-	George Clooney 1
+	Orlando Bloom 2 * true * http://dbpedia.org/resource/Orlando_Bloom
 	{
 	}
-	celebrities 1
+	Justin Bieber 1 * true * http://dbpedia.org/resource/Justin_Bieber
+	{
+	}
+	George Clooney 1 * true * http://dbpedia.org/resource/George_Clooney
+	{
+	}
+	celebrities 1 * false * http://dbpedia.org/resource/Celebrity
 	{
 	}
 }
 Comment 9
 {
-	combat training 1
+	Justin Bieber 5 * true * http://dbpedia.org/resource/Justin_Bieber
 	{
 	}
-	film crew 1
+	Orlando Bloom 2 * true * http://dbpedia.org/resource/Orlando_Bloom
+	{
+	}
+	combat training 1 * false * http://dbpedia.org/resource/Combat
+	{
+	}
+	film crew 1 * false * http://dbpedia.org/resource/Film_crew
 	{
 	}
 }
 Comment 10
 {
-	Miranda Kerr 1
+	Justin Bieber 3 * true * http://dbpedia.org/resource/Justin_Bieber
 	{
 	}
-	use by date 1
+	Miranda Kerr 2 * true * http://dbpedia.org/resource/Miranda_Kerr
 	{
 	}
-	fan base 1
+	Orlando Bloom 2 * true * http://dbpedia.org/resource/Orlando_Bloom
+	{
+	}
+	use by date 1 * false * http://dbpedia.org/resource/Shelf_life
+	{
+	}
+	fan base 1 * false * 
 	{
 	}
 }
 Comment 11
 {
-	Kingdom of Heaven 1
+	Orlando Bloom 3 * true * http://dbpedia.org/resource/Orlando_Bloom
+	{
+	}
+	Kingdom of Heaven 1 * false * 
 	{
 	}
 }
 Comment 12
 {
-	Orlando Bloom 1
+	Justin Bieber 2 * true * http://dbpedia.org/resource/Justin_Bieber
 	{
 	}
-	Justin Bieber 1
+	Orlando Bloom 1 * true * http://dbpedia.org/resource/Orlando_Bloom
 	{
 	}
 }
 Comment 13
 {
-	Johnny Depp 1
+	Johnny Depp 1 * true * http://dbpedia.org/resource/Johnny_Depp
 	{
 	}
-	Orlando Bloom 1
+	Orlando Bloom 1 * true * http://dbpedia.org/resource/Orlando_Bloom
 	{
 	}
-	Justin Bieber 1
+	Justin Bieber 1 * true * http://dbpedia.org/resource/Justin_Bieber
 	{
 	}
 }
 Comment 14
 {
+	Orlando Bloom 1 * true * http://dbpedia.org/resource/Orlando_Bloom
+	{
+	}
+	Justin Bieber 1 * true * http://dbpedia.org/resource/Justin_Bieber
+	{
+	}
 }
 Comment 15
 {
-	Orlando Bloom 1
+	Orlando Bloom 1 * true * http://dbpedia.org/resource/Orlando_Bloom
 	{
 	}
-	Justin Bieber 1
+	Justin Bieber 1 * true * http://dbpedia.org/resource/Justin_Bieber
 	{
 	}
-	Canada 1
+	Canada 1 * false * http://dbpedia.org/resource/Canada
 	{
 	}
-	spoiled brat 1
+	spoiled brat 1 * false * http://dbpedia.org/resource/Spoiled_child
 	{
 	}
 }
 Comment 16
 {
-	Miranda Kerr 1
+	Justin Bieber 2 * true * http://dbpedia.org/resource/Justin_Bieber
 	{
 	}
-	Justin Bieber 2
+	Miranda Kerr 1 * true * http://dbpedia.org/resource/Miranda_Kerr
 	{
 	}
-	Orlando Bloom 1
+	Orlando Bloom 1 * true * http://dbpedia.org/resource/Orlando_Bloom
 	{
 	}
-	Brian Harvey 1
+	Brian Harvey 1 * true * http://dbpedia.org/resource/Brian_Harvey
 	{
 	}
-	baseball caps 1
+	baseball caps 1 * true * http://dbpedia.org/resource/Baseball_cap
 	{
 	}
 }
 Comment 17
 {
-	Leonardo DiCaprio 5
+	Leonardo DiCaprio 3 * true * http://dbpedia.org/resource/Leonardo_DiCaprio
 	{
 	}
-	Jack Nicholson 1
+	Jack Nicholson 1 * true * http://dbpedia.org/resource/Jack_Nicholson
 	{
 	}
-	Orlando 1
+	Orlando Bloom 1 * true * http://dbpedia.org/resource/Orlando_Bloom
 	{
 	}
 }
 Comment 18
 {
-	celebrities 4
+	celebrities 4 * false * http://dbpedia.org/resource/Celebrity
 	{
 	}
-	feud 5
+	feud 5 * false * 
 	{
 	}
 }
 Comment 19
 {
+	Orlando Bloom 3 * true * http://dbpedia.org/resource/Orlando_Bloom
+	{
+	}
+	Justin Bieber 2 * true * http://dbpedia.org/resource/Justin_Bieber
+	{
+	}
 }
 Comment 20
 {
-	Twitter 1
+	Orlando Bloom 3 * true * http://dbpedia.org/resource/Orlando_Bloom
 	{
 	}
-	cinema history 1
+	Justin Bieber 3 * true * http://dbpedia.org/resource/Justin_Bieber
+	{
+	}
+	Twitter 1 * true * http://dbpedia.org/resource/Twitter
+	{
+	}
+	cinema history 1 * false * http://dbpedia.org/resource/History_of_film
 	{
 	}
 }
