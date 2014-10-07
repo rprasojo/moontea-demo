@@ -1,5 +1,20 @@
 Comment 1
 {
+	Justin Bieber 2 * true * http://dbpedia.org/resource/Justin_Bieber
+	{
+	}
+	Orlando Bloom 1 * true * http://dbpedia.org/resource/Orlando_Bloom
+	{
+	}
+	Simpsons 1 * false * http://dbpedia.org/resource/The_Simpsons
+	{
+	}
+	films 3 * false * http://dbpedia.org/resource/Film
+	{
+	}
+}
+Comment 2
+{
 	Miranda Kerr 1 * true * http://dbpedia.org/resource/Miranda_Kerr
 	{
 	}
@@ -10,7 +25,7 @@ Comment 1
 	{
 	}
 }
-Comment 2
+Comment 3
 {
 	Justin Bieber 1 * true * http://dbpedia.org/resource/Justin_Bieber
 	{
@@ -22,7 +37,7 @@ Comment 2
 	{
 	}
 }
-Comment 3
+Comment 4
 {
 	Liam Gallagher 1 * true * http://dbpedia.org/resource/Liam_Gallagher
 	{
@@ -31,18 +46,6 @@ Comment 3
 	{
 	}
 	Italy 1 * false * http://dbpedia.org/resource/Italy
-	{
-	}
-}
-Comment 4
-{
-	Orlando Bloom 1 * true * http://dbpedia.org/resource/Orlando_Bloom
-	{
-	}
-	Justin Bieber 1 * true * http://dbpedia.org/resource/Justin_Bieber
-	{
-	}
-	Rocky Balboa 1 * false * 
 	{
 	}
 }
@@ -66,11 +69,23 @@ Comment 6
 	Justin Bieber 1 * true * http://dbpedia.org/resource/Justin_Bieber
 	{
 	}
-	recyclable 1 * false * http://dbpedia.org/resource/Recycling
+	Rocky Balboa 1 * false * 
 	{
 	}
 }
 Comment 7
+{
+	Orlando Bloom 1 * true * http://dbpedia.org/resource/Orlando_Bloom
+	{
+	}
+	Justin Bieber 1 * true * http://dbpedia.org/resource/Justin_Bieber
+	{
+	}
+	recyclable 1 * false * http://dbpedia.org/resource/Recycling
+	{
+	}
+}
+Comment 8
 {
 	Orlando Bloom 2 * true * http://dbpedia.org/resource/Orlando_Bloom
 	{
@@ -85,7 +100,7 @@ Comment 7
 	{
 	}
 }
-Comment 8
+Comment 9
 {
 	Justin Bieber 5 * true * http://dbpedia.org/resource/Justin_Bieber
 	{
@@ -100,7 +115,7 @@ Comment 8
 	{
 	}
 }
-Comment 9
+Comment 10
 {
 	Justin Bieber 3 * true * http://dbpedia.org/resource/Justin_Bieber
 	{
@@ -118,7 +133,7 @@ Comment 9
 	{
 	}
 }
-Comment 10
+Comment 11
 {
 	Orlando Bloom 3 * true * http://dbpedia.org/resource/Orlando_Bloom
 	{
@@ -127,7 +142,7 @@ Comment 10
 	{
 	}
 }
-Comment 11
+Comment 12
 {
 	Justin Bieber 2 * true * http://dbpedia.org/resource/Justin_Bieber
 	{
@@ -136,20 +151,11 @@ Comment 11
 	{
 	}
 }
-Comment 12
+Comment 13
 {
 	Johnny Depp 1 * true * http://dbpedia.org/resource/Johnny_Depp
 	{
 	}
-	Orlando Bloom 1 * true * http://dbpedia.org/resource/Orlando_Bloom
-	{
-	}
-	Justin Bieber 1 * true * http://dbpedia.org/resource/Justin_Bieber
-	{
-	}
-}
-Comment 13
-{
 	Orlando Bloom 1 * true * http://dbpedia.org/resource/Orlando_Bloom
 	{
 	}
@@ -165,6 +171,15 @@ Comment 14
 	Justin Bieber 1 * true * http://dbpedia.org/resource/Justin_Bieber
 	{
 	}
+}
+Comment 15
+{
+	Orlando Bloom 1 * true * http://dbpedia.org/resource/Orlando_Bloom
+	{
+	}
+	Justin Bieber 1 * true * http://dbpedia.org/resource/Justin_Bieber
+	{
+	}
 	Canada 1 * false * http://dbpedia.org/resource/Canada
 	{
 	}
@@ -172,7 +187,7 @@ Comment 14
 	{
 	}
 }
-Comment 15
+Comment 16
 {
 	Justin Bieber 2 * true * http://dbpedia.org/resource/Justin_Bieber
 	{
@@ -190,7 +205,7 @@ Comment 15
 	{
 	}
 }
-Comment 16
+Comment 17
 {
 	Leonardo DiCaprio 3 * true * http://dbpedia.org/resource/Leonardo_DiCaprio
 	{
@@ -202,7 +217,7 @@ Comment 16
 	{
 	}
 }
-Comment 17
+Comment 18
 {
 	celebrities 4 * false * http://dbpedia.org/resource/Celebrity
 	{
@@ -211,7 +226,7 @@ Comment 17
 	{
 	}
 }
-Comment 18
+Comment 19
 {
 	Orlando Bloom 3 * true * http://dbpedia.org/resource/Orlando_Bloom
 	{
@@ -220,7 +235,7 @@ Comment 18
 	{
 	}
 }
-Comment 19
+Comment 20
 {
 	Orlando Bloom 3 * true * http://dbpedia.org/resource/Orlando_Bloom
 	{
@@ -234,7 +249,4 @@ Comment 19
 	cinema history 1 * false * http://dbpedia.org/resource/History_of_film
 	{
 	}
-}
-Comment 20
-{
 }

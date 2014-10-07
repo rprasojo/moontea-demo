@@ -35,6 +35,7 @@ public abstract class EntityExtractor implements Extractor {
 			String names = longName.replaceAll(",", " ")
 					.replaceAll("\\s+", " ");
 			e.getPartOfNames().addAll(Arrays.asList(names.split(" ")));
+			e.getPartOfNames().addAll(Arrays.asList(e.getAnchorName().split(" ")));
 		}
 	}
 }

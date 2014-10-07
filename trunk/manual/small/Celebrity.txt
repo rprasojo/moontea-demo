@@ -145,11 +145,14 @@ Comment 10
  Justin Bieber 3
  {
    fan 1
-   taste 1  
+   taste 1
+   mileage 1  
  }
  Orlando Bloom 2
  {
    acting 1
+   mileage 1
+   adequateness 1
  }      
 }
 Comment 11: acting, Orlando Bloom 
