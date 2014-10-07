@@ -27,7 +27,12 @@ public class SPARQLQueryPoster {
 	public static Set<String> executeSelectQuery(String query,
 			String endpointURL, String variableName) {
 		String service = endpointURL;
-		QueryExecution qe = QueryExecutionFactory.sparqlService(service, query);
+		QueryExecution qe = null;
+		try {
+		qe = QueryExecutionFactory.sparqlService(service, query);
+		} catch(Exception e) {
+			return new TreeSet<String>();
+		}
 		ResultSet results = qe.execSelect();
 		Set<String> res = new TreeSet<String>();
 		for (; results.hasNext();) {
@@ -66,14 +71,15 @@ public class SPARQLQueryPoster {
 				+ "> dbpprop:conventionalLongName ?" + VAR_ALIAS
 				+ " . } UNION { <" + uri + "> foaf:name ?" + VAR_ALIAS
 				+ " . } UNION { <" + uri + "> dbpprop:linkingName ?"
-				+ VAR_ALIAS + " . } UNION { <" + uri + "> dbpprop:name ?" + VAR_ALIAS
-				+ " . } UNION { <" + uri + "> dbpedia-owl:birthName ?"
+				+ VAR_ALIAS + " . } UNION { <" + uri + "> dbpprop:name ?"
 				+ VAR_ALIAS + " . } UNION { <" + uri
-				+ "> dbpprop:alternativeNames ?" + VAR_ALIAS + " . } UNION { <"
-				+ uri + "> dbpprop:name ?" + VAR_ALIAS + " . } UNION { <" + uri
-				+ "> dbpprop:birthname ?" + VAR_ALIAS + " . } UNION { <" + uri
-				+ "> foaf:name ?" + VAR_ALIAS + " . }  FILTER(LANG(?"
-				+ VAR_ALIAS + " ) = \"\" || LANGMATCHES(LANG(?" + VAR_ALIAS
+				+ "> dbpedia-owl:birthName ?" + VAR_ALIAS + " . } UNION { <"
+				+ uri + "> dbpprop:alternativeNames ?" + VAR_ALIAS
+				+ " . } UNION { <" + uri + "> dbpprop:name ?" + VAR_ALIAS
+				+ " . } UNION { <" + uri + "> dbpprop:birthname ?" + VAR_ALIAS
+				+ " . } UNION { <" + uri + "> foaf:name ?" + VAR_ALIAS
+				+ " . }  FILTER(LANG(?" + VAR_ALIAS
+				+ " ) = \"\" || LANGMATCHES(LANG(?" + VAR_ALIAS
 				+ " ), \"en\")) . } LIMIT 100";
 		return query;
 	}
@@ -107,7 +113,7 @@ public class SPARQLQueryPoster {
 				+ " where {?" + VAR_ENTITY_URI + " foaf:homepage <" + url
 				+ "> . ?" + VAR_ENTITY_URI + " rdfs:label \"" + label
 				+ "\"@en}";
-		
+
 		Iterator<String> i = executeSelectQuery(query, endpointURL,
 				VAR_ENTITY_URI).iterator();
 		if (i.hasNext()) {

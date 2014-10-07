@@ -62,10 +62,10 @@ public class ZemantaExtractor extends EntityExtractor {
 		case LocalReader.SMALL_DATASET:
 			BufferedWriter bw;
 			String file = "";
-			if (this.reader.getArticle().getListOfComments().get(0).getMode() == Comment.ORIGINAL) {
+			if (this.reader.getFormOfArticle() == Reader.ORIGINAL) {
 				file = "result/small/original/entity/zemanta/"
 						+ this.reader.getSourceName();
-			} else if (this.reader.getArticle().getListOfComments().get(0).getMode() == Comment.EXTENDED) {
+			} else if (this.reader.getFormOfArticle() == Reader.EXTENDED) {
 				file = "result/small/extended/entity/zemanta/"
 						+ this.reader.getSourceName();
 			}
@@ -131,8 +131,9 @@ public class ZemantaExtractor extends EntityExtractor {
 				e.setAnchorName(anchor);
 				e.getTypes().addAll(types);
 				for (String s : types) {
-					if (s.toLowerCase().contains("person")) {
+					if (s.contains("http://schema.org/Person")) {
 						e.setPerson(true);
+						break;
 					}
 				}
 

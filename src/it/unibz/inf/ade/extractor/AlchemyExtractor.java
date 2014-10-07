@@ -8,6 +8,10 @@ public class AlchemyExtractor extends EntityExtractor {
 		super(reader, useLocal);
 	}
 
+	private void alchemyExtract() {
+		
+	}	
+	
 	@Override
 	public void extractComment() {
 		// TODO Auto-generated method stub

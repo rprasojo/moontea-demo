@@ -2,6 +2,14 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="lib/stanfordNLP/coreNLP/stanford-corenlp-3.4.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="lib/stanfordNLP/coreNLP/stanford-corenlp-3.4.1-models.jar"/>
+	<classpathentry kind="lib" path="lib/stanfordNLP/coreNLP/stanford-corenlp-3.4.1-sources.jar"/>
+	<classpathentry kind="lib" path="lib/stanfordNLP/coreNLP/stanford-corenlp-3.4.1.jar"/>
+	<classpathentry kind="lib" path="lib/stanfordNLP/parser/stanford-parser-3.4.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="lib/stanfordNLP/parser/stanford-parser-3.4.1-models.jar"/>
+	<classpathentry kind="lib" path="lib/stanfordNLP/parser/stanford-parser-3.4.1-sources.jar"/>
+	<classpathentry kind="lib" path="lib/stanfordNLP/parser/stanford-parser.jar"/>
 	<classpathentry kind="lib" path="lib/wordnet/jaws-bin.jar"/>
 	<classpathentry kind="lib" path="lib/zemanta/zemapi-java.jar"/>
 	<classpathentry kind="lib" path="lib/apacheJena/commons-codec-1.6.jar"/>
@@ -23,21 +31,7 @@
 	<classpathentry kind="lib" path="lib/apacheJena/slf4j-log4j12-1.7.6.jar"/>
 	<classpathentry kind="lib" path="lib/apacheJena/xercesImpl-2.11.0.jar"/>
 	<classpathentry kind="lib" path="lib/apacheJena/xml-apis-1.4.01.jar"/>
-	<classpathentry kind="lib" path="lib/stanfordNLP/coreNLP/stanford-corenlp-3.4.1-javadoc.jar"/>
-	<classpathentry kind="lib" path="lib/stanfordNLP/coreNLP/stanford-corenlp-3.4.1-models.jar"/>
-	<classpathentry kind="lib" path="lib/stanfordNLP/coreNLP/stanford-corenlp-3.4.1-sources.jar"/>
-	<classpathentry kind="lib" path="lib/stanfordNLP/coreNLP/stanford-corenlp-3.4.1.jar" sourcepath="lib/stanfordNLP/coreNLP/stanford-corenlp-3.4.1-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/thesis-demo/lib/stanfordNLP/coreNLP/stanford-corenlp-3.4.1-javadoc.jar!/"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/stanfordNLP/parser/stanford-parser-3.4.1-javadoc.jar"/>
-	<classpathentry kind="lib" path="lib/stanfordNLP/parser/stanford-parser-3.4.1-models.jar"/>
-	<classpathentry kind="lib" path="lib/stanfordNLP/parser/stanford-parser-3.4.1-sources.jar"/>
-	<classpathentry kind="lib" path="lib/stanfordNLP/parser/stanford-parser.jar" sourcepath="lib/stanfordNLP/parser/stanford-parser-3.4.1-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/thesis-demo/lib/stanfordNLP/parser/stanford-parser-3.4.1-javadoc.jar!/"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="lib" path="lib/lingpipe/lingpipe-4.1.0/lingpipe-4.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/alchemy/alchemy.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

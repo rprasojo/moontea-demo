@@ -1,74 +1,84 @@
-The news article can be read from http://bgr.com/2014/05/07/iphone-vs-android-comparison-switch/
-
-========================================================================================================
-Comment #1
+Comment 1
 
 How dare the author try to insert rational thought, clear thinking, and even-handed reporting to say that both platforms are mature and fully usable for most users. Fanboys from both sides will be greatly offended by this type of journalism!
 
-========================================================================================================
-Comment #2
+
+================================================================
+Comment 2
 
 Lol seriously, I have plenty of iPhones but once I went to a high quality Android phone I have never looked back. Small ass screen, no swype feature, boring UI, SIRI(lol). Android has definitely made my life much easier.
 
-========================================================================================================
-Comment #3
+
+================================================================
+Comment 3
 
 lol...seriously...I have plenty of android phones but when I use a "high quality" android phone, it still runs like crap. Laggy, disjointed UI, google now sucks for anything useful except trivia questions. I'll give them the larger screens but that won't be an issue for long.
 
-========================================================================================================
-Comment #4
+
+================================================================
+Comment 4
 
 Next time you try an android, try the old HTC One M7 but install google launcher on it. There is no lag and the experience is similar to stock. What android phones do you have? Many buy cheap android phones and expect no lag. The Moto G though is a good phone for a cheap price with a good cpu and enough memory to improve the android experience.
 
-========================================================================================================
-Comment #5
+
+================================================================
+Comment 5
 
 I have an LG G2 and Note 2. Both lag. The LG does lag less with ADW launcher on it but sometimes it just chokes as it's moving between certain apps.
 
-========================================================================================================
-Comment #6
+
+================================================================
+Comment 6
 
 That's the thing, my HTC One M7 almost had no lag when I picked it over the S4. I was all set to get a phone with a removable battery and a micro sd card expansion but the speakers on the htc one and the brightness along with the no lag surprised me. I'm guessing it's the software of HTC that lets it move smoother. It beats Samsung's touchwiz and ever since the HTC One, I've stopped tried go launcher ex and adw launcher ex and they do lag, I suggest for something new, stoichome, you just use gestures with no icons at all, themer (if I don't want to theme since it themes for me) or what I use right now, either Google Experience Launcher (it has google now always listening) or Blinkfeed (when it's released by HTC to non HTC phones). Both don't lag and the interface is clean and simple.
 
-========================================================================================================
-Comment #7
+
+================================================================
+Comment 7
 
 Really those to be honest are crap OEM software. Has nothing to do with Android. smh to the uninformed. Android only problem is people get these phones who's OEM has put a heavy skinned UI on top of Android and it produces "lag" that most consumers assume its Android when thats the furthest from the truth. Try a Nexus 5 or the same G2 in the Google Play Edition and then you will truly see the power of Android lag free that is.
 
-========================================================================================================
-Comment #8
+
+================================================================
+Comment 8
 
 The thing I love about Android, is it's what Apple was like when they first started.
 
 It "thinks different." Everything isn't locked down. I can customize, personalize and play. By contrast the iPhone is the new PC. Boring, lacking creativity and self expression. You either think like Apple or... you get an Android.
 
-========================================================================================================
-Comment #9
+
+================================================================
+Comment 9
 
 You can jailbreak the iPhone and do all of those things. It's not that hard. Probably easier than rooting an Android.
 
-========================================================================================================
-Comment #10
+
+================================================================
+Comment 10
 
 Android is built for people who like to tinker and iOS is built for the "technically illiterate".
 
-========================================================================================================
-Comment #11
+
+================================================================
+Comment 11
 
 I switched from my iPhone 4s to Android (Note 3) and never looked back. And there is no way I'm going back. The eons better notifications, live widgets and multi windowing multitasking alone versus the 7 year old pathetic static app chooser iPhone home screen makes sure of that. Android is a live breathing smartphone, that is happening and a productivity powerhouse. By comparison, iPhone is comatose and moribund. It's like going from B&W TV (iPhone) to HD color (Android).
 
-========================================================================================================
-Comment #12
+
+================================================================
+Comment 12
 
 I agree. I recently switched from an iPhone 5s to a Galaxy S4, and I have to say, it was very easy. The better hardware is great (with the 5 inch display) and every single app I had on iOS is available on Android. Not only that, but the app quality is very much the same. IN some cases, its better. Overall, I've found Android Kitkat 4.4.2 a pleasure to use (even though I had to turn off the many craptastic Samsung apps that came on the phone).
 
-========================================================================================================
-Comment #13
+
+================================================================
+Comment 13
 
 I've tried several different Android phones over the past year: S4, HTC One, MotoX and Note 3. I like the MotoX the best. I enjoyed playing around with all of them and getting them to work the way I wanted to work. Two weeks ago I went back to using my iPhone 5, which which I had become so bored. It's so refreshing to be back. I mainly liked the larger screens of the Android phones, but even that doesn't bother me now. I'm looking forward to an iPhone with a larger screen, but, until then, I'm happy to be using my iPhone 5 again. I know it's cliche, but it just works better for everything I do.
 
-========================================================================================================
-Comment #14
+
+================================================================
+Comment 14
 
 In addition the fluid integration of applications and core system functions in Android is second to none IMHO.
 
@@ -76,39 +86,47 @@ Also, I find it very difficult to send text messages and emails on the iPhone ke
 It's too restrictive and for me, time-consuming.
 Full disclosure...I am a swipe-typist :)
 
-========================================================================================================
-Comment #15
+
+================================================================
+Comment 15
 
 As a dual platform person, I think both OSes have their pros and cons. Though Apple doesn't have Swype (which is great), I tend to prefer texting on the iPhone. On the other hand, something on Android I couldn't live without is the ability to share to lots of apps. Sharing on the iPhone is limited to what Apple thinks you should be able to share to. On Android, I can share to Pocket, Evernote, a random Twitter app or anything else very easily. I also happen to be in the minority that prefers the Android user interface on the Nexus 5. It just feels natural for me.
 
-========================================================================================================
-Comment #16
+
+================================================================
+Comment 16
 
 I have to agree, I came from an iPhone and switched to the LG G2 2 months ago.
 The transition was very smooth and not regretting my decision one bit.
 I got a really cool phone with a large screen for free with my carrier, and moved all my music into google play very easily.
 
-========================================================================================================
-Comment #17
+
+================================================================
+Comment 17
 
 I made the switch from an iphone 5 (plus almost every iphone before that) to a nexus 5 almost 6 months ago and I'm still on the fence about it. I like that I can download torrents right to my phone and then play them. I like that I can easily tether my nexus without paying my carrier. I don't like the battery life, which in turn makes me have to dim the screen almost all the way down. I miss the little things, like tapping the top of the screen to instantly go to the top of a web page or my twitter feed. I also miss the shake to undo function found on iOS. It would be nice if one day people had a choice which software ran on their phones or if you could choose both, like computers. There was a couple of days when I couldn't even use my camera, even after I rebooted the phone I still couldn't open it. Anyway the main reason I switched was for a bigger screen and now that a new iphone will be coming out soon, I will be going back to iphone.
 
-========================================================================================================
-Comment #18
+
+================================================================
+Comment 18
 
 I made the switch from an iphone 5 (plus almost every iphone before that) to a nexus 5 almost 6 months ago and I'm still on the fence about it. I like that I can download torrents right to my phone and then play them. I like that I can easily tether my nexus without paying my carrier. I don't like the battery life, which in turn makes me have to dim the screen almost all the way down. I miss the little things, like tapping the top of the screen to instantly go to the top of a web page or my twitter feed. I also miss the shake to undo function found on iOS. It would be nice if one day people had a choice which software ran on their phones or if you could choose both, like computers. There was a couple of days when I couldn't even use my camera, even after I rebooted the phone I still couldn't open it. Anyway the main reason I switched was for a bigger screen and now that a new iphone will be coming out soon, I will be going back to iphone.
 
-========================================================================================================
-Comment #19
+
+================================================================
+Comment 19
 
 For heavy users of iOS, switching to Android would be painful, because many apps and services won't be available on Android. 
 However, heavy users of Android, who use apps like emulators, or enjoy the level of customization, will feel this is lacking on iOS. 
 I think giving up customization is easier than giving up apps, but that's why I won't switch. 
 Now, if you're not a heavy user, you're probably not going to care either way. In fact, the biggest complaint I've heard from Android to iOS switchers (who don't care about smartphones much), is the smaller screen.
 
-========================================================================================================
-Comment #20
+
+================================================================
+Comment 20
 
 On the topic of apps, I think that users that switch from iPhone to Android will, like the user in the article, find that the apps and services they commonly use are available on Android as well. Now, if they do something specialized like video or music production, then yes, they'll find those power apps missing.
 
 Another thing is that they might find that some of the apps they had to use on iOS aren't required on Android because it does it out of the box.
+
+================================================================

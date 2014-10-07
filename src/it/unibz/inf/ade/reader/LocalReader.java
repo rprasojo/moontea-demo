@@ -14,14 +14,25 @@ public class LocalReader extends Reader {
 	public static final int BIG_DATASET = 1;
 	public static final int IN_CODE_DATASET = 2;
 
+	public static final int CELEBRITY = 0;
+	public static final int HEALTHCARE = 1;
+	public static final int POLITICS = 2;
+	public static final int SPORT = 3;
+	public static final int TECH = 4;
+
 	private String sourceURI;
+	private int whichArticle = TECH;
+
+	public LocalReader(int whichArticle) {
+		this.whichArticle = whichArticle;
+	}
 
 	@Override
 	public void chooseReadingSource(int sourceID) {
 		this.sourceID = sourceID;
 		switch (sourceID) {
 		case SMALL_DATASET:
-			readSmallDataset();
+			readSmallDataset(whichArticle, formOfArticle);
 			break;
 		case BIG_DATASET:
 			readBigDataset();
@@ -41,10 +52,9 @@ public class LocalReader extends Reader {
 
 	}
 
-	private void readSmallDataset() {
-		String datasetFolder = "dataset/small/original";
-		File dataset = new File(datasetFolder);
-		String article = getWhichArticle(dataset);
+	private void readSmallDataset(int whichArticle, int typeArticle) {
+		String datasetFolder = "dataset/small/" + getWhichFormOfArticle(typeArticle);
+		String article = getWhichArticle(whichArticle);
 		sourceName = article;
 		setSourceURI(datasetFolder + "/" + article);
 		try {
@@ -84,11 +94,17 @@ public class LocalReader extends Reader {
 		}
 	}
 
-	private String getWhichArticle(File dataset) {
+	private String getWhichArticle(int whichArticle) {
 		// TODO create user-chosen file
 		String[] articleList = { "Celebrity.txt", "Healthcare.txt",
 				"Politics.txt", "Sport.txt", "Tech.txt" };
-		return articleList[0];
+		return articleList[whichArticle];
+	}
+
+	private String getWhichFormOfArticle(int whichFormOfArticle) {
+		String[] articleFormList = { "original", "cleaned", "extended",
+				"cleaned_and_extended" };
+		return articleFormList[whichFormOfArticle];
 	}
 
 	public String getSourceURI() {
