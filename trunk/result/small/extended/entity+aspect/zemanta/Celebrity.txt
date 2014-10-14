@@ -5,6 +5,8 @@ Comment 1
 	}
 	Orlando Bloom 1 * true * http://dbpedia.org/resource/Orlando_Bloom
 	{
+		prettiness 1
+		films 1
 	}
 	Simpsons 1 * false * http://dbpedia.org/resource/The_Simpsons
 	{

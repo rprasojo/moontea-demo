@@ -40,8 +40,7 @@ public class PersonNameExtender {
 
 	public void extend() {
 		for (Comment c : this.getReader().getArticle().getListOfComments()) {
-			Iterator<Entity> i = this.getReader().getArticle()
-					.getSetOfEntities().iterator();
+			Iterator<Entity> i = c.getEntities().iterator();
 			String tempStr = c.getOriginalText();
 			while (i.hasNext()) {
 				Entity e = i.next();
@@ -59,8 +58,12 @@ public class PersonNameExtender {
 				String x = i.next();
 				Set<Entity> tempEntitySet = nameExtenderMapper.get(x);
 				if (tempEntitySet.size() == 1) {
+					// TODO: set of entities from the map, I have to implement
+					// disambiguation. Now it simply take the first element of
+					// the set.
 					Entity e = (Entity) tempEntitySet.toArray()[0];
-					tempStr = tempStr.replaceAll("\\b" + x + "\\b", e.getUuid() );
+					tempStr = tempStr
+							.replaceAll("\\b" + x + "\\b", e.getUuid());
 				}
 			}
 			c.setExtendedText(tempStr);
@@ -87,6 +90,28 @@ public class PersonNameExtender {
 			if (e.isAPerson()) {
 				Set<Entity> temp;
 				for (String partOfAlias : e.getPartOfNames()) {
+					if (partOfAlias.length() > 1) {
+						setOfNames.add(partOfAlias);
+						if (!nameExtenderMapper.containsKey(partOfAlias)) {
+							temp = new TreeSet<Entity>();
+							temp.add(e);
+							nameExtenderMapper.put(partOfAlias, temp);
+							// if(partOfAlias.equals("Bieber")) {
+							// System.out.println(e);
+							// System.out.println(nameExtenderMapper.get(partOfAlias).toArray()[0]);
+							// }
+						} else {
+							temp = nameExtenderMapper.get(partOfAlias);
+							temp.add(e);
+							// if(partOfAlias.equals("Bieber")) {
+							// System.out.println(e.getURI() + " added");
+							// }
+						}
+					}
+				}
+			} else {
+				Set<Entity> temp;
+				for (String partOfAlias : e.getAliases()) {
 					if (partOfAlias.length() > 1) {
 						setOfNames.add(partOfAlias);
 						if (!nameExtenderMapper.containsKey(partOfAlias)) {

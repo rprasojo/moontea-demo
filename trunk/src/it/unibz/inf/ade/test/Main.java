@@ -1,6 +1,7 @@
 package it.unibz.inf.ade.test;
 
 import it.unibz.inf.ade.extender.Extender;
+import it.unibz.inf.ade.extractor.AlchemyExtractor;
 import it.unibz.inf.ade.extractor.EntityExtractor;
 import it.unibz.inf.ade.extractor.ZemantaExtractor;
 import it.unibz.inf.ade.reader.LocalReader;
@@ -12,21 +13,25 @@ public class Main {
 		System.setProperty("wordnet.database.dir",
 				"C:/Users/RadityoEko/Downloads/Compressed/WordNet-3.0/dict/");
 
-		for (int i = 0; i < 5; i++) {
-			Reader localReader = new LocalReader(i);
-			localReader.chooseReadingSource(LocalReader.SMALL_DATASET);
-			localReader.setFormOfArticle(Reader.EXTENDED);
+//		Reader localReader = new LocalReader(0);
+//		EntityExtractor alchemyExtractor = new AlchemyExtractor(localReader, false);
+//		alchemyExtractor.extractComment();
+		
+//		for (int i = 0; i < 5; i++) {
+		Reader localReader = new LocalReader(LocalReader.POLITICS);
+		localReader.chooseReadingSource(LocalReader.SMALL_DATASET);
+		localReader.setFormOfArticle(Reader.EXTENDED);
 
-			EntityExtractor zemantaExtractor = new ZemantaExtractor(
-					localReader, false, "thkhkzot2vjtx6dzsamyxhrr");
-//			zemantaExtractor.extractTopic();
+		EntityExtractor zemantaExtractor = new ZemantaExtractor(localReader,
+				false, "thkhkzot2vjtx6dzsamyxhrr");
+		zemantaExtractor.extractTopic();
 
-//			Extender extender = new Extender(localReader);
-//			extender.extend();
-//			extender.writeExtendedArticleLocally();
+		Extender extender = new Extender(localReader);
+		extender.extend();
+		extender.writeExtendedArticleLocally();
 
-			zemantaExtractor.extractComment();
-		}
+		zemantaExtractor.extractComment();
+//		}
 	}
 
 }
