@@ -1,0 +1,6813 @@
+<section id="conversation" data-role="main" data-tracking-area="main">
+
+	<div class="nav nav-secondary" data-tracking-area="secondary-nav">
+		<ul>
+
+			<li data-role="post-sort" class="dropdown sorting">
+				<a href="#" class="dropdown-toggle" data-nav="conversation"
+					data-toggle="dropdown">
+
+
+					Sort by Oldest
+					<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="#" data-action="sort" data-sort="popular">
+							Best
+							<i aria-hidden="true" class="icon-checkmark"></i>
+						</a>
+					</li>
+
+					<li>
+						<a href="#" data-action="sort" data-sort="desc">
+							Newest
+							<i aria-hidden="true" class="icon-checkmark"></i>
+						</a>
+					</li>
+
+					<li class="selected">
+						<a href="#" data-action="sort" data-sort="asc">
+							Oldest
+							<i aria-hidden="true" class="icon-checkmark"></i>
+						</a>
+					</li>
+				</ul>
+			</li>
+
+
+			<li id="thread-votes" class="favorite pull-right">
+				<!-- rendered dynamically -->
+				<div class="thread-likes" data-role="vote-button">
+					<a href="#" data-action="upvote" title="Favorite this discussion">
+						<span class="label">Favorite</span>
+						<span class="icon-star"></span>
+						<span class="icon-check"></span>
+					</a>
+				</div>
+			</li>
+
+			<li id="thread-share-menu" class="dropdown share-menu">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Share">
+					<span class="label">Share</span>
+					<span class="icon-export"></span>
+				</a>
+				<ul class="share-menu dropdown-menu pull-right">
+					<li class="share">
+						Share this discussion on
+						<ul>
+							<li class="twitter">
+								<a data-action="share:twitter" href="#">Twitter</a>
+							</li>
+							<li class="facebook">
+								<a data-action="share:facebook" href="#">Facebook</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+
+	<div id="posts">
+
+		<div id="form">
+			<form class="reply authenticated">
+
+				<div class="postbox">
+					<div role="alert">
+						<div class="alert warn">
+							<a class="close" data-action="dismiss" title="Dismiss">×</a>
+							<span>
+
+
+								BGR requires you to
+								<a href="#" data-action="verify-email">verify your email address</a>
+								before posting
+
+							</span>
+						</div>
+					</div>
+					<div class="avatar">
+
+						<a href="http://disqus.com/radityoekoprasojo/" class="user"
+							data-action="profile" data-user="106760165">
+							<img data-role="user-avatar" data-user="106760165"
+								src="//a.disquscdn.com/1413230218/images/noavatar92.png" alt="Avatar">
+						</a>
+
+					</div>
+
+					<div class="textarea-wrapper" data-role="textarea" dir="auto">
+						<div>
+							<span class="placeholder">Join the discussion…</span>
+							<div class="textarea" tabindex="0" role="textbox"
+								aria-multiline="true" contenteditable="true" data-role="editable"
+								aria-label="Join the discussion…" style="overflow: auto; max-height: 350px;">
+								<p>
+									<br>
+								</p>
+							</div>
+							<div style="display: none;">
+								<ul class="suggestions">
+									<li class="header">
+										<h5>in this conversation</h5>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div data-role="drag-drop-placeholder" class="media-drag-hover"
+							style="display: none">
+							<div class="drag-text">
+								⬇ Drag and drop your images here to upload them.
+							</div>
+						</div>
+
+						<div class="media-preview empty" data-role="media-preview">
+							<ul data-role="media-legacy-list"></ul>
+							<ul data-role="media-rich-list"></ul>
+							<div class="media-expanded empty" data-role="media-preview-expanded">
+
+								<img
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									data-role="media-preview-expanded-image" alt="Media preview placeholder">
+							</div>
+						</div>
+
+						<div class="edit-alert" role="postbox-alert"></div>
+						<div class="post-actions">
+							<ul class="wysiwyg">
+
+								<li>
+									<a href="#" tabindex="-1" data-action="attach" class="attach"
+										title="Upload Images">
+										<span>Attach</span>
+									</a>
+									<input type="file" data-role="media-upload" tabindex="-1"
+										class="regular" accept="image/*">
+								</li>
+
+							</ul>
+
+
+
+							<div class="logged-in">
+								<section>
+									<div class="temp-post" style="text-align: right">
+										<button class="btn">
+											Post as
+											<span data-user="106760165" data-role="username">Radityo Eko
+												Prasojo</span>
+
+										</button>
+									</div>
+								</section>
+							</div>
+
+
+						</div>
+					</div>
+
+					<div data-role="login-form">
+						<div>
+
+
+
+
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<button class="alert realtime" style="display: none;"
+			data-role="realtime-notification">
+
+		</button>
+
+
+		<div id="no-posts" style="display: none;">Be the first to comment.</div>
+
+		<ul id="post-list" class="post-list">
+			<li class="post" id="post-1635021852">
+				<div role="alert"></div>
+
+				<div data-role="post-content" class="post-content">
+
+
+					<ul class="post-menu dropdown" data-role="menu">
+						<li class="collapse">
+							<a href="#" data-action="collapse" title="Collapse">
+								<span>−</span>
+							</a>
+						</li>
+						<li class="expand">
+							<a href="#" data-action="collapse" title="Expand">
+								<span>+</span>
+							</a>
+						</li>
+
+
+						<li class="" role="menu">
+
+
+							<a class="dropdown-toggle" href="#" data-action="flag"
+								data-role="flag" title="Flag as inappropriate">
+								<i aria-hidden="true" class="icon icon-flag"></i>
+							</a>
+
+
+						</li>
+
+					</ul>
+
+
+					<div class="indicator"></div>
+
+
+
+
+					<div class="avatar hovercard">
+						<a href="http://disqus.com/disqus_lew2Vptdyd/" class="user"
+							data-action="profile" data-user="62628870">
+							<img data-role="user-avatar" data-user="62628870"
+								src="//a.disquscdn.com/1413230218/images/noavatar92.png" alt="Avatar">
+						</a>
+					</div>
+
+
+					<div class="post-body">
+						<header>
+							<span class="post-byline">
+
+								<span class="author publisher-anchor-color">
+									<a href="#" data-action="profile" data-user="62628870"
+										data-role="username">Geoff Wood</a>
+								</span>
+
+
+
+
+
+
+							</span>
+
+							<span class="post-meta">
+								<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+
+								<a
+									href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635021852"
+									data-role="relative-time" class="time-ago"
+									title="Tuesday, October 14, 2014 4:18 PM">7 hours ago</a>
+
+							</span>
+
+
+						</header>
+
+
+						<div class="post-body-inner">
+
+							<div class="post-message-container" data-role="message-container">
+
+								<div class="publisher-anchor-color" data-role="message-content">
+									<div class="post-message " data-role="message" dir="auto">
+
+										<p>So, no original content of your own once again, how
+											surprising. What fine "journalism"</p>
+
+									</div>
+
+									<span class="post-media">
+										<ul data-role="post-media-list"></ul>
+									</span>
+								</div>
+							</div>
+							<a class="see-more hidden" title="see more" data-action="see-more">see
+								more</a>
+						</div>
+
+						<footer>
+							<menu>
+
+								<li class="voting" data-role="voting">
+
+									<a href="#" class="vote-up count-17" data-action="upvote"
+										title="">
+										<span class="updatable count" data-role="likes">17</span>
+										<span class="control">
+											<i aria-hidden="true" class="icon icon-arrow-2"></i>
+										</span>
+									</a>
+									<span role="button" class="vote-down  count-2" href="#"
+										data-action="downvote" title="Vote down">
+										<span class="control">
+											<i aria-hidden="true" class="icon icon-arrow"></i>
+										</span>
+
+									</span>
+
+								</li>
+								<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+								<li class="reply" data-role="reply-link">
+									<a href="#" data-action="reply">
+										<i class="icon icon-mobile icon-reply"></i>
+										<span class="text">Reply</span>
+									</a>
+								</li>
+								<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+								<li class="share">
+									<a class="toggle">
+										<i class="icon icon-mobile icon-share"></i>
+										<span class="text">Share ›</span>
+									</a>
+									<ul>
+										<li class="twitter">
+											<a href="#" data-action="share:twitter">Twitter</a>
+										</li>
+										<li class="facebook">
+											<a href="#" data-action="share:facebook">Facebook</a>
+										</li>
+										<li class="link">
+											<a
+												href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635021852">Link</a>
+										</li>
+									</ul>
+								</li>
+
+
+
+								<li class="realtime" data-role="realtime-notification:1635021852">
+									<span style="display:none;" class="realtime-replies"></span>
+									<a style="display:none;" href="#" class="btn btn-small"></a>
+
+								</li>
+
+
+
+							</menu>
+						</footer>
+					</div>
+
+
+					<div data-role="blacklist-form"></div>
+					<div class="reply-form-container" data-role="reply-form"></div>
+				</div>
+
+
+				<ul data-role="children" class="children">
+					<li class="post" id="post-1635023123">
+						<div role="alert"></div>
+
+						<div data-role="post-content" class="post-content">
+
+
+							<ul class="post-menu dropdown" data-role="menu">
+								<li class="collapse">
+									<a href="#" data-action="collapse" title="Collapse">
+										<span>−</span>
+									</a>
+								</li>
+								<li class="expand">
+									<a href="#" data-action="collapse" title="Expand">
+										<span>+</span>
+									</a>
+								</li>
+
+
+								<li class="" role="menu">
+
+
+									<a class="dropdown-toggle" href="#" data-action="flag"
+										data-role="flag" title="Flag as inappropriate">
+										<i aria-hidden="true" class="icon icon-flag"></i>
+									</a>
+
+
+								</li>
+
+							</ul>
+
+
+							<div class="indicator"></div>
+
+
+
+
+							<div class="avatar hovercard">
+								<a href="http://disqus.com/mikerechtien/" class="user"
+									data-action="profile" data-user="53542892">
+									<img data-role="user-avatar" data-user="53542892"
+										src="//a.disquscdn.com/1413230218/images/noavatar92.png" alt="Avatar">
+								</a>
+							</div>
+
+
+							<div class="post-body">
+								<header>
+									<span class="post-byline">
+
+										<span class="author publisher-anchor-color">
+											<a href="#" data-action="profile" data-user="53542892"
+												data-role="username">Mike Rechtien</a>
+										</span>
+
+
+
+
+
+
+										<span>
+											<a
+												href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635021852"
+												class="parent-link" data-role="parent-link">
+												<i aria-hidden="true" class="icon-forward" title="in reply to"></i>
+												Geoff Wood
+											</a>
+										</span>
+
+									</span>
+
+									<span class="post-meta">
+										<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+
+										<a
+											href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635023123"
+											data-role="relative-time" class="time-ago"
+											title="Tuesday, October 14, 2014 4:19 PM">7 hours ago</a>
+
+									</span>
+
+
+								</header>
+
+
+								<div class="post-body-inner">
+
+									<div class="post-message-container" data-role="message-container">
+
+										<div class="publisher-anchor-color" data-role="message-content">
+											<div class="post-message " data-role="message" dir="auto">
+
+												<p>Hey! At least this article didn't have anything to do
+													with an iDevice! I found it a refreshing (disappointing,
+													but refreshing) change!</p>
+
+											</div>
+
+											<span class="post-media">
+												<ul data-role="post-media-list"></ul>
+											</span>
+										</div>
+									</div>
+									<a class="see-more hidden" title="see more" data-action="see-more">see
+										more</a>
+								</div>
+
+								<footer>
+									<menu>
+
+										<li class="voting" data-role="voting">
+
+											<a href="#" class="vote-up  count-14" data-action="upvote"
+												title="">
+												<span class="updatable count" data-role="likes">14</span>
+												<span class="control">
+													<i aria-hidden="true" class="icon icon-arrow-2"></i>
+												</span>
+											</a>
+											<span role="button" class="vote-down  count-0" href="#"
+												data-action="downvote" title="Vote down">
+												<span class="control">
+													<i aria-hidden="true" class="icon icon-arrow"></i>
+												</span>
+
+											</span>
+
+										</li>
+										<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+										<li class="reply" data-role="reply-link">
+											<a href="#" data-action="reply">
+												<i class="icon icon-mobile icon-reply"></i>
+												<span class="text">Reply</span>
+											</a>
+										</li>
+										<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+										<li class="share">
+											<a class="toggle">
+												<i class="icon icon-mobile icon-share"></i>
+												<span class="text">Share ›</span>
+											</a>
+											<ul>
+												<li class="twitter">
+													<a href="#" data-action="share:twitter">Twitter</a>
+												</li>
+												<li class="facebook">
+													<a href="#" data-action="share:facebook">Facebook</a>
+												</li>
+												<li class="link">
+													<a
+														href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635023123">Link</a>
+												</li>
+											</ul>
+										</li>
+
+
+
+										<li class="realtime" data-role="realtime-notification:1635023123">
+											<span style="display:none;" class="realtime-replies"></span>
+											<a style="display:none;" href="#" class="btn btn-small"></a>
+
+										</li>
+
+
+
+									</menu>
+								</footer>
+							</div>
+
+
+							<div data-role="blacklist-form"></div>
+							<div class="reply-form-container" data-role="reply-form"></div>
+						</div>
+
+
+						<ul data-role="children" class="children">
+							<li class="post" id="post-1635067379">
+								<div role="alert"></div>
+
+								<div data-role="post-content" class="post-content">
+
+
+									<ul class="post-menu dropdown" data-role="menu">
+										<li class="collapse">
+											<a href="#" data-action="collapse" title="Collapse">
+												<span>−</span>
+											</a>
+										</li>
+										<li class="expand">
+											<a href="#" data-action="collapse" title="Expand">
+												<span>+</span>
+											</a>
+										</li>
+
+
+										<li class="" role="menu">
+
+
+											<a class="dropdown-toggle" href="#" data-action="flag"
+												data-role="flag" title="Flag as inappropriate">
+												<i aria-hidden="true" class="icon icon-flag"></i>
+											</a>
+
+
+										</li>
+
+									</ul>
+
+
+									<div class="indicator"></div>
+
+
+
+
+									<div class="avatar hovercard">
+										<a href="http://disqus.com/disqus_bvBEpf9hiW/" class="user"
+											data-action="profile" data-user="56345442">
+											<img data-role="user-avatar" data-user="56345442"
+												src="//a.disquscdn.com/uploads/users/5634/5442/avatar92.jpg?1413298550"
+												alt="Avatar">
+										</a>
+									</div>
+
+
+									<div class="post-body">
+										<header>
+											<span class="post-byline">
+
+												<span class="author publisher-anchor-color">
+													<a href="#" data-action="profile" data-user="56345442"
+														data-role="username">Frank Beans</a>
+												</span>
+
+
+
+
+
+
+												<span>
+													<a
+														href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635023123"
+														class="parent-link" data-role="parent-link">
+														<i aria-hidden="true" class="icon-forward" title="in reply to"></i>
+														Mike Rechtien
+													</a>
+												</span>
+
+											</span>
+
+											<span class="post-meta">
+												<span class="bullet time-ago-bullet" aria-hidden="true">•
+												</span>
+
+
+												<a
+													href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635067379"
+													data-role="relative-time" class="time-ago"
+													title="Tuesday, October 14, 2014 4:51 PM">6 hours ago</a>
+
+											</span>
+
+
+										</header>
+
+
+										<div class="post-body-inner">
+
+											<div class="post-message-container" data-role="message-container">
+
+												<div class="publisher-anchor-color" data-role="message-content">
+													<div class="post-message " data-role="message" dir="auto">
+
+														<p>They did throw a mention of the iPhone in there though.
+														</p>
+
+													</div>
+
+													<span class="post-media">
+														<ul data-role="post-media-list"></ul>
+													</span>
+												</div>
+											</div>
+											<a class="see-more hidden" title="see more" data-action="see-more">see
+												more</a>
+										</div>
+
+										<footer>
+											<menu>
+
+												<li class="voting" data-role="voting">
+
+													<a href="#" class="vote-up  count-3" data-action="upvote"
+														title="">
+														<span class="updatable count" data-role="likes">3</span>
+														<span class="control">
+															<i aria-hidden="true" class="icon icon-arrow-2"></i>
+														</span>
+													</a>
+													<span role="button" class="vote-down  count-0" href="#"
+														data-action="downvote" title="Vote down">
+														<span class="control">
+															<i aria-hidden="true" class="icon icon-arrow"></i>
+														</span>
+
+													</span>
+
+												</li>
+												<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+												<li class="reply" data-role="reply-link">
+													<a href="#" data-action="reply">
+														<i class="icon icon-mobile icon-reply"></i>
+														<span class="text">Reply</span>
+													</a>
+												</li>
+												<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+												<li class="share">
+													<a class="toggle">
+														<i class="icon icon-mobile icon-share"></i>
+														<span class="text">Share ›</span>
+													</a>
+													<ul>
+														<li class="twitter">
+															<a href="#" data-action="share:twitter">Twitter</a>
+														</li>
+														<li class="facebook">
+															<a href="#" data-action="share:facebook">Facebook</a>
+														</li>
+														<li class="link">
+															<a
+																href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635067379">Link</a>
+														</li>
+													</ul>
+												</li>
+
+
+
+												<li class="realtime" data-role="realtime-notification:1635067379">
+													<span style="display:none;" class="realtime-replies"></span>
+													<a style="display:none;" href="#" class="btn btn-small"></a>
+
+												</li>
+
+
+
+											</menu>
+										</footer>
+									</div>
+
+
+									<div data-role="blacklist-form"></div>
+									<div class="reply-form-container" data-role="reply-form"></div>
+								</div>
+
+
+								<ul data-role="children" class="children"></ul>
+
+
+							</li>
+							<li class="post" id="post-1635071460">
+								<div role="alert"></div>
+
+								<div data-role="post-content" class="post-content">
+
+
+									<ul class="post-menu dropdown" data-role="menu">
+										<li class="collapse">
+											<a href="#" data-action="collapse" title="Collapse">
+												<span>−</span>
+											</a>
+										</li>
+										<li class="expand">
+											<a href="#" data-action="collapse" title="Expand">
+												<span>+</span>
+											</a>
+										</li>
+
+
+										<li class="" role="menu">
+
+
+											<a class="dropdown-toggle" href="#" data-action="flag"
+												data-role="flag" title="Flag as inappropriate">
+												<i aria-hidden="true" class="icon icon-flag"></i>
+											</a>
+
+
+										</li>
+
+									</ul>
+
+
+									<div class="indicator"></div>
+
+
+
+
+									<div class="avatar hovercard">
+										<a href="http://disqus.com/disqus_rP3LcrVoNF/" class="user"
+											data-action="profile" data-user="111029008">
+											<img data-role="user-avatar" data-user="111029008"
+												src="//a.disquscdn.com/uploads/users/11102/9008/avatar92.jpg?1413299872"
+												alt="Avatar">
+										</a>
+									</div>
+
+
+									<div class="post-body">
+										<header>
+											<span class="post-byline">
+
+												<span class="author publisher-anchor-color">
+													<a href="#" data-action="profile" data-user="111029008"
+														data-role="username">Running Rampage</a>
+												</span>
+
+
+
+
+
+
+												<span>
+													<a
+														href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635023123"
+														class="parent-link" data-role="parent-link">
+														<i aria-hidden="true" class="icon-forward" title="in reply to"></i>
+														Mike Rechtien
+													</a>
+												</span>
+
+											</span>
+
+											<span class="post-meta">
+												<span class="bullet time-ago-bullet" aria-hidden="true">•
+												</span>
+
+
+												<a
+													href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635071460"
+													data-role="relative-time" class="time-ago"
+													title="Tuesday, October 14, 2014 4:54 PM">6 hours ago</a>
+
+											</span>
+
+
+										</header>
+
+
+										<div class="post-body-inner">
+
+											<div class="post-message-container" data-role="message-container">
+
+												<div class="publisher-anchor-color" data-role="message-content">
+													<div class="post-message " data-role="message" dir="auto">
+
+														<p>Yet you couldn't help yourself anyway. I'm once again
+															laughing at a picture of a Android phone with a Clock
+															Widget so you can see the time twice on the same screen.
+															Now that's funny.</p>
+
+													</div>
+
+													<span class="post-media">
+														<ul data-role="post-media-list"></ul>
+													</span>
+												</div>
+											</div>
+											<a class="see-more hidden" title="see more" data-action="see-more">see
+												more</a>
+										</div>
+
+										<footer>
+											<menu>
+
+												<li class="voting" data-role="voting">
+
+													<a href="#" class="vote-up  count-0" data-action="upvote"
+														title="Vote up">
+														<span class="updatable count" data-role="likes">0</span>
+														<span class="control">
+															<i aria-hidden="true" class="icon icon-arrow-2"></i>
+														</span>
+													</a>
+													<span role="button" class="vote-down  count-2" href="#"
+														data-action="downvote" title="Vote down">
+														<span class="control">
+															<i aria-hidden="true" class="icon icon-arrow"></i>
+														</span>
+
+													</span>
+
+												</li>
+												<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+												<li class="reply" data-role="reply-link">
+													<a href="#" data-action="reply">
+														<i class="icon icon-mobile icon-reply"></i>
+														<span class="text">Reply</span>
+													</a>
+												</li>
+												<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+												<li class="share">
+													<a class="toggle">
+														<i class="icon icon-mobile icon-share"></i>
+														<span class="text">Share ›</span>
+													</a>
+													<ul>
+														<li class="twitter">
+															<a href="#" data-action="share:twitter">Twitter</a>
+														</li>
+														<li class="facebook">
+															<a href="#" data-action="share:facebook">Facebook</a>
+														</li>
+														<li class="link">
+															<a
+																href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635071460">Link</a>
+														</li>
+													</ul>
+												</li>
+
+
+
+												<li class="realtime" data-role="realtime-notification:1635071460">
+													<span style="display:none;" class="realtime-replies"></span>
+													<a style="display:none;" href="#" class="btn btn-small"></a>
+
+												</li>
+
+
+
+											</menu>
+										</footer>
+									</div>
+
+
+									<div data-role="blacklist-form"></div>
+									<div class="reply-form-container" data-role="reply-form"></div>
+								</div>
+
+
+								<ul data-role="children" class="children">
+									<li class="post" id="post-1635127497">
+										<div role="alert"></div>
+
+										<div data-role="post-content" class="post-content">
+
+
+											<ul class="post-menu dropdown" data-role="menu">
+												<li class="collapse">
+													<a href="#" data-action="collapse" title="Collapse">
+														<span>−</span>
+													</a>
+												</li>
+												<li class="expand">
+													<a href="#" data-action="collapse" title="Expand">
+														<span>+</span>
+													</a>
+												</li>
+
+
+												<li class="" role="menu">
+
+
+													<a class="dropdown-toggle" href="#" data-action="flag"
+														data-role="flag" title="Flag as inappropriate">
+														<i aria-hidden="true" class="icon icon-flag"></i>
+													</a>
+
+
+												</li>
+
+											</ul>
+
+
+											<div class="indicator"></div>
+
+
+
+
+											<div class="avatar hovercard">
+												<a href="http://disqus.com/macboy74/" class="user"
+													data-action="profile" data-user="7241410">
+													<img data-role="user-avatar" data-user="7241410"
+														src="//a.disquscdn.com/uploads/users/724/1410/avatar92.jpg?1413311682"
+														alt="Avatar">
+												</a>
+											</div>
+
+
+											<div class="post-body">
+												<header>
+													<span class="post-byline">
+
+														<span class="author publisher-anchor-color">
+															<a href="#" data-action="profile" data-user="7241410"
+																data-role="username">macboy74</a>
+														</span>
+
+
+
+
+
+
+														<span>
+															<a
+																href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635071460"
+																class="parent-link" data-role="parent-link">
+																<i aria-hidden="true" class="icon-forward" title="in reply to"></i>
+																Running Rampage
+															</a>
+														</span>
+
+													</span>
+
+													<span class="post-meta">
+														<span class="bullet time-ago-bullet" aria-hidden="true">•
+														</span>
+
+
+														<a
+															href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635127497"
+															data-role="relative-time" class="time-ago"
+															title="Tuesday, October 14, 2014 5:31 PM">5 hours ago</a>
+
+													</span>
+
+
+												</header>
+
+
+												<div class="post-body-inner">
+
+													<div class="post-message-container" data-role="message-container">
+
+														<div class="publisher-anchor-color" data-role="message-content">
+															<div class="post-message " data-role="message" dir="auto">
+
+																<p>Ya I never understood taking up all that space for a
+																	clock. When there is one on top of the phone. </p>
+
+															</div>
+
+															<span class="post-media">
+																<ul data-role="post-media-list"></ul>
+															</span>
+														</div>
+													</div>
+													<a class="see-more hidden" title="see more" data-action="see-more">see
+														more</a>
+												</div>
+
+												<footer>
+													<menu>
+
+														<li class="voting" data-role="voting">
+
+															<a href="#" class="vote-up  count-0" data-action="upvote"
+																title="Vote up">
+																<span class="updatable count" data-role="likes">0</span>
+																<span class="control">
+																	<i aria-hidden="true" class="icon icon-arrow-2"></i>
+																</span>
+															</a>
+															<span role="button" class="vote-down  count-2" href="#"
+																data-action="downvote" title="Vote down">
+																<span class="control">
+																	<i aria-hidden="true" class="icon icon-arrow"></i>
+																</span>
+
+															</span>
+
+														</li>
+														<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+														<li class="reply" data-role="reply-link">
+															<a href="#" data-action="reply">
+																<i class="icon icon-mobile icon-reply"></i>
+																<span class="text">Reply</span>
+															</a>
+														</li>
+														<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+														<li class="share">
+															<a class="toggle">
+																<i class="icon icon-mobile icon-share"></i>
+																<span class="text">Share ›</span>
+															</a>
+															<ul>
+																<li class="twitter">
+																	<a href="#" data-action="share:twitter">Twitter</a>
+																</li>
+																<li class="facebook">
+																	<a href="#" data-action="share:facebook">Facebook</a>
+																</li>
+																<li class="link">
+																	<a
+																		href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635127497">Link</a>
+																</li>
+															</ul>
+														</li>
+
+
+
+														<li class="realtime" data-role="realtime-notification:1635127497">
+															<span style="display:none;" class="realtime-replies"></span>
+															<a style="display:none;" href="#" class="btn btn-small"></a>
+
+														</li>
+
+
+
+													</menu>
+												</footer>
+											</div>
+
+
+											<div data-role="blacklist-form"></div>
+											<div class="reply-form-container" data-role="reply-form"></div>
+										</div>
+
+
+										<ul data-role="children" class="children">
+											<li class="post" id="post-1635152683">
+												<div role="alert"></div>
+
+												<div data-role="post-content" class="post-content">
+
+
+													<ul class="post-menu dropdown" data-role="menu">
+														<li class="collapse">
+															<a href="#" data-action="collapse" title="Collapse">
+																<span>−</span>
+															</a>
+														</li>
+														<li class="expand">
+															<a href="#" data-action="collapse" title="Expand">
+																<span>+</span>
+															</a>
+														</li>
+
+
+														<li class="" role="menu">
+
+
+															<a class="dropdown-toggle" href="#" data-action="flag"
+																data-role="flag" title="Flag as inappropriate">
+																<i aria-hidden="true" class="icon icon-flag"></i>
+															</a>
+
+
+														</li>
+
+													</ul>
+
+
+													<div class="indicator"></div>
+
+
+
+
+													<div class="avatar">
+
+														<div class="user">
+															<img src="//a.disquscdn.com/1413230218/images/noavatar92.png"
+																class="user" alt="Avatar">
+														</div>
+													</div>
+
+
+													<div class="post-body">
+														<header>
+															<span class="post-byline">
+
+																<span class="author">Guest</span>
+
+
+
+																<span>
+																	<a
+																		href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635127497"
+																		class="parent-link" data-role="parent-link">
+																		<i aria-hidden="true" class="icon-forward" title="in reply to"></i>
+																		macboy74
+																	</a>
+																</span>
+
+															</span>
+
+															<span class="post-meta">
+																<span class="bullet time-ago-bullet" aria-hidden="true">•
+																</span>
+
+
+																<a
+																	href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635152683"
+																	data-role="relative-time" class="time-ago"
+																	title="Tuesday, October 14, 2014 5:48 PM">5 hours ago</a>
+
+															</span>
+
+
+														</header>
+
+
+														<div class="post-body-inner">
+
+															<div class="post-message-container" data-role="message-container">
+
+																<div class="publisher-anchor-color" data-role="message-content">
+																	<div class="post-message " data-role="message" dir="auto">
+
+																		<p>The clock has multiple purposes. When you press the
+																			clock it opens alarms, timer, stopwatch etc. or you
+																			can customize to open any app you want. Also clicking
+																			the clouds, sun, weather etc. will open up the
+																			current weather, 5 day forecast, or any weather app
+																			you want. Obviously none of you have used an Android
+																			phone so your opinions are worthless.</p>
+
+																	</div>
+
+																	<span class="post-media">
+																		<ul data-role="post-media-list"></ul>
+																	</span>
+																</div>
+															</div>
+															<a class="see-more hidden" title="see more"
+																data-action="see-more">see more</a>
+														</div>
+
+														<footer>
+															<menu>
+
+																<li class="voting" data-role="voting">
+
+																	<a href="#" class="vote-up  count-8" data-action="upvote"
+																		title="">
+																		<span class="updatable count" data-role="likes">8</span>
+																		<span class="control">
+																			<i aria-hidden="true" class="icon icon-arrow-2"></i>
+																		</span>
+																	</a>
+																	<span role="button" class="vote-down  count-0"
+																		href="#" data-action="downvote" title="Vote down">
+																		<span class="control">
+																			<i aria-hidden="true" class="icon icon-arrow"></i>
+																		</span>
+
+																	</span>
+
+																</li>
+																<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+																<li class="reply" data-role="reply-link">
+																	<a href="#" data-action="reply">
+																		<i class="icon icon-mobile icon-reply"></i>
+																		<span class="text">Reply</span>
+																	</a>
+																</li>
+																<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+																<li class="share">
+																	<a class="toggle">
+																		<i class="icon icon-mobile icon-share"></i>
+																		<span class="text">Share ›</span>
+																	</a>
+																	<ul>
+																		<li class="twitter">
+																			<a href="#" data-action="share:twitter">Twitter</a>
+																		</li>
+																		<li class="facebook">
+																			<a href="#" data-action="share:facebook">Facebook</a>
+																		</li>
+																		<li class="link">
+																			<a
+																				href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635152683">Link</a>
+																		</li>
+																	</ul>
+																</li>
+
+
+
+																<li class="realtime" data-role="realtime-notification:1635152683">
+																	<span style="display:none;" class="realtime-replies"></span>
+																	<a style="display:none;" href="#" class="btn btn-small"></a>
+
+																</li>
+
+
+
+															</menu>
+														</footer>
+													</div>
+
+
+													<div data-role="blacklist-form"></div>
+													<div class="reply-form-container" data-role="reply-form"></div>
+												</div>
+
+
+												<ul data-role="children" class="children">
+													<li class="post" id="post-1635165717">
+														<div role="alert"></div>
+
+														<div data-role="post-content" class="post-content">
+
+
+															<ul class="post-menu dropdown" data-role="menu">
+																<li class="collapse">
+																	<a href="#" data-action="collapse" title="Collapse">
+																		<span>−</span>
+																	</a>
+																</li>
+																<li class="expand">
+																	<a href="#" data-action="collapse" title="Expand">
+																		<span>+</span>
+																	</a>
+																</li>
+
+
+																<li class="" role="menu">
+
+
+																	<a class="dropdown-toggle" href="#" data-action="flag"
+																		data-role="flag" title="Flag as inappropriate">
+																		<i aria-hidden="true" class="icon icon-flag"></i>
+																	</a>
+
+
+																</li>
+
+															</ul>
+
+
+															<div class="indicator"></div>
+
+
+
+
+															<div class="avatar hovercard">
+																<a href="http://disqus.com/disqus_5PRUBF03W7/" class="user"
+																	data-action="profile" data-user="112015643">
+																	<img data-role="user-avatar" data-user="112015643"
+																		src="//a.disquscdn.com/1413230218/images/noavatar92.png"
+																		alt="Avatar">
+																</a>
+															</div>
+
+
+															<div class="post-body">
+																<header>
+																	<span class="post-byline">
+
+																		<span class="author publisher-anchor-color">
+																			<a href="#" data-action="profile" data-user="112015643"
+																				data-role="username">Ernie M</a>
+																		</span>
+
+
+
+
+
+
+																		<span>
+																			<a
+																				href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635152683"
+																				class="parent-link" data-role="parent-link">
+																				<i aria-hidden="true" class="icon-forward" title="in reply to"></i>
+																				Guest
+																			</a>
+																		</span>
+
+																	</span>
+
+																	<span class="post-meta">
+																		<span class="bullet time-ago-bullet" aria-hidden="true">
+																			•</span>
+
+
+																		<a
+																			href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635165717"
+																			data-role="relative-time" class="time-ago"
+																			title="Tuesday, October 14, 2014 5:54 PM">5 hours ago</a>
+
+																	</span>
+
+
+																</header>
+
+
+																<div class="post-body-inner">
+
+																	<div class="post-message-container" data-role="message-container">
+
+																		<div class="publisher-anchor-color" data-role="message-content">
+																			<div class="post-message " data-role="message"
+																				dir="auto">
+
+																				<p>His name implies his stupidity </p>
+
+																			</div>
+
+																			<span class="post-media">
+																				<ul data-role="post-media-list"></ul>
+																			</span>
+																		</div>
+																	</div>
+																	<a class="see-more hidden" title="see more"
+																		data-action="see-more">see more</a>
+																</div>
+
+																<footer>
+																	<menu>
+
+																		<li class="voting" data-role="voting">
+
+																			<a href="#" class="vote-up  count-2" data-action="upvote"
+																				title="">
+																				<span class="updatable count" data-role="likes">2
+																				</span>
+																				<span class="control">
+																					<i aria-hidden="true" class="icon icon-arrow-2"></i>
+																				</span>
+																			</a>
+																			<span role="button" class="vote-down  count-0"
+																				href="#" data-action="downvote" title="Vote down">
+																				<span class="control">
+																					<i aria-hidden="true" class="icon icon-arrow"></i>
+																				</span>
+
+																			</span>
+
+																		</li>
+																		<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+																		<li class="reply" data-role="reply-link">
+																			<a href="#" data-action="reply">
+																				<i class="icon icon-mobile icon-reply"></i>
+																				<span class="text">Reply</span>
+																			</a>
+																		</li>
+																		<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+																		<li class="share">
+																			<a class="toggle">
+																				<i class="icon icon-mobile icon-share"></i>
+																				<span class="text">Share ›</span>
+																			</a>
+																			<ul>
+																				<li class="twitter">
+																					<a href="#" data-action="share:twitter">Twitter</a>
+																				</li>
+																				<li class="facebook">
+																					<a href="#" data-action="share:facebook">Facebook</a>
+																				</li>
+																				<li class="link">
+																					<a
+																						href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635165717">Link</a>
+																				</li>
+																			</ul>
+																		</li>
+
+
+
+																		<li class="realtime" data-role="realtime-notification:1635165717">
+																			<span style="display:none;" class="realtime-replies"></span>
+																			<a style="display:none;" href="#" class="btn btn-small"></a>
+
+																		</li>
+
+
+
+																	</menu>
+																</footer>
+															</div>
+
+
+															<div data-role="blacklist-form"></div>
+															<div class="reply-form-container" data-role="reply-form"></div>
+														</div>
+
+
+														<ul data-role="children" class="children"></ul>
+
+
+													</li>
+												</ul>
+
+
+											</li>
+											<li class="post" id="post-1635703414">
+												<div role="alert"></div>
+
+												<div data-role="post-content" class="post-content">
+
+
+													<ul class="post-menu dropdown" data-role="menu">
+														<li class="collapse">
+															<a href="#" data-action="collapse" title="Collapse">
+																<span>−</span>
+															</a>
+														</li>
+														<li class="expand">
+															<a href="#" data-action="collapse" title="Expand">
+																<span>+</span>
+															</a>
+														</li>
+
+
+														<li class="" role="menu">
+
+
+															<a class="dropdown-toggle" href="#" data-action="flag"
+																data-role="flag" title="Flag as inappropriate">
+																<i aria-hidden="true" class="icon icon-flag"></i>
+															</a>
+
+
+														</li>
+
+													</ul>
+
+
+													<div class="indicator"></div>
+
+
+
+
+													<div class="avatar hovercard">
+														<a href="http://disqus.com/disqus_ClToXooJnX/" class="user"
+															data-action="profile" data-user="66289482">
+															<img data-role="user-avatar" data-user="66289482"
+																src="//a.disquscdn.com/uploads/users/6628/9482/avatar92.jpg?1385150129"
+																alt="Avatar">
+														</a>
+													</div>
+
+
+													<div class="post-body">
+														<header>
+															<span class="post-byline">
+
+																<span class="author publisher-anchor-color">
+																	<a href="#" data-action="profile" data-user="66289482"
+																		data-role="username">Fiddle Castro</a>
+																</span>
+
+
+
+
+
+
+																<span>
+																	<a
+																		href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635127497"
+																		class="parent-link" data-role="parent-link">
+																		<i aria-hidden="true" class="icon-forward" title="in reply to"></i>
+																		macboy74
+																	</a>
+																</span>
+
+															</span>
+
+															<span class="post-meta">
+																<span class="bullet time-ago-bullet" aria-hidden="true">•
+																</span>
+
+
+																<a
+																	href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635703414"
+																	data-role="relative-time" class="time-ago"
+																	title="Tuesday, October 14, 2014 10:17 PM">38 minutes ago</a>
+
+															</span>
+
+
+														</header>
+
+
+														<div class="post-body-inner">
+
+															<div class="post-message-container" data-role="message-container">
+
+																<div class="publisher-anchor-color" data-role="message-content">
+																	<div class="post-message " data-role="message" dir="auto">
+
+																		<p>Oh boy... *shakes head slowly at clueless person*
+																		</p>
+
+																	</div>
+
+																	<span class="post-media">
+																		<ul data-role="post-media-list"></ul>
+																	</span>
+																</div>
+															</div>
+															<a class="see-more hidden" title="see more"
+																data-action="see-more">see more</a>
+														</div>
+
+														<footer>
+															<menu>
+
+																<li class="voting" data-role="voting">
+
+																	<a href="#" class="vote-up  count-1" data-action="upvote"
+																		title="">
+																		<span class="updatable count" data-role="likes">1</span>
+																		<span class="control">
+																			<i aria-hidden="true" class="icon icon-arrow-2"></i>
+																		</span>
+																	</a>
+																	<span role="button" class="vote-down  count-0"
+																		href="#" data-action="downvote" title="Vote down">
+																		<span class="control">
+																			<i aria-hidden="true" class="icon icon-arrow"></i>
+																		</span>
+
+																	</span>
+
+																</li>
+																<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+																<li class="reply" data-role="reply-link">
+																	<a href="#" data-action="reply">
+																		<i class="icon icon-mobile icon-reply"></i>
+																		<span class="text">Reply</span>
+																	</a>
+																</li>
+																<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+																<li class="share">
+																	<a class="toggle">
+																		<i class="icon icon-mobile icon-share"></i>
+																		<span class="text">Share ›</span>
+																	</a>
+																	<ul>
+																		<li class="twitter">
+																			<a href="#" data-action="share:twitter">Twitter</a>
+																		</li>
+																		<li class="facebook">
+																			<a href="#" data-action="share:facebook">Facebook</a>
+																		</li>
+																		<li class="link">
+																			<a
+																				href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635703414">Link</a>
+																		</li>
+																	</ul>
+																</li>
+
+
+
+																<li class="realtime" data-role="realtime-notification:1635703414">
+																	<span style="display:none;" class="realtime-replies"></span>
+																	<a style="display:none;" href="#" class="btn btn-small"></a>
+
+																</li>
+
+
+
+															</menu>
+														</footer>
+													</div>
+
+
+													<div data-role="blacklist-form"></div>
+													<div class="reply-form-container" data-role="reply-form"></div>
+												</div>
+
+
+												<ul data-role="children" class="children"></ul>
+
+
+											</li>
+										</ul>
+
+
+									</li>
+								</ul>
+
+
+							</li>
+						</ul>
+
+
+					</li>
+				</ul>
+
+
+			</li>
+			<li class="post" id="post-1635035713">
+				<div role="alert"></div>
+
+				<div data-role="post-content" class="post-content">
+
+
+					<ul class="post-menu dropdown" data-role="menu">
+						<li class="collapse">
+							<a href="#" data-action="collapse" title="Collapse">
+								<span>−</span>
+							</a>
+						</li>
+						<li class="expand">
+							<a href="#" data-action="collapse" title="Expand">
+								<span>+</span>
+							</a>
+						</li>
+
+
+						<li class="" role="menu">
+
+
+							<a class="dropdown-toggle" href="#" data-action="flag"
+								data-role="flag" title="Flag as inappropriate">
+								<i aria-hidden="true" class="icon icon-flag"></i>
+							</a>
+
+
+						</li>
+
+					</ul>
+
+
+					<div class="indicator"></div>
+
+
+
+
+					<div class="avatar hovercard">
+						<a href="http://disqus.com/djdrastic/" class="user" data-action="profile"
+							data-user="21091610">
+							<img data-role="user-avatar" data-user="21091610"
+								src="//a.disquscdn.com/1413230218/images/noavatar92.png" alt="Avatar">
+						</a>
+					</div>
+
+
+					<div class="post-body">
+						<header>
+							<span class="post-byline">
+
+								<span class="author publisher-anchor-color">
+									<a href="#" data-action="profile" data-user="21091610"
+										data-role="username">djdrastic</a>
+								</span>
+
+
+
+
+
+
+							</span>
+
+							<span class="post-meta">
+								<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+
+								<a
+									href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635035713"
+									data-role="relative-time" class="time-ago"
+									title="Tuesday, October 14, 2014 4:28 PM">6 hours ago</a>
+
+							</span>
+
+
+						</header>
+
+
+						<div class="post-body-inner">
+
+							<div class="post-message-container" data-role="message-container">
+
+								<div class="publisher-anchor-color" data-role="message-content">
+									<div class="post-message " data-role="message" dir="auto">
+
+										<p>Top tier journalism on display right here</p>
+
+									</div>
+
+									<span class="post-media">
+										<ul data-role="post-media-list"></ul>
+									</span>
+								</div>
+							</div>
+							<a class="see-more hidden" title="see more" data-action="see-more">see
+								more</a>
+						</div>
+
+						<footer>
+							<menu>
+
+								<li class="voting" data-role="voting">
+
+									<a href="#" class="vote-up  count-8" data-action="upvote"
+										title="">
+										<span class="updatable count" data-role="likes">8</span>
+										<span class="control">
+											<i aria-hidden="true" class="icon icon-arrow-2"></i>
+										</span>
+									</a>
+									<span role="button" class="vote-down  count-0" href="#"
+										data-action="downvote" title="Vote down">
+										<span class="control">
+											<i aria-hidden="true" class="icon icon-arrow"></i>
+										</span>
+
+									</span>
+
+								</li>
+								<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+								<li class="reply" data-role="reply-link">
+									<a href="#" data-action="reply">
+										<i class="icon icon-mobile icon-reply"></i>
+										<span class="text">Reply</span>
+									</a>
+								</li>
+								<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+								<li class="share">
+									<a class="toggle">
+										<i class="icon icon-mobile icon-share"></i>
+										<span class="text">Share ›</span>
+									</a>
+									<ul>
+										<li class="twitter">
+											<a href="#" data-action="share:twitter">Twitter</a>
+										</li>
+										<li class="facebook">
+											<a href="#" data-action="share:facebook">Facebook</a>
+										</li>
+										<li class="link">
+											<a
+												href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635035713">Link</a>
+										</li>
+									</ul>
+								</li>
+
+
+
+								<li class="realtime" data-role="realtime-notification:1635035713">
+									<span style="display:none;" class="realtime-replies"></span>
+									<a style="display:none;" href="#" class="btn btn-small"></a>
+
+								</li>
+
+
+
+							</menu>
+						</footer>
+					</div>
+
+
+					<div data-role="blacklist-form"></div>
+					<div class="reply-form-container" data-role="reply-form"></div>
+				</div>
+
+
+				<ul data-role="children" class="children">
+					<li class="post" id="post-1635048062">
+						<div role="alert"></div>
+
+						<div data-role="post-content" class="post-content">
+
+
+							<ul class="post-menu dropdown" data-role="menu">
+								<li class="collapse">
+									<a href="#" data-action="collapse" title="Collapse">
+										<span>−</span>
+									</a>
+								</li>
+								<li class="expand">
+									<a href="#" data-action="collapse" title="Expand">
+										<span>+</span>
+									</a>
+								</li>
+
+
+								<li class="" role="menu">
+
+
+									<a class="dropdown-toggle" href="#" data-action="flag"
+										data-role="flag" title="Flag as inappropriate">
+										<i aria-hidden="true" class="icon icon-flag"></i>
+									</a>
+
+
+								</li>
+
+							</ul>
+
+
+							<div class="indicator"></div>
+
+
+
+
+							<div class="avatar hovercard">
+								<a href="http://disqus.com/disqus_lew2Vptdyd/" class="user"
+									data-action="profile" data-user="62628870">
+									<img data-role="user-avatar" data-user="62628870"
+										src="//a.disquscdn.com/1413230218/images/noavatar92.png" alt="Avatar">
+								</a>
+							</div>
+
+
+							<div class="post-body">
+								<header>
+									<span class="post-byline">
+
+										<span class="author publisher-anchor-color">
+											<a href="#" data-action="profile" data-user="62628870"
+												data-role="username">Geoff Wood</a>
+										</span>
+
+
+
+
+
+
+										<span>
+											<a
+												href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635035713"
+												class="parent-link" data-role="parent-link">
+												<i aria-hidden="true" class="icon-forward" title="in reply to"></i>
+												djdrastic
+											</a>
+										</span>
+
+									</span>
+
+									<span class="post-meta">
+										<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+
+										<a
+											href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635048062"
+											data-role="relative-time" class="time-ago"
+											title="Tuesday, October 14, 2014 4:37 PM">6 hours ago</a>
+
+									</span>
+
+
+								</header>
+
+
+								<div class="post-body-inner">
+
+									<div class="post-message-container" data-role="message-container">
+
+										<div class="publisher-anchor-color" data-role="message-content">
+											<div class="post-message " data-role="message" dir="auto">
+
+												<p>Indeed. I love the way they're not just features, they're
+													"Secret" features, just to spice things up a little more. I
+													guess it's all about clicks, not content.</p>
+
+											</div>
+
+											<span class="post-media">
+												<ul data-role="post-media-list"></ul>
+											</span>
+										</div>
+									</div>
+									<a class="see-more hidden" title="see more" data-action="see-more">see
+										more</a>
+								</div>
+
+								<footer>
+									<menu>
+
+										<li class="voting" data-role="voting">
+
+											<a href="#" class="vote-up  count-5" data-action="upvote"
+												title="">
+												<span class="updatable count" data-role="likes">5</span>
+												<span class="control">
+													<i aria-hidden="true" class="icon icon-arrow-2"></i>
+												</span>
+											</a>
+											<span role="button" class="vote-down  count-0" href="#"
+												data-action="downvote" title="Vote down">
+												<span class="control">
+													<i aria-hidden="true" class="icon icon-arrow"></i>
+												</span>
+
+											</span>
+
+										</li>
+										<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+										<li class="reply" data-role="reply-link">
+											<a href="#" data-action="reply">
+												<i class="icon icon-mobile icon-reply"></i>
+												<span class="text">Reply</span>
+											</a>
+										</li>
+										<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+										<li class="share">
+											<a class="toggle">
+												<i class="icon icon-mobile icon-share"></i>
+												<span class="text">Share ›</span>
+											</a>
+											<ul>
+												<li class="twitter">
+													<a href="#" data-action="share:twitter">Twitter</a>
+												</li>
+												<li class="facebook">
+													<a href="#" data-action="share:facebook">Facebook</a>
+												</li>
+												<li class="link">
+													<a
+														href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635048062">Link</a>
+												</li>
+											</ul>
+										</li>
+
+
+
+										<li class="realtime" data-role="realtime-notification:1635048062">
+											<span style="display:none;" class="realtime-replies"></span>
+											<a style="display:none;" href="#" class="btn btn-small"></a>
+
+										</li>
+
+
+
+									</menu>
+								</footer>
+							</div>
+
+
+							<div data-role="blacklist-form"></div>
+							<div class="reply-form-container" data-role="reply-form"></div>
+						</div>
+
+
+						<ul data-role="children" class="children">
+							<li class="post" id="post-1635050072">
+								<div role="alert"></div>
+
+								<div data-role="post-content" class="post-content">
+
+
+									<ul class="post-menu dropdown" data-role="menu">
+										<li class="collapse">
+											<a href="#" data-action="collapse" title="Collapse">
+												<span>−</span>
+											</a>
+										</li>
+										<li class="expand">
+											<a href="#" data-action="collapse" title="Expand">
+												<span>+</span>
+											</a>
+										</li>
+
+
+										<li class="" role="menu">
+
+
+											<a class="dropdown-toggle" href="#" data-action="flag"
+												data-role="flag" title="Flag as inappropriate">
+												<i aria-hidden="true" class="icon icon-flag"></i>
+											</a>
+
+
+										</li>
+
+									</ul>
+
+
+									<div class="indicator"></div>
+
+
+
+
+									<div class="avatar hovercard">
+										<a href="http://disqus.com/disqus_SvNyX7y7FE/" class="user"
+											data-action="profile" data-user="54629853">
+											<img data-role="user-avatar" data-user="54629853"
+												src="//a.disquscdn.com/1413230218/images/noavatar92.png"
+												alt="Avatar">
+										</a>
+									</div>
+
+
+									<div class="post-body">
+										<header>
+											<span class="post-byline">
+
+												<span class="author publisher-anchor-color">
+													<a href="#" data-action="profile" data-user="54629853"
+														data-role="username">Pitchy</a>
+												</span>
+
+
+
+
+
+
+												<span>
+													<a
+														href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635048062"
+														class="parent-link" data-role="parent-link">
+														<i aria-hidden="true" class="icon-forward" title="in reply to"></i>
+														Geoff Wood
+													</a>
+												</span>
+
+											</span>
+
+											<span class="post-meta">
+												<span class="bullet time-ago-bullet" aria-hidden="true">•
+												</span>
+
+
+												<a
+													href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635050072"
+													data-role="relative-time" class="time-ago"
+													title="Tuesday, October 14, 2014 4:38 PM">6 hours ago</a>
+
+											</span>
+
+
+										</header>
+
+
+										<div class="post-body-inner">
+
+											<div class="post-message-container" data-role="message-container">
+
+												<div class="publisher-anchor-color" data-role="message-content">
+													<div class="post-message " data-role="message" dir="auto">
+
+														<p>Exactly... nothing secret here. These are things that
+															most people already know unless you are completely new to
+															Android.</p>
+
+													</div>
+
+													<span class="post-media">
+														<ul data-role="post-media-list"></ul>
+													</span>
+												</div>
+											</div>
+											<a class="see-more hidden" title="see more" data-action="see-more">see
+												more</a>
+										</div>
+
+										<footer>
+											<menu>
+
+												<li class="voting" data-role="voting">
+
+													<a href="#" class="vote-up  count-3" data-action="upvote"
+														title="">
+														<span class="updatable count" data-role="likes">3</span>
+														<span class="control">
+															<i aria-hidden="true" class="icon icon-arrow-2"></i>
+														</span>
+													</a>
+													<span role="button" class="vote-down  count-0" href="#"
+														data-action="downvote" title="Vote down">
+														<span class="control">
+															<i aria-hidden="true" class="icon icon-arrow"></i>
+														</span>
+
+													</span>
+
+												</li>
+												<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+												<li class="reply" data-role="reply-link">
+													<a href="#" data-action="reply">
+														<i class="icon icon-mobile icon-reply"></i>
+														<span class="text">Reply</span>
+													</a>
+												</li>
+												<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+												<li class="share">
+													<a class="toggle">
+														<i class="icon icon-mobile icon-share"></i>
+														<span class="text">Share ›</span>
+													</a>
+													<ul>
+														<li class="twitter">
+															<a href="#" data-action="share:twitter">Twitter</a>
+														</li>
+														<li class="facebook">
+															<a href="#" data-action="share:facebook">Facebook</a>
+														</li>
+														<li class="link">
+															<a
+																href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635050072">Link</a>
+														</li>
+													</ul>
+												</li>
+
+
+
+												<li class="realtime" data-role="realtime-notification:1635050072">
+													<span style="display:none;" class="realtime-replies"></span>
+													<a style="display:none;" href="#" class="btn btn-small"></a>
+
+												</li>
+
+
+
+											</menu>
+										</footer>
+									</div>
+
+
+									<div data-role="blacklist-form"></div>
+									<div class="reply-form-container" data-role="reply-form"></div>
+								</div>
+
+
+								<ul data-role="children" class="children">
+									<li class="post" id="post-1635078192">
+										<div role="alert"></div>
+
+										<div data-role="post-content" class="post-content">
+
+
+											<ul class="post-menu dropdown" data-role="menu">
+												<li class="collapse">
+													<a href="#" data-action="collapse" title="Collapse">
+														<span>−</span>
+													</a>
+												</li>
+												<li class="expand">
+													<a href="#" data-action="collapse" title="Expand">
+														<span>+</span>
+													</a>
+												</li>
+
+
+												<li class="" role="menu">
+
+
+													<a class="dropdown-toggle" href="#" data-action="flag"
+														data-role="flag" title="Flag as inappropriate">
+														<i aria-hidden="true" class="icon icon-flag"></i>
+													</a>
+
+
+												</li>
+
+											</ul>
+
+
+											<div class="indicator"></div>
+
+
+
+
+											<div class="avatar hovercard">
+												<a href="http://disqus.com/pt0331/" class="user"
+													data-action="profile" data-user="74026840">
+													<img data-role="user-avatar" data-user="74026840"
+														src="//a.disquscdn.com/1413230218/images/noavatar92.png"
+														alt="Avatar">
+												</a>
+											</div>
+
+
+											<div class="post-body">
+												<header>
+													<span class="post-byline">
+
+														<span class="author publisher-anchor-color">
+															<a href="#" data-action="profile" data-user="74026840"
+																data-role="username">PTee</a>
+														</span>
+
+
+
+
+
+
+														<span>
+															<a
+																href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635050072"
+																class="parent-link" data-role="parent-link">
+																<i aria-hidden="true" class="icon-forward" title="in reply to"></i>
+																Pitchy
+															</a>
+														</span>
+
+													</span>
+
+													<span class="post-meta">
+														<span class="bullet time-ago-bullet" aria-hidden="true">•
+														</span>
+
+
+														<a
+															href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635078192"
+															data-role="relative-time" class="time-ago"
+															title="Tuesday, October 14, 2014 4:58 PM">6 hours ago</a>
+
+													</span>
+
+
+												</header>
+
+
+												<div class="post-body-inner">
+
+													<div class="post-message-container" data-role="message-container">
+
+														<div class="publisher-anchor-color" data-role="message-content">
+															<div class="post-message " data-role="message" dir="auto">
+
+																<p>Well now you know one thing about Zach's phone OS
+																	that he uses...</p>
+
+															</div>
+
+															<span class="post-media">
+																<ul data-role="post-media-list"></ul>
+															</span>
+														</div>
+													</div>
+													<a class="see-more hidden" title="see more" data-action="see-more">see
+														more</a>
+												</div>
+
+												<footer>
+													<menu>
+
+														<li class="voting" data-role="voting">
+
+															<a href="#" class="vote-up  count-2" data-action="upvote"
+																title="">
+																<span class="updatable count" data-role="likes">2</span>
+																<span class="control">
+																	<i aria-hidden="true" class="icon icon-arrow-2"></i>
+																</span>
+															</a>
+															<span role="button" class="vote-down  count-0" href="#"
+																data-action="downvote" title="Vote down">
+																<span class="control">
+																	<i aria-hidden="true" class="icon icon-arrow"></i>
+																</span>
+
+															</span>
+
+														</li>
+														<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+														<li class="reply" data-role="reply-link">
+															<a href="#" data-action="reply">
+																<i class="icon icon-mobile icon-reply"></i>
+																<span class="text">Reply</span>
+															</a>
+														</li>
+														<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+														<li class="share">
+															<a class="toggle">
+																<i class="icon icon-mobile icon-share"></i>
+																<span class="text">Share ›</span>
+															</a>
+															<ul>
+																<li class="twitter">
+																	<a href="#" data-action="share:twitter">Twitter</a>
+																</li>
+																<li class="facebook">
+																	<a href="#" data-action="share:facebook">Facebook</a>
+																</li>
+																<li class="link">
+																	<a
+																		href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635078192">Link</a>
+																</li>
+															</ul>
+														</li>
+
+
+
+														<li class="realtime" data-role="realtime-notification:1635078192">
+															<span style="display:none;" class="realtime-replies"></span>
+															<a style="display:none;" href="#" class="btn btn-small"></a>
+
+														</li>
+
+
+
+													</menu>
+												</footer>
+											</div>
+
+
+											<div data-role="blacklist-form"></div>
+											<div class="reply-form-container" data-role="reply-form"></div>
+										</div>
+
+
+										<ul data-role="children" class="children"></ul>
+
+
+									</li>
+								</ul>
+
+
+							</li>
+							<li class="post" id="post-1635490233">
+								<div role="alert"></div>
+
+								<div data-role="post-content" class="post-content">
+
+
+									<ul class="post-menu dropdown" data-role="menu">
+										<li class="collapse">
+											<a href="#" data-action="collapse" title="Collapse">
+												<span>−</span>
+											</a>
+										</li>
+										<li class="expand">
+											<a href="#" data-action="collapse" title="Expand">
+												<span>+</span>
+											</a>
+										</li>
+
+
+										<li class="" role="menu">
+
+
+											<a class="dropdown-toggle" href="#" data-action="flag"
+												data-role="flag" title="Flag as inappropriate">
+												<i aria-hidden="true" class="icon icon-flag"></i>
+											</a>
+
+
+										</li>
+
+									</ul>
+
+
+									<div class="indicator"></div>
+
+
+
+
+									<div class="avatar hovercard">
+										<a href="http://disqus.com/brando56894/" class="user"
+											data-action="profile" data-user="2681941">
+											<img data-role="user-avatar" data-user="2681941"
+												src="//a.disquscdn.com/1413230218/images/noavatar92.png"
+												alt="Avatar">
+										</a>
+									</div>
+
+
+									<div class="post-body">
+										<header>
+											<span class="post-byline">
+
+												<span class="author publisher-anchor-color">
+													<a href="#" data-action="profile" data-user="2681941"
+														data-role="username">Brandon</a>
+												</span>
+
+
+
+
+
+
+												<span>
+													<a
+														href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635048062"
+														class="parent-link" data-role="parent-link">
+														<i aria-hidden="true" class="icon-forward" title="in reply to"></i>
+														Geoff Wood
+													</a>
+												</span>
+
+											</span>
+
+											<span class="post-meta">
+												<span class="bullet time-ago-bullet" aria-hidden="true">•
+												</span>
+
+
+												<a
+													href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635490233"
+													data-role="relative-time" class="time-ago"
+													title="Tuesday, October 14, 2014 8:17 PM">3 hours ago</a>
+
+											</span>
+
+
+										</header>
+
+
+										<div class="post-body-inner">
+
+											<div class="post-message-container" data-role="message-container">
+
+												<div class="publisher-anchor-color" data-role="message-content">
+													<div class="post-message " data-role="message" dir="auto">
+
+														<p>Don't you love it how every feature is a secret to them
+															and every stupid thing they post they shout "you need
+															this!!" stop telling me what I do and don't need because
+															almost all of the time I don't need it and couldn't care
+															less about it!</p>
+
+													</div>
+
+													<span class="post-media">
+														<ul data-role="post-media-list"></ul>
+													</span>
+												</div>
+											</div>
+											<a class="see-more hidden" title="see more" data-action="see-more">see
+												more</a>
+										</div>
+
+										<footer>
+											<menu>
+
+												<li class="voting" data-role="voting">
+
+													<a href="#" class="vote-up  count-1" data-action="upvote"
+														title="">
+														<span class="updatable count" data-role="likes">1</span>
+														<span class="control">
+															<i aria-hidden="true" class="icon icon-arrow-2"></i>
+														</span>
+													</a>
+													<span role="button" class="vote-down  count-0" href="#"
+														data-action="downvote" title="Vote down">
+														<span class="control">
+															<i aria-hidden="true" class="icon icon-arrow"></i>
+														</span>
+
+													</span>
+
+												</li>
+												<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+												<li class="reply" data-role="reply-link">
+													<a href="#" data-action="reply">
+														<i class="icon icon-mobile icon-reply"></i>
+														<span class="text">Reply</span>
+													</a>
+												</li>
+												<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+												<li class="share">
+													<a class="toggle">
+														<i class="icon icon-mobile icon-share"></i>
+														<span class="text">Share ›</span>
+													</a>
+													<ul>
+														<li class="twitter">
+															<a href="#" data-action="share:twitter">Twitter</a>
+														</li>
+														<li class="facebook">
+															<a href="#" data-action="share:facebook">Facebook</a>
+														</li>
+														<li class="link">
+															<a
+																href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635490233">Link</a>
+														</li>
+													</ul>
+												</li>
+
+
+
+												<li class="realtime" data-role="realtime-notification:1635490233">
+													<span style="display:none;" class="realtime-replies"></span>
+													<a style="display:none;" href="#" class="btn btn-small"></a>
+
+												</li>
+
+
+
+											</menu>
+										</footer>
+									</div>
+
+
+									<div data-role="blacklist-form"></div>
+									<div class="reply-form-container" data-role="reply-form"></div>
+								</div>
+
+
+								<ul data-role="children" class="children"></ul>
+
+
+							</li>
+						</ul>
+
+
+					</li>
+				</ul>
+
+
+			</li>
+			<li class="post" id="post-1635044134">
+				<div role="alert"></div>
+
+				<div data-role="post-content" class="post-content">
+
+
+					<ul class="post-menu dropdown" data-role="menu">
+						<li class="collapse">
+							<a href="#" data-action="collapse" title="Collapse">
+								<span>−</span>
+							</a>
+						</li>
+						<li class="expand">
+							<a href="#" data-action="collapse" title="Expand">
+								<span>+</span>
+							</a>
+						</li>
+
+
+						<li class="" role="menu">
+
+
+							<a class="dropdown-toggle" href="#" data-action="flag"
+								data-role="flag" title="Flag as inappropriate">
+								<i aria-hidden="true" class="icon icon-flag"></i>
+							</a>
+
+
+						</li>
+
+					</ul>
+
+
+					<div class="indicator"></div>
+
+
+
+
+					<div class="avatar hovercard">
+						<a href="http://disqus.com/olanerd/" class="user" data-action="profile"
+							data-user="104391012">
+							<img data-role="user-avatar" data-user="104391012"
+								src="//a.disquscdn.com/1413230218/images/noavatar92.png" alt="Avatar">
+						</a>
+					</div>
+
+
+					<div class="post-body">
+						<header>
+							<span class="post-byline">
+
+								<span class="author publisher-anchor-color">
+									<a href="#" data-action="profile" data-user="104391012"
+										data-role="username">piff</a>
+								</span>
+
+
+
+
+
+
+							</span>
+
+							<span class="post-meta">
+								<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+
+								<a
+									href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635044134"
+									data-role="relative-time" class="time-ago"
+									title="Tuesday, October 14, 2014 4:34 PM">6 hours ago</a>
+
+							</span>
+
+
+						</header>
+
+
+						<div class="post-body-inner">
+
+							<div class="post-message-container" data-role="message-container">
+
+								<div class="publisher-anchor-color" data-role="message-content">
+									<div class="post-message " data-role="message" dir="auto">
+
+										<p>DON’T MISS: Here’s how to give your Android phone a huge
+											speed boost, just like Apple sped up iOS. Its a breach of
+											contract if Apple is not mentioned in every article.</p>
+
+									</div>
+
+									<span class="post-media">
+										<ul data-role="post-media-list"></ul>
+									</span>
+								</div>
+							</div>
+							<a class="see-more hidden" title="see more" data-action="see-more">see
+								more</a>
+						</div>
+
+						<footer>
+							<menu>
+
+								<li class="voting" data-role="voting">
+
+									<a href="#" class="vote-up  count-2" data-action="upvote"
+										title="">
+										<span class="updatable count" data-role="likes">2</span>
+										<span class="control">
+											<i aria-hidden="true" class="icon icon-arrow-2"></i>
+										</span>
+									</a>
+									<span role="button" class="vote-down  count-1" href="#"
+										data-action="downvote" title="Vote down">
+										<span class="control">
+											<i aria-hidden="true" class="icon icon-arrow"></i>
+										</span>
+
+									</span>
+
+								</li>
+								<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+								<li class="reply" data-role="reply-link">
+									<a href="#" data-action="reply">
+										<i class="icon icon-mobile icon-reply"></i>
+										<span class="text">Reply</span>
+									</a>
+								</li>
+								<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+								<li class="share">
+									<a class="toggle">
+										<i class="icon icon-mobile icon-share"></i>
+										<span class="text">Share ›</span>
+									</a>
+									<ul>
+										<li class="twitter">
+											<a href="#" data-action="share:twitter">Twitter</a>
+										</li>
+										<li class="facebook">
+											<a href="#" data-action="share:facebook">Facebook</a>
+										</li>
+										<li class="link">
+											<a
+												href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635044134">Link</a>
+										</li>
+									</ul>
+								</li>
+
+
+
+								<li class="realtime" data-role="realtime-notification:1635044134">
+									<span style="display:none;" class="realtime-replies"></span>
+									<a style="display:none;" href="#" class="btn btn-small"></a>
+
+								</li>
+
+
+
+							</menu>
+						</footer>
+					</div>
+
+
+					<div data-role="blacklist-form"></div>
+					<div class="reply-form-container" data-role="reply-form"></div>
+				</div>
+
+
+				<ul data-role="children" class="children"></ul>
+
+
+			</li>
+			<li class="post" id="post-1635049069">
+				<div role="alert"></div>
+
+				<div data-role="post-content" class="post-content">
+
+
+					<ul class="post-menu dropdown" data-role="menu">
+						<li class="collapse">
+							<a href="#" data-action="collapse" title="Collapse">
+								<span>−</span>
+							</a>
+						</li>
+						<li class="expand">
+							<a href="#" data-action="collapse" title="Expand">
+								<span>+</span>
+							</a>
+						</li>
+
+
+						<li class="" role="menu">
+
+
+							<a class="dropdown-toggle" href="#" data-action="flag"
+								data-role="flag" title="Flag as inappropriate">
+								<i aria-hidden="true" class="icon icon-flag"></i>
+							</a>
+
+
+						</li>
+
+					</ul>
+
+
+					<div class="indicator"></div>
+
+
+
+
+					<div class="avatar hovercard">
+						<a href="http://disqus.com/disqus_SvNyX7y7FE/" class="user"
+							data-action="profile" data-user="54629853">
+							<img data-role="user-avatar" data-user="54629853"
+								src="//a.disquscdn.com/1413230218/images/noavatar92.png" alt="Avatar">
+						</a>
+					</div>
+
+
+					<div class="post-body">
+						<header>
+							<span class="post-byline">
+
+								<span class="author publisher-anchor-color">
+									<a href="#" data-action="profile" data-user="54629853"
+										data-role="username">Pitchy</a>
+								</span>
+
+
+
+
+
+
+							</span>
+
+							<span class="post-meta">
+								<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+
+								<a
+									href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635049069"
+									data-role="relative-time" class="time-ago"
+									title="Tuesday, October 14, 2014 4:38 PM">6 hours ago</a>
+
+							</span>
+
+
+						</header>
+
+
+						<div class="post-body-inner">
+
+							<div class="post-message-container" data-role="message-container">
+
+								<div class="publisher-anchor-color" data-role="message-content">
+									<div class="post-message " data-role="message" dir="auto">
+
+										<p>Those are 10 features I thought most people already knew
+											about. I was hoping for 10 secret features that were almost
+											completely unknown. So misleading headline using content
+											pulled from someplace else... did the author even try?</p>
+
+									</div>
+
+									<span class="post-media">
+										<ul data-role="post-media-list"></ul>
+									</span>
+								</div>
+							</div>
+							<a class="see-more hidden" title="see more" data-action="see-more">see
+								more</a>
+						</div>
+
+						<footer>
+							<menu>
+
+								<li class="voting" data-role="voting">
+
+									<a href="#" class="vote-up  count-15" data-action="upvote"
+										title="">
+										<span class="updatable count" data-role="likes">15</span>
+										<span class="control">
+											<i aria-hidden="true" class="icon icon-arrow-2"></i>
+										</span>
+									</a>
+									<span role="button" class="vote-down  count-0" href="#"
+										data-action="downvote" title="Vote down">
+										<span class="control">
+											<i aria-hidden="true" class="icon icon-arrow"></i>
+										</span>
+
+									</span>
+
+								</li>
+								<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+								<li class="reply" data-role="reply-link">
+									<a href="#" data-action="reply">
+										<i class="icon icon-mobile icon-reply"></i>
+										<span class="text">Reply</span>
+									</a>
+								</li>
+								<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+								<li class="share">
+									<a class="toggle">
+										<i class="icon icon-mobile icon-share"></i>
+										<span class="text">Share ›</span>
+									</a>
+									<ul>
+										<li class="twitter">
+											<a href="#" data-action="share:twitter">Twitter</a>
+										</li>
+										<li class="facebook">
+											<a href="#" data-action="share:facebook">Facebook</a>
+										</li>
+										<li class="link">
+											<a
+												href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635049069">Link</a>
+										</li>
+									</ul>
+								</li>
+
+
+
+								<li class="realtime" data-role="realtime-notification:1635049069">
+									<span style="display:none;" class="realtime-replies"></span>
+									<a style="display:none;" href="#" class="btn btn-small"></a>
+
+								</li>
+
+
+
+							</menu>
+						</footer>
+					</div>
+
+
+					<div data-role="blacklist-form"></div>
+					<div class="reply-form-container" data-role="reply-form"></div>
+				</div>
+
+
+				<ul data-role="children" class="children">
+					<li class="post" id="post-1635055959">
+						<div role="alert"></div>
+
+						<div data-role="post-content" class="post-content">
+
+
+							<ul class="post-menu dropdown" data-role="menu">
+								<li class="collapse">
+									<a href="#" data-action="collapse" title="Collapse">
+										<span>−</span>
+									</a>
+								</li>
+								<li class="expand">
+									<a href="#" data-action="collapse" title="Expand">
+										<span>+</span>
+									</a>
+								</li>
+
+
+								<li class="" role="menu">
+
+
+									<a class="dropdown-toggle" href="#" data-action="flag"
+										data-role="flag" title="Flag as inappropriate">
+										<i aria-hidden="true" class="icon icon-flag"></i>
+									</a>
+
+
+								</li>
+
+							</ul>
+
+
+							<div class="indicator"></div>
+
+
+
+
+							<div class="avatar hovercard">
+								<a href="http://disqus.com/thecuddlykoala/" class="user"
+									data-action="profile" data-user="84411030">
+									<img data-role="user-avatar" data-user="84411030"
+										src="//a.disquscdn.com/1413230218/images/noavatar92.png" alt="Avatar">
+								</a>
+							</div>
+
+
+							<div class="post-body">
+								<header>
+									<span class="post-byline">
+
+										<span class="author publisher-anchor-color">
+											<a href="#" data-action="profile" data-user="84411030"
+												data-role="username">TheCuddlyKoala</a>
+										</span>
+
+
+
+
+
+
+										<span>
+											<a
+												href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635049069"
+												class="parent-link" data-role="parent-link">
+												<i aria-hidden="true" class="icon-forward" title="in reply to"></i>
+												Pitchy
+											</a>
+										</span>
+
+									</span>
+
+									<span class="post-meta">
+										<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+
+										<a
+											href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635055959"
+											data-role="relative-time" class="time-ago"
+											title="Tuesday, October 14, 2014 4:43 PM">6 hours ago</a>
+
+									</span>
+
+
+								</header>
+
+
+								<div class="post-body-inner">
+
+									<div class="post-message-container" data-role="message-container">
+
+										<div class="publisher-anchor-color" data-role="message-content">
+											<div class="post-message " data-role="message" dir="auto">
+
+												<p>Click bait!</p>
+
+											</div>
+
+											<span class="post-media">
+												<ul data-role="post-media-list"></ul>
+											</span>
+										</div>
+									</div>
+									<a class="see-more hidden" title="see more" data-action="see-more">see
+										more</a>
+								</div>
+
+								<footer>
+									<menu>
+
+										<li class="voting" data-role="voting">
+
+											<a href="#" class="vote-up  count-4" data-action="upvote"
+												title="">
+												<span class="updatable count" data-role="likes">4</span>
+												<span class="control">
+													<i aria-hidden="true" class="icon icon-arrow-2"></i>
+												</span>
+											</a>
+											<span role="button" class="vote-down  count-0" href="#"
+												data-action="downvote" title="Vote down">
+												<span class="control">
+													<i aria-hidden="true" class="icon icon-arrow"></i>
+												</span>
+
+											</span>
+
+										</li>
+										<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+										<li class="reply" data-role="reply-link">
+											<a href="#" data-action="reply">
+												<i class="icon icon-mobile icon-reply"></i>
+												<span class="text">Reply</span>
+											</a>
+										</li>
+										<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+										<li class="share">
+											<a class="toggle">
+												<i class="icon icon-mobile icon-share"></i>
+												<span class="text">Share ›</span>
+											</a>
+											<ul>
+												<li class="twitter">
+													<a href="#" data-action="share:twitter">Twitter</a>
+												</li>
+												<li class="facebook">
+													<a href="#" data-action="share:facebook">Facebook</a>
+												</li>
+												<li class="link">
+													<a
+														href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635055959">Link</a>
+												</li>
+											</ul>
+										</li>
+
+
+
+										<li class="realtime" data-role="realtime-notification:1635055959">
+											<span style="display:none;" class="realtime-replies"></span>
+											<a style="display:none;" href="#" class="btn btn-small"></a>
+
+										</li>
+
+
+
+									</menu>
+								</footer>
+							</div>
+
+
+							<div data-role="blacklist-form"></div>
+							<div class="reply-form-container" data-role="reply-form"></div>
+						</div>
+
+
+						<ul data-role="children" class="children">
+							<li class="post" id="post-1635072881">
+								<div role="alert"></div>
+
+								<div data-role="post-content" class="post-content">
+
+
+									<ul class="post-menu dropdown" data-role="menu">
+										<li class="collapse">
+											<a href="#" data-action="collapse" title="Collapse">
+												<span>−</span>
+											</a>
+										</li>
+										<li class="expand">
+											<a href="#" data-action="collapse" title="Expand">
+												<span>+</span>
+											</a>
+										</li>
+
+
+										<li class="" role="menu">
+
+
+											<a class="dropdown-toggle" href="#" data-action="flag"
+												data-role="flag" title="Flag as inappropriate">
+												<i aria-hidden="true" class="icon icon-flag"></i>
+											</a>
+
+
+										</li>
+
+									</ul>
+
+
+									<div class="indicator"></div>
+
+
+
+
+									<div class="avatar hovercard">
+										<a href="http://disqus.com/disqus_SvNyX7y7FE/" class="user"
+											data-action="profile" data-user="54629853">
+											<img data-role="user-avatar" data-user="54629853"
+												src="//a.disquscdn.com/1413230218/images/noavatar92.png"
+												alt="Avatar">
+										</a>
+									</div>
+
+
+									<div class="post-body">
+										<header>
+											<span class="post-byline">
+
+												<span class="author publisher-anchor-color">
+													<a href="#" data-action="profile" data-user="54629853"
+														data-role="username">Pitchy</a>
+												</span>
+
+
+
+
+
+
+												<span>
+													<a
+														href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635055959"
+														class="parent-link" data-role="parent-link">
+														<i aria-hidden="true" class="icon-forward" title="in reply to"></i>
+														TheCuddlyKoala
+													</a>
+												</span>
+
+											</span>
+
+											<span class="post-meta">
+												<span class="bullet time-ago-bullet" aria-hidden="true">•
+												</span>
+
+
+												<a
+													href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635072881"
+													data-role="relative-time" class="time-ago"
+													title="Tuesday, October 14, 2014 4:55 PM">6 hours ago</a>
+
+											</span>
+
+
+										</header>
+
+
+										<div class="post-body-inner">
+
+											<div class="post-message-container" data-role="message-container">
+
+												<div class="publisher-anchor-color" data-role="message-content">
+													<div class="post-message " data-role="message" dir="auto">
+
+														<p>It's sad because we fell for it.</p>
+
+													</div>
+
+													<span class="post-media">
+														<ul data-role="post-media-list"></ul>
+													</span>
+												</div>
+											</div>
+											<a class="see-more hidden" title="see more" data-action="see-more">see
+												more</a>
+										</div>
+
+										<footer>
+											<menu>
+
+												<li class="voting" data-role="voting">
+
+													<a href="#" class="vote-up  count-3" data-action="upvote"
+														title="">
+														<span class="updatable count" data-role="likes">3</span>
+														<span class="control">
+															<i aria-hidden="true" class="icon icon-arrow-2"></i>
+														</span>
+													</a>
+													<span role="button" class="vote-down  count-0" href="#"
+														data-action="downvote" title="Vote down">
+														<span class="control">
+															<i aria-hidden="true" class="icon icon-arrow"></i>
+														</span>
+
+													</span>
+
+												</li>
+												<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+												<li class="reply" data-role="reply-link">
+													<a href="#" data-action="reply">
+														<i class="icon icon-mobile icon-reply"></i>
+														<span class="text">Reply</span>
+													</a>
+												</li>
+												<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+												<li class="share">
+													<a class="toggle">
+														<i class="icon icon-mobile icon-share"></i>
+														<span class="text">Share ›</span>
+													</a>
+													<ul>
+														<li class="twitter">
+															<a href="#" data-action="share:twitter">Twitter</a>
+														</li>
+														<li class="facebook">
+															<a href="#" data-action="share:facebook">Facebook</a>
+														</li>
+														<li class="link">
+															<a
+																href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635072881">Link</a>
+														</li>
+													</ul>
+												</li>
+
+
+
+												<li class="realtime" data-role="realtime-notification:1635072881">
+													<span style="display:none;" class="realtime-replies"></span>
+													<a style="display:none;" href="#" class="btn btn-small"></a>
+
+												</li>
+
+
+
+											</menu>
+										</footer>
+									</div>
+
+
+									<div data-role="blacklist-form"></div>
+									<div class="reply-form-container" data-role="reply-form"></div>
+								</div>
+
+
+								<ul data-role="children" class="children">
+									<li class="post" id="post-1635073530">
+										<div role="alert"></div>
+
+										<div data-role="post-content" class="post-content">
+
+
+											<ul class="post-menu dropdown" data-role="menu">
+												<li class="collapse">
+													<a href="#" data-action="collapse" title="Collapse">
+														<span>−</span>
+													</a>
+												</li>
+												<li class="expand">
+													<a href="#" data-action="collapse" title="Expand">
+														<span>+</span>
+													</a>
+												</li>
+
+
+												<li class="" role="menu">
+
+
+													<a class="dropdown-toggle" href="#" data-action="flag"
+														data-role="flag" title="Flag as inappropriate">
+														<i aria-hidden="true" class="icon icon-flag"></i>
+													</a>
+
+
+												</li>
+
+											</ul>
+
+
+											<div class="indicator"></div>
+
+
+
+
+											<div class="avatar hovercard">
+												<a href="http://disqus.com/pt0331/" class="user"
+													data-action="profile" data-user="74026840">
+													<img data-role="user-avatar" data-user="74026840"
+														src="//a.disquscdn.com/1413230218/images/noavatar92.png"
+														alt="Avatar">
+												</a>
+											</div>
+
+
+											<div class="post-body">
+												<header>
+													<span class="post-byline">
+
+														<span class="author publisher-anchor-color">
+															<a href="#" data-action="profile" data-user="74026840"
+																data-role="username">PTee</a>
+														</span>
+
+
+
+
+
+
+														<span>
+															<a
+																href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635072881"
+																class="parent-link" data-role="parent-link">
+																<i aria-hidden="true" class="icon-forward" title="in reply to"></i>
+																Pitchy
+															</a>
+														</span>
+
+													</span>
+
+													<span class="post-meta">
+														<span class="bullet time-ago-bullet" aria-hidden="true">•
+														</span>
+
+
+														<a
+															href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635073530"
+															data-role="relative-time" class="time-ago"
+															title="Tuesday, October 14, 2014 4:55 PM">6 hours ago</a>
+
+													</span>
+
+
+												</header>
+
+
+												<div class="post-body-inner">
+
+													<div class="post-message-container" data-role="message-container">
+
+														<div class="publisher-anchor-color" data-role="message-content">
+															<div class="post-message " data-role="message" dir="auto">
+
+																<p>We gave them a chance time and time again.</p>
+
+															</div>
+
+															<span class="post-media">
+																<ul data-role="post-media-list"></ul>
+															</span>
+														</div>
+													</div>
+													<a class="see-more hidden" title="see more" data-action="see-more">see
+														more</a>
+												</div>
+
+												<footer>
+													<menu>
+
+														<li class="voting" data-role="voting">
+
+															<a href="#" class="vote-up  count-1" data-action="upvote"
+																title="">
+																<span class="updatable count" data-role="likes">1</span>
+																<span class="control">
+																	<i aria-hidden="true" class="icon icon-arrow-2"></i>
+																</span>
+															</a>
+															<span role="button" class="vote-down  count-0" href="#"
+																data-action="downvote" title="Vote down">
+																<span class="control">
+																	<i aria-hidden="true" class="icon icon-arrow"></i>
+																</span>
+
+															</span>
+
+														</li>
+														<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+														<li class="reply" data-role="reply-link">
+															<a href="#" data-action="reply">
+																<i class="icon icon-mobile icon-reply"></i>
+																<span class="text">Reply</span>
+															</a>
+														</li>
+														<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+														<li class="share">
+															<a class="toggle">
+																<i class="icon icon-mobile icon-share"></i>
+																<span class="text">Share ›</span>
+															</a>
+															<ul>
+																<li class="twitter">
+																	<a href="#" data-action="share:twitter">Twitter</a>
+																</li>
+																<li class="facebook">
+																	<a href="#" data-action="share:facebook">Facebook</a>
+																</li>
+																<li class="link">
+																	<a
+																		href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635073530">Link</a>
+																</li>
+															</ul>
+														</li>
+
+
+
+														<li class="realtime" data-role="realtime-notification:1635073530">
+															<span style="display:none;" class="realtime-replies"></span>
+															<a style="display:none;" href="#" class="btn btn-small"></a>
+
+														</li>
+
+
+
+													</menu>
+												</footer>
+											</div>
+
+
+											<div data-role="blacklist-form"></div>
+											<div class="reply-form-container" data-role="reply-form"></div>
+										</div>
+
+
+										<ul data-role="children" class="children"></ul>
+
+
+									</li>
+									<li class="post" id="post-1635080611">
+										<div role="alert"></div>
+
+										<div data-role="post-content" class="post-content">
+
+
+											<ul class="post-menu dropdown" data-role="menu">
+												<li class="collapse">
+													<a href="#" data-action="collapse" title="Collapse">
+														<span>−</span>
+													</a>
+												</li>
+												<li class="expand">
+													<a href="#" data-action="collapse" title="Expand">
+														<span>+</span>
+													</a>
+												</li>
+
+
+												<li class="" role="menu">
+
+
+													<a class="dropdown-toggle" href="#" data-action="flag"
+														data-role="flag" title="Flag as inappropriate">
+														<i aria-hidden="true" class="icon icon-flag"></i>
+													</a>
+
+
+												</li>
+
+											</ul>
+
+
+											<div class="indicator"></div>
+
+
+
+
+											<div class="avatar hovercard">
+												<a href="http://disqus.com/thecuddlykoala/" class="user"
+													data-action="profile" data-user="84411030">
+													<img data-role="user-avatar" data-user="84411030"
+														src="//a.disquscdn.com/1413230218/images/noavatar92.png"
+														alt="Avatar">
+												</a>
+											</div>
+
+
+											<div class="post-body">
+												<header>
+													<span class="post-byline">
+
+														<span class="author publisher-anchor-color">
+															<a href="#" data-action="profile" data-user="84411030"
+																data-role="username">TheCuddlyKoala</a>
+														</span>
+
+
+
+
+
+
+														<span>
+															<a
+																href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635072881"
+																class="parent-link" data-role="parent-link">
+																<i aria-hidden="true" class="icon-forward" title="in reply to"></i>
+																Pitchy
+															</a>
+														</span>
+
+													</span>
+
+													<span class="post-meta">
+														<span class="bullet time-ago-bullet" aria-hidden="true">•
+														</span>
+
+
+														<a
+															href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635080611"
+															data-role="relative-time" class="time-ago"
+															title="Tuesday, October 14, 2014 5:00 PM">6 hours ago</a>
+
+													</span>
+
+
+												</header>
+
+
+												<div class="post-body-inner">
+
+													<div class="post-message-container" data-role="message-container">
+
+														<div class="publisher-anchor-color" data-role="message-content">
+															<div class="post-message " data-role="message" dir="auto">
+
+																<p>If we never fell for it, we would never read any of
+																	them. Lol</p>
+
+															</div>
+
+															<span class="post-media">
+																<ul data-role="post-media-list"></ul>
+															</span>
+														</div>
+													</div>
+													<a class="see-more hidden" title="see more" data-action="see-more">see
+														more</a>
+												</div>
+
+												<footer>
+													<menu>
+
+														<li class="voting" data-role="voting">
+
+															<a href="#" class="vote-up  count-1" data-action="upvote"
+																title="">
+																<span class="updatable count" data-role="likes">1</span>
+																<span class="control">
+																	<i aria-hidden="true" class="icon icon-arrow-2"></i>
+																</span>
+															</a>
+															<span role="button" class="vote-down  count-0" href="#"
+																data-action="downvote" title="Vote down">
+																<span class="control">
+																	<i aria-hidden="true" class="icon icon-arrow"></i>
+																</span>
+
+															</span>
+
+														</li>
+														<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+														<li class="reply" data-role="reply-link">
+															<a href="#" data-action="reply">
+																<i class="icon icon-mobile icon-reply"></i>
+																<span class="text">Reply</span>
+															</a>
+														</li>
+														<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+														<li class="share">
+															<a class="toggle">
+																<i class="icon icon-mobile icon-share"></i>
+																<span class="text">Share ›</span>
+															</a>
+															<ul>
+																<li class="twitter">
+																	<a href="#" data-action="share:twitter">Twitter</a>
+																</li>
+																<li class="facebook">
+																	<a href="#" data-action="share:facebook">Facebook</a>
+																</li>
+																<li class="link">
+																	<a
+																		href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635080611">Link</a>
+																</li>
+															</ul>
+														</li>
+
+
+
+														<li class="realtime" data-role="realtime-notification:1635080611">
+															<span style="display:none;" class="realtime-replies"></span>
+															<a style="display:none;" href="#" class="btn btn-small"></a>
+
+														</li>
+
+
+
+													</menu>
+												</footer>
+											</div>
+
+
+											<div data-role="blacklist-form"></div>
+											<div class="reply-form-container" data-role="reply-form"></div>
+										</div>
+
+
+										<ul data-role="children" class="children"></ul>
+
+
+									</li>
+								</ul>
+
+
+							</li>
+						</ul>
+
+
+					</li>
+					<li class="post" id="post-1635137599">
+						<div role="alert"></div>
+
+						<div data-role="post-content" class="post-content">
+
+
+							<ul class="post-menu dropdown" data-role="menu">
+								<li class="collapse">
+									<a href="#" data-action="collapse" title="Collapse">
+										<span>−</span>
+									</a>
+								</li>
+								<li class="expand">
+									<a href="#" data-action="collapse" title="Expand">
+										<span>+</span>
+									</a>
+								</li>
+
+
+								<li class="" role="menu">
+
+
+									<a class="dropdown-toggle" href="#" data-action="flag"
+										data-role="flag" title="Flag as inappropriate">
+										<i aria-hidden="true" class="icon icon-flag"></i>
+									</a>
+
+
+								</li>
+
+							</ul>
+
+
+							<div class="indicator"></div>
+
+
+
+
+							<div class="avatar hovercard">
+								<a href="http://disqus.com/fantom007/" class="user"
+									data-action="profile" data-user="2475734">
+									<img data-role="user-avatar" data-user="2475734"
+										src="//a.disquscdn.com/1413230218/images/noavatar92.png" alt="Avatar">
+								</a>
+							</div>
+
+
+							<div class="post-body">
+								<header>
+									<span class="post-byline">
+
+										<span class="author publisher-anchor-color">
+											<a href="#" data-action="profile" data-user="2475734"
+												data-role="username">fantom007</a>
+										</span>
+
+
+
+
+
+
+										<span>
+											<a
+												href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635049069"
+												class="parent-link" data-role="parent-link">
+												<i aria-hidden="true" class="icon-forward" title="in reply to"></i>
+												Pitchy
+											</a>
+										</span>
+
+									</span>
+
+									<span class="post-meta">
+										<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+
+										<a
+											href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635137599"
+											data-role="relative-time" class="time-ago"
+											title="Tuesday, October 14, 2014 5:37 PM">5 hours ago</a>
+
+									</span>
+
+
+								</header>
+
+
+								<div class="post-body-inner">
+
+									<div class="post-message-container" data-role="message-container">
+
+										<div class="publisher-anchor-color" data-role="message-content">
+											<div class="post-message " data-role="message" dir="auto">
+
+												<p>I fell for this one too. 5 minutes I'm never gonna get
+													back. Now teach us something we didn't already know. We at
+													least deserve it now.</p>
+
+											</div>
+
+											<span class="post-media">
+												<ul data-role="post-media-list"></ul>
+											</span>
+										</div>
+									</div>
+									<a class="see-more hidden" title="see more" data-action="see-more">see
+										more</a>
+								</div>
+
+								<footer>
+									<menu>
+
+										<li class="voting" data-role="voting">
+
+											<a href="#" class="vote-up  count-3" data-action="upvote"
+												title="">
+												<span class="updatable count" data-role="likes">3</span>
+												<span class="control">
+													<i aria-hidden="true" class="icon icon-arrow-2"></i>
+												</span>
+											</a>
+											<span role="button" class="vote-down  count-0" href="#"
+												data-action="downvote" title="Vote down">
+												<span class="control">
+													<i aria-hidden="true" class="icon icon-arrow"></i>
+												</span>
+
+											</span>
+
+										</li>
+										<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+										<li class="reply" data-role="reply-link">
+											<a href="#" data-action="reply">
+												<i class="icon icon-mobile icon-reply"></i>
+												<span class="text">Reply</span>
+											</a>
+										</li>
+										<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+										<li class="share">
+											<a class="toggle">
+												<i class="icon icon-mobile icon-share"></i>
+												<span class="text">Share ›</span>
+											</a>
+											<ul>
+												<li class="twitter">
+													<a href="#" data-action="share:twitter">Twitter</a>
+												</li>
+												<li class="facebook">
+													<a href="#" data-action="share:facebook">Facebook</a>
+												</li>
+												<li class="link">
+													<a
+														href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635137599">Link</a>
+												</li>
+											</ul>
+										</li>
+
+
+
+										<li class="realtime" data-role="realtime-notification:1635137599">
+											<span style="display:none;" class="realtime-replies"></span>
+											<a style="display:none;" href="#" class="btn btn-small"></a>
+
+										</li>
+
+
+
+									</menu>
+								</footer>
+							</div>
+
+
+							<div data-role="blacklist-form"></div>
+							<div class="reply-form-container" data-role="reply-form"></div>
+						</div>
+
+
+						<ul data-role="children" class="children"></ul>
+
+
+					</li>
+					<li class="post" id="post-1635491496">
+						<div role="alert"></div>
+
+						<div data-role="post-content" class="post-content">
+
+
+							<ul class="post-menu dropdown" data-role="menu">
+								<li class="collapse">
+									<a href="#" data-action="collapse" title="Collapse">
+										<span>−</span>
+									</a>
+								</li>
+								<li class="expand">
+									<a href="#" data-action="collapse" title="Expand">
+										<span>+</span>
+									</a>
+								</li>
+
+
+								<li class="" role="menu">
+
+
+									<a class="dropdown-toggle" href="#" data-action="flag"
+										data-role="flag" title="Flag as inappropriate">
+										<i aria-hidden="true" class="icon icon-flag"></i>
+									</a>
+
+
+								</li>
+
+							</ul>
+
+
+							<div class="indicator"></div>
+
+
+
+
+							<div class="avatar hovercard">
+								<a href="http://disqus.com/brando56894/" class="user"
+									data-action="profile" data-user="2681941">
+									<img data-role="user-avatar" data-user="2681941"
+										src="//a.disquscdn.com/1413230218/images/noavatar92.png" alt="Avatar">
+								</a>
+							</div>
+
+
+							<div class="post-body">
+								<header>
+									<span class="post-byline">
+
+										<span class="author publisher-anchor-color">
+											<a href="#" data-action="profile" data-user="2681941"
+												data-role="username">Brandon</a>
+										</span>
+
+
+
+
+
+
+										<span>
+											<a
+												href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635049069"
+												class="parent-link" data-role="parent-link">
+												<i aria-hidden="true" class="icon-forward" title="in reply to"></i>
+												Pitchy
+											</a>
+										</span>
+
+									</span>
+
+									<span class="post-meta">
+										<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+
+										<a
+											href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635491496"
+											data-role="relative-time" class="time-ago"
+											title="Tuesday, October 14, 2014 8:18 PM">3 hours ago</a>
+
+									</span>
+
+
+								</header>
+
+
+								<div class="post-body-inner">
+
+									<div class="post-message-container" data-role="message-container">
+
+										<div class="publisher-anchor-color" data-role="message-content">
+											<div class="post-message " data-role="message" dir="auto">
+
+												<p>You should know by now, they never try!</p>
+
+											</div>
+
+											<span class="post-media">
+												<ul data-role="post-media-list"></ul>
+											</span>
+										</div>
+									</div>
+									<a class="see-more hidden" title="see more" data-action="see-more">see
+										more</a>
+								</div>
+
+								<footer>
+									<menu>
+
+										<li class="voting" data-role="voting">
+
+											<a href="#" class="vote-up  count-1" data-action="upvote"
+												title="">
+												<span class="updatable count" data-role="likes">1</span>
+												<span class="control">
+													<i aria-hidden="true" class="icon icon-arrow-2"></i>
+												</span>
+											</a>
+											<span role="button" class="vote-down  count-0" href="#"
+												data-action="downvote" title="Vote down">
+												<span class="control">
+													<i aria-hidden="true" class="icon icon-arrow"></i>
+												</span>
+
+											</span>
+
+										</li>
+										<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+										<li class="reply" data-role="reply-link">
+											<a href="#" data-action="reply">
+												<i class="icon icon-mobile icon-reply"></i>
+												<span class="text">Reply</span>
+											</a>
+										</li>
+										<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+										<li class="share">
+											<a class="toggle">
+												<i class="icon icon-mobile icon-share"></i>
+												<span class="text">Share ›</span>
+											</a>
+											<ul>
+												<li class="twitter">
+													<a href="#" data-action="share:twitter">Twitter</a>
+												</li>
+												<li class="facebook">
+													<a href="#" data-action="share:facebook">Facebook</a>
+												</li>
+												<li class="link">
+													<a
+														href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635491496">Link</a>
+												</li>
+											</ul>
+										</li>
+
+
+
+										<li class="realtime" data-role="realtime-notification:1635491496">
+											<span style="display:none;" class="realtime-replies"></span>
+											<a style="display:none;" href="#" class="btn btn-small"></a>
+
+										</li>
+
+
+
+									</menu>
+								</footer>
+							</div>
+
+
+							<div data-role="blacklist-form"></div>
+							<div class="reply-form-container" data-role="reply-form"></div>
+						</div>
+
+
+						<ul data-role="children" class="children"></ul>
+
+
+					</li>
+				</ul>
+
+
+			</li>
+			<li class="post" id="post-1635074797">
+				<div role="alert"></div>
+
+				<div data-role="post-content" class="post-content">
+
+
+					<ul class="post-menu dropdown" data-role="menu">
+						<li class="collapse">
+							<a href="#" data-action="collapse" title="Collapse">
+								<span>−</span>
+							</a>
+						</li>
+						<li class="expand">
+							<a href="#" data-action="collapse" title="Expand">
+								<span>+</span>
+							</a>
+						</li>
+
+
+						<li class="" role="menu">
+
+
+							<a class="dropdown-toggle" href="#" data-action="flag"
+								data-role="flag" title="Flag as inappropriate">
+								<i aria-hidden="true" class="icon icon-flag"></i>
+							</a>
+
+
+						</li>
+
+					</ul>
+
+
+					<div class="indicator"></div>
+
+
+
+
+					<div class="avatar hovercard">
+						<a href="http://disqus.com/pt0331/" class="user" data-action="profile"
+							data-user="74026840">
+							<img data-role="user-avatar" data-user="74026840"
+								src="//a.disquscdn.com/1413230218/images/noavatar92.png" alt="Avatar">
+						</a>
+					</div>
+
+
+					<div class="post-body">
+						<header>
+							<span class="post-byline">
+
+								<span class="author publisher-anchor-color">
+									<a href="#" data-action="profile" data-user="74026840"
+										data-role="username">PTee</a>
+								</span>
+
+
+
+
+
+
+							</span>
+
+							<span class="post-meta">
+								<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+
+								<a
+									href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635074797"
+									data-role="relative-time" class="time-ago"
+									title="Tuesday, October 14, 2014 4:56 PM">6 hours ago</a>
+
+							</span>
+
+
+						</header>
+
+
+						<div class="post-body-inner">
+
+							<div class="post-message-container" data-role="message-container">
+
+								<div class="publisher-anchor-color" data-role="message-content">
+									<div class="post-message " data-role="message" dir="auto">
+
+										<p>
+											"there
+											<b>is</b>
+											tons of great functionality..." You don't even have to be a
+											journalism major to write for Bee Gee Are... or have basic
+											writing lessons 101. Pr00freadin', what's that?
+										</p>
+
+									</div>
+
+									<span class="post-media">
+										<ul data-role="post-media-list"></ul>
+									</span>
+								</div>
+							</div>
+							<a class="see-more hidden" title="see more" data-action="see-more">see
+								more</a>
+						</div>
+
+						<footer>
+							<menu>
+
+								<li class="voting" data-role="voting">
+
+									<a href="#" class="vote-up  count-3" data-action="upvote"
+										title="">
+										<span class="updatable count" data-role="likes">3</span>
+										<span class="control">
+											<i aria-hidden="true" class="icon icon-arrow-2"></i>
+										</span>
+									</a>
+									<span role="button" class="vote-down  count-0" href="#"
+										data-action="downvote" title="Vote down">
+										<span class="control">
+											<i aria-hidden="true" class="icon icon-arrow"></i>
+										</span>
+
+									</span>
+
+								</li>
+								<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+								<li class="reply" data-role="reply-link">
+									<a href="#" data-action="reply">
+										<i class="icon icon-mobile icon-reply"></i>
+										<span class="text">Reply</span>
+									</a>
+								</li>
+								<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+								<li class="share">
+									<a class="toggle">
+										<i class="icon icon-mobile icon-share"></i>
+										<span class="text">Share ›</span>
+									</a>
+									<ul>
+										<li class="twitter">
+											<a href="#" data-action="share:twitter">Twitter</a>
+										</li>
+										<li class="facebook">
+											<a href="#" data-action="share:facebook">Facebook</a>
+										</li>
+										<li class="link">
+											<a
+												href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635074797">Link</a>
+										</li>
+									</ul>
+								</li>
+
+
+
+								<li class="realtime" data-role="realtime-notification:1635074797">
+									<span style="display:none;" class="realtime-replies"></span>
+									<a style="display:none;" href="#" class="btn btn-small"></a>
+
+								</li>
+
+
+
+							</menu>
+						</footer>
+					</div>
+
+
+					<div data-role="blacklist-form"></div>
+					<div class="reply-form-container" data-role="reply-form"></div>
+				</div>
+
+
+				<ul data-role="children" class="children"></ul>
+
+
+			</li>
+			<li class="post" id="post-1635082114">
+				<div role="alert"></div>
+
+				<div data-role="post-content" class="post-content">
+
+
+					<ul class="post-menu dropdown" data-role="menu">
+						<li class="collapse">
+							<a href="#" data-action="collapse" title="Collapse">
+								<span>−</span>
+							</a>
+						</li>
+						<li class="expand">
+							<a href="#" data-action="collapse" title="Expand">
+								<span>+</span>
+							</a>
+						</li>
+
+
+						<li class="" role="menu">
+
+
+							<a class="dropdown-toggle" href="#" data-action="flag"
+								data-role="flag" title="Flag as inappropriate">
+								<i aria-hidden="true" class="icon icon-flag"></i>
+							</a>
+
+
+						</li>
+
+					</ul>
+
+
+					<div class="indicator"></div>
+
+
+
+
+					<div class="avatar hovercard">
+						<a href="http://disqus.com/pt0331/" class="user" data-action="profile"
+							data-user="74026840">
+							<img data-role="user-avatar" data-user="74026840"
+								src="//a.disquscdn.com/1413230218/images/noavatar92.png" alt="Avatar">
+						</a>
+					</div>
+
+
+					<div class="post-body">
+						<header>
+							<span class="post-byline">
+
+								<span class="author publisher-anchor-color">
+									<a href="#" data-action="profile" data-user="74026840"
+										data-role="username">PTee</a>
+								</span>
+
+
+
+
+
+
+							</span>
+
+							<span class="post-meta">
+								<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+
+								<a
+									href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635082114"
+									data-role="relative-time" class="time-ago"
+									title="Tuesday, October 14, 2014 5:01 PM">6 hours ago</a>
+
+							</span>
+
+
+						</header>
+
+
+						<div class="post-body-inner">
+
+							<div class="post-message-container" data-role="message-container">
+
+								<div class="publisher-anchor-color" data-role="message-content">
+									<div class="post-message " data-role="message" dir="auto">
+
+										<p>So basically it is a Popular Mechanics article written
+											by... Z. E. for Bee Gee Are? Got it</p>
+
+									</div>
+
+									<span class="post-media">
+										<ul data-role="post-media-list"></ul>
+									</span>
+								</div>
+							</div>
+							<a class="see-more hidden" title="see more" data-action="see-more">see
+								more</a>
+						</div>
+
+						<footer>
+							<menu>
+
+								<li class="voting" data-role="voting">
+
+									<a href="#" class="vote-up  count-3" data-action="upvote"
+										title="">
+										<span class="updatable count" data-role="likes">3</span>
+										<span class="control">
+											<i aria-hidden="true" class="icon icon-arrow-2"></i>
+										</span>
+									</a>
+									<span role="button" class="vote-down  count-0" href="#"
+										data-action="downvote" title="Vote down">
+										<span class="control">
+											<i aria-hidden="true" class="icon icon-arrow"></i>
+										</span>
+
+									</span>
+
+								</li>
+								<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+								<li class="reply" data-role="reply-link">
+									<a href="#" data-action="reply">
+										<i class="icon icon-mobile icon-reply"></i>
+										<span class="text">Reply</span>
+									</a>
+								</li>
+								<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+								<li class="share">
+									<a class="toggle">
+										<i class="icon icon-mobile icon-share"></i>
+										<span class="text">Share ›</span>
+									</a>
+									<ul>
+										<li class="twitter">
+											<a href="#" data-action="share:twitter">Twitter</a>
+										</li>
+										<li class="facebook">
+											<a href="#" data-action="share:facebook">Facebook</a>
+										</li>
+										<li class="link">
+											<a
+												href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635082114">Link</a>
+										</li>
+									</ul>
+								</li>
+
+
+
+								<li class="realtime" data-role="realtime-notification:1635082114">
+									<span style="display:none;" class="realtime-replies"></span>
+									<a style="display:none;" href="#" class="btn btn-small"></a>
+
+								</li>
+
+
+
+							</menu>
+						</footer>
+					</div>
+
+
+					<div data-role="blacklist-form"></div>
+					<div class="reply-form-container" data-role="reply-form"></div>
+				</div>
+
+
+				<ul data-role="children" class="children"></ul>
+
+
+			</li>
+			<li class="post" id="post-1635083674">
+				<div role="alert"></div>
+
+				<div data-role="post-content" class="post-content">
+
+
+					<ul class="post-menu dropdown" data-role="menu">
+						<li class="collapse">
+							<a href="#" data-action="collapse" title="Collapse">
+								<span>−</span>
+							</a>
+						</li>
+						<li class="expand">
+							<a href="#" data-action="collapse" title="Expand">
+								<span>+</span>
+							</a>
+						</li>
+
+
+						<li class="" role="menu">
+
+
+							<a class="dropdown-toggle" href="#" data-action="flag"
+								data-role="flag" title="Flag as inappropriate">
+								<i aria-hidden="true" class="icon icon-flag"></i>
+							</a>
+
+
+						</li>
+
+					</ul>
+
+
+					<div class="indicator"></div>
+
+
+
+
+					<div class="avatar hovercard">
+						<a href="http://disqus.com/Mr_Data/" class="user" data-action="profile"
+							data-user="7123104">
+							<img data-role="user-avatar" data-user="7123104"
+								src="//a.disquscdn.com/1413230218/images/noavatar92.png" alt="Avatar">
+						</a>
+					</div>
+
+
+					<div class="post-body">
+						<header>
+							<span class="post-byline">
+
+								<span class="author publisher-anchor-color">
+									<a href="#" data-action="profile" data-user="7123104"
+										data-role="username">Mr_Data</a>
+								</span>
+
+
+
+
+
+
+							</span>
+
+							<span class="post-meta">
+								<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+
+								<a
+									href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635083674"
+									data-role="relative-time" class="time-ago"
+									title="Tuesday, October 14, 2014 5:02 PM">6 hours ago</a>
+
+							</span>
+
+
+						</header>
+
+
+						<div class="post-body-inner">
+
+							<div class="post-message-container" data-role="message-container">
+
+								<div class="publisher-anchor-color" data-role="message-content">
+									<div class="post-message " data-role="message" dir="auto">
+
+										<p>Add tracking your movement everywhere you go, connecting to
+											wi-fi routers even if the wi-fi function seems to be disabled
+											in order to locate your position.</p>
+
+									</div>
+
+									<span class="post-media">
+										<ul data-role="post-media-list"></ul>
+									</span>
+								</div>
+							</div>
+							<a class="see-more hidden" title="see more" data-action="see-more">see
+								more</a>
+						</div>
+
+						<footer>
+							<menu>
+
+								<li class="voting" data-role="voting">
+
+									<a href="#" class="vote-up  count-0" data-action="upvote"
+										title="Vote up">
+										<span class="updatable count" data-role="likes">0</span>
+										<span class="control">
+											<i aria-hidden="true" class="icon icon-arrow-2"></i>
+										</span>
+									</a>
+									<span role="button" class="vote-down  count-1" href="#"
+										data-action="downvote" title="Vote down">
+										<span class="control">
+											<i aria-hidden="true" class="icon icon-arrow"></i>
+										</span>
+
+									</span>
+
+								</li>
+								<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+								<li class="reply" data-role="reply-link">
+									<a href="#" data-action="reply">
+										<i class="icon icon-mobile icon-reply"></i>
+										<span class="text">Reply</span>
+									</a>
+								</li>
+								<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+								<li class="share">
+									<a class="toggle">
+										<i class="icon icon-mobile icon-share"></i>
+										<span class="text">Share ›</span>
+									</a>
+									<ul>
+										<li class="twitter">
+											<a href="#" data-action="share:twitter">Twitter</a>
+										</li>
+										<li class="facebook">
+											<a href="#" data-action="share:facebook">Facebook</a>
+										</li>
+										<li class="link">
+											<a
+												href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635083674">Link</a>
+										</li>
+									</ul>
+								</li>
+
+
+
+								<li class="realtime" data-role="realtime-notification:1635083674">
+									<span style="display:none;" class="realtime-replies"></span>
+									<a style="display:none;" href="#" class="btn btn-small"></a>
+
+								</li>
+
+
+
+							</menu>
+						</footer>
+					</div>
+
+
+					<div data-role="blacklist-form"></div>
+					<div class="reply-form-container" data-role="reply-form"></div>
+				</div>
+
+
+				<ul data-role="children" class="children">
+					<li class="post" id="post-1635100340">
+						<div role="alert"></div>
+
+						<div data-role="post-content" class="post-content">
+
+
+							<ul class="post-menu dropdown" data-role="menu">
+								<li class="collapse">
+									<a href="#" data-action="collapse" title="Collapse">
+										<span>−</span>
+									</a>
+								</li>
+								<li class="expand">
+									<a href="#" data-action="collapse" title="Expand">
+										<span>+</span>
+									</a>
+								</li>
+
+
+								<li class="" role="menu">
+
+
+									<a class="dropdown-toggle" href="#" data-action="flag"
+										data-role="flag" title="Flag as inappropriate">
+										<i aria-hidden="true" class="icon icon-flag"></i>
+									</a>
+
+
+								</li>
+
+							</ul>
+
+
+							<div class="indicator"></div>
+
+
+
+
+							<div class="avatar hovercard">
+								<a href="http://disqus.com/alwhoreithm/" class="user"
+									data-action="profile" data-user="66259603">
+									<img data-role="user-avatar" data-user="66259603"
+										src="//a.disquscdn.com/1413230218/images/noavatar92.png" alt="Avatar">
+								</a>
+							</div>
+
+
+							<div class="post-body">
+								<header>
+									<span class="post-byline">
+
+										<span class="author publisher-anchor-color">
+											<a href="#" data-action="profile" data-user="66259603"
+												data-role="username">Eric Estrada</a>
+										</span>
+
+
+
+
+
+
+										<span>
+											<a
+												href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635083674"
+												class="parent-link" data-role="parent-link">
+												<i aria-hidden="true" class="icon-forward" title="in reply to"></i>
+												Mr_Data
+											</a>
+										</span>
+
+									</span>
+
+									<span class="post-meta">
+										<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+
+										<a
+											href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635100340"
+											data-role="relative-time" class="time-ago"
+											title="Tuesday, October 14, 2014 5:14 PM">6 hours ago</a>
+
+									</span>
+
+
+								</header>
+
+
+								<div class="post-body-inner">
+
+									<div class="post-message-container" data-role="message-container">
+
+										<div class="publisher-anchor-color" data-role="message-content">
+											<div class="post-message " data-role="message" dir="auto">
+
+												<p>...</p>
+
+											</div>
+
+											<span class="post-media">
+												<ul data-role="post-media-list">
+													<li>
+														<div class="media-mode-deferred media-show-buttons">
+
+															<div data-role="post-media">
+
+																<a
+																	class="media-button media-button-expand publisher-color publisher-border-color"
+																	href="//a.disquscdn.com/uploads/mediaembed/images/1368/8491/original.jpg"
+																	rel="nofollow" target="_blank" data-action="expand"
+																	title="">
+																	<i class="icon-images publisher-background-color"></i>
+																	View
+																</a>
+																<a
+																	class="media-button media-button-contract publisher-color publisher-border-color"
+																	href="#" target="_blank" data-action="contract">
+																	<i class="icon-cancel publisher-background-color"></i>
+																	Hide
+																</a>
+
+																<div class="media-content-loader" data-role="content-loader"></div>
+
+																<div data-role="content-placeholder" class="media-content-placeholder"
+																	style="height: auto;">
+																	<a href="#" class="media-force-load" data-action="force-load">
+																		<i class="icon-images"></i>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</span>
+										</div>
+									</div>
+									<a class="see-more hidden" title="see more" data-action="see-more">see
+										more</a>
+								</div>
+
+								<footer>
+									<menu>
+
+										<li class="voting" data-role="voting">
+
+											<a href="#" class="vote-up  count-6" data-action="upvote"
+												title="">
+												<span class="updatable count" data-role="likes">6</span>
+												<span class="control">
+													<i aria-hidden="true" class="icon icon-arrow-2"></i>
+												</span>
+											</a>
+											<span role="button" class="vote-down  count-0" href="#"
+												data-action="downvote" title="Vote down">
+												<span class="control">
+													<i aria-hidden="true" class="icon icon-arrow"></i>
+												</span>
+
+											</span>
+
+										</li>
+										<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+										<li class="reply" data-role="reply-link">
+											<a href="#" data-action="reply">
+												<i class="icon icon-mobile icon-reply"></i>
+												<span class="text">Reply</span>
+											</a>
+										</li>
+										<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+										<li class="share">
+											<a class="toggle">
+												<i class="icon icon-mobile icon-share"></i>
+												<span class="text">Share ›</span>
+											</a>
+											<ul>
+												<li class="twitter">
+													<a href="#" data-action="share:twitter">Twitter</a>
+												</li>
+												<li class="facebook">
+													<a href="#" data-action="share:facebook">Facebook</a>
+												</li>
+												<li class="link">
+													<a
+														href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635100340">Link</a>
+												</li>
+											</ul>
+										</li>
+
+
+
+										<li class="realtime" data-role="realtime-notification:1635100340">
+											<span style="display:none;" class="realtime-replies"></span>
+											<a style="display:none;" href="#" class="btn btn-small"></a>
+
+										</li>
+
+
+
+									</menu>
+								</footer>
+							</div>
+
+
+							<div data-role="blacklist-form"></div>
+							<div class="reply-form-container" data-role="reply-form"></div>
+						</div>
+
+
+						<ul data-role="children" class="children"></ul>
+
+
+					</li>
+					<li class="post" id="post-1635486665">
+						<div role="alert"></div>
+
+						<div data-role="post-content" class="post-content">
+
+
+							<ul class="post-menu dropdown" data-role="menu">
+								<li class="collapse">
+									<a href="#" data-action="collapse" title="Collapse">
+										<span>−</span>
+									</a>
+								</li>
+								<li class="expand">
+									<a href="#" data-action="collapse" title="Expand">
+										<span>+</span>
+									</a>
+								</li>
+
+
+								<li class="" role="menu">
+
+
+									<a class="dropdown-toggle" href="#" data-action="flag"
+										data-role="flag" title="Flag as inappropriate">
+										<i aria-hidden="true" class="icon icon-flag"></i>
+									</a>
+
+
+								</li>
+
+							</ul>
+
+
+							<div class="indicator"></div>
+
+
+
+
+							<div class="avatar hovercard">
+								<a href="http://disqus.com/brando56894/" class="user"
+									data-action="profile" data-user="2681941">
+									<img data-role="user-avatar" data-user="2681941"
+										src="//a.disquscdn.com/1413230218/images/noavatar92.png" alt="Avatar">
+								</a>
+							</div>
+
+
+							<div class="post-body">
+								<header>
+									<span class="post-byline">
+
+										<span class="author publisher-anchor-color">
+											<a href="#" data-action="profile" data-user="2681941"
+												data-role="username">Brandon</a>
+										</span>
+
+
+
+
+
+
+										<span>
+											<a
+												href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635083674"
+												class="parent-link" data-role="parent-link">
+												<i aria-hidden="true" class="icon-forward" title="in reply to"></i>
+												Mr_Data
+											</a>
+										</span>
+
+									</span>
+
+									<span class="post-meta">
+										<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+
+										<a
+											href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635486665"
+											data-role="relative-time" class="time-ago"
+											title="Tuesday, October 14, 2014 8:15 PM">3 hours ago</a>
+
+									</span>
+
+
+								</header>
+
+
+								<div class="post-body-inner">
+
+									<div class="post-message-container" data-role="message-container">
+
+										<div class="publisher-anchor-color" data-role="message-content">
+											<div class="post-message " data-role="message" dir="auto">
+
+												<p>You can easily turn all those off....</p>
+
+											</div>
+
+											<span class="post-media">
+												<ul data-role="post-media-list"></ul>
+											</span>
+										</div>
+									</div>
+									<a class="see-more hidden" title="see more" data-action="see-more">see
+										more</a>
+								</div>
+
+								<footer>
+									<menu>
+
+										<li class="voting" data-role="voting">
+
+											<a href="#" class="vote-up  count-1" data-action="upvote"
+												title="">
+												<span class="updatable count" data-role="likes">1</span>
+												<span class="control">
+													<i aria-hidden="true" class="icon icon-arrow-2"></i>
+												</span>
+											</a>
+											<span role="button" class="vote-down  count-0" href="#"
+												data-action="downvote" title="Vote down">
+												<span class="control">
+													<i aria-hidden="true" class="icon icon-arrow"></i>
+												</span>
+
+											</span>
+
+										</li>
+										<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+										<li class="reply" data-role="reply-link">
+											<a href="#" data-action="reply">
+												<i class="icon icon-mobile icon-reply"></i>
+												<span class="text">Reply</span>
+											</a>
+										</li>
+										<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+										<li class="share">
+											<a class="toggle">
+												<i class="icon icon-mobile icon-share"></i>
+												<span class="text">Share ›</span>
+											</a>
+											<ul>
+												<li class="twitter">
+													<a href="#" data-action="share:twitter">Twitter</a>
+												</li>
+												<li class="facebook">
+													<a href="#" data-action="share:facebook">Facebook</a>
+												</li>
+												<li class="link">
+													<a
+														href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635486665">Link</a>
+												</li>
+											</ul>
+										</li>
+
+
+
+										<li class="realtime" data-role="realtime-notification:1635486665">
+											<span style="display:none;" class="realtime-replies"></span>
+											<a style="display:none;" href="#" class="btn btn-small"></a>
+
+										</li>
+
+
+
+									</menu>
+								</footer>
+							</div>
+
+
+							<div data-role="blacklist-form"></div>
+							<div class="reply-form-container" data-role="reply-form"></div>
+						</div>
+
+
+						<ul data-role="children" class="children">
+							<li class="post" id="post-1635623049">
+								<div role="alert"></div>
+
+								<div data-role="post-content" class="post-content">
+
+
+									<ul class="post-menu dropdown" data-role="menu">
+										<li class="collapse">
+											<a href="#" data-action="collapse" title="Collapse">
+												<span>−</span>
+											</a>
+										</li>
+										<li class="expand">
+											<a href="#" data-action="collapse" title="Expand">
+												<span>+</span>
+											</a>
+										</li>
+
+
+										<li class="" role="menu">
+
+
+											<a class="dropdown-toggle" href="#" data-action="flag"
+												data-role="flag" title="Flag as inappropriate">
+												<i aria-hidden="true" class="icon icon-flag"></i>
+											</a>
+
+
+										</li>
+
+									</ul>
+
+
+									<div class="indicator"></div>
+
+
+
+
+									<div class="avatar hovercard">
+										<a href="http://disqus.com/Mr_Data/" class="user"
+											data-action="profile" data-user="7123104">
+											<img data-role="user-avatar" data-user="7123104"
+												src="//a.disquscdn.com/1413230218/images/noavatar92.png"
+												alt="Avatar">
+										</a>
+									</div>
+
+
+									<div class="post-body">
+										<header>
+											<span class="post-byline">
+
+												<span class="author publisher-anchor-color">
+													<a href="#" data-action="profile" data-user="7123104"
+														data-role="username">Mr_Data</a>
+												</span>
+
+
+
+
+
+
+												<span>
+													<a
+														href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635486665"
+														class="parent-link" data-role="parent-link">
+														<i aria-hidden="true" class="icon-forward" title="in reply to"></i>
+														Brandon
+													</a>
+												</span>
+
+											</span>
+
+											<span class="post-meta">
+												<span class="bullet time-ago-bullet" aria-hidden="true">•
+												</span>
+
+
+												<a
+													href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635623049"
+													data-role="relative-time" class="time-ago"
+													title="Tuesday, October 14, 2014 9:39 PM">an hour ago</a>
+
+											</span>
+
+
+										</header>
+
+
+										<div class="post-body-inner">
+
+											<div class="post-message-container" data-role="message-container">
+
+												<div class="publisher-anchor-color" data-role="message-content">
+													<div class="post-message " data-role="message" dir="auto">
+
+														<p>If you know about them....</p>
+
+													</div>
+
+													<span class="post-media">
+														<ul data-role="post-media-list"></ul>
+													</span>
+												</div>
+											</div>
+											<a class="see-more hidden" title="see more" data-action="see-more">see
+												more</a>
+										</div>
+
+										<footer>
+											<menu>
+
+												<li class="voting" data-role="voting">
+
+													<a href="#" class="vote-up  count-0" data-action="upvote"
+														title="Vote up">
+														<span class="updatable count" data-role="likes">0</span>
+														<span class="control">
+															<i aria-hidden="true" class="icon icon-arrow-2"></i>
+														</span>
+													</a>
+													<span role="button" class="vote-down  count-1" href="#"
+														data-action="downvote" title="Vote down">
+														<span class="control">
+															<i aria-hidden="true" class="icon icon-arrow"></i>
+														</span>
+
+													</span>
+
+												</li>
+												<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+												<li class="reply" data-role="reply-link">
+													<a href="#" data-action="reply">
+														<i class="icon icon-mobile icon-reply"></i>
+														<span class="text">Reply</span>
+													</a>
+												</li>
+												<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+												<li class="share">
+													<a class="toggle">
+														<i class="icon icon-mobile icon-share"></i>
+														<span class="text">Share ›</span>
+													</a>
+													<ul>
+														<li class="twitter">
+															<a href="#" data-action="share:twitter">Twitter</a>
+														</li>
+														<li class="facebook">
+															<a href="#" data-action="share:facebook">Facebook</a>
+														</li>
+														<li class="link">
+															<a
+																href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635623049">Link</a>
+														</li>
+													</ul>
+												</li>
+
+
+
+												<li class="realtime" data-role="realtime-notification:1635623049">
+													<span style="display:none;" class="realtime-replies"></span>
+													<a style="display:none;" href="#" class="btn btn-small"></a>
+
+												</li>
+
+
+
+											</menu>
+										</footer>
+									</div>
+
+
+									<div data-role="blacklist-form"></div>
+									<div class="reply-form-container" data-role="reply-form"></div>
+								</div>
+
+
+								<ul data-role="children" class="children">
+									<li class="post" id="post-1635633381">
+										<div role="alert"></div>
+
+										<div data-role="post-content" class="post-content">
+
+
+											<ul class="post-menu dropdown" data-role="menu">
+												<li class="collapse">
+													<a href="#" data-action="collapse" title="Collapse">
+														<span>−</span>
+													</a>
+												</li>
+												<li class="expand">
+													<a href="#" data-action="collapse" title="Expand">
+														<span>+</span>
+													</a>
+												</li>
+
+
+												<li class="" role="menu">
+
+
+													<a class="dropdown-toggle" href="#" data-action="flag"
+														data-role="flag" title="Flag as inappropriate">
+														<i aria-hidden="true" class="icon icon-flag"></i>
+													</a>
+
+
+												</li>
+
+											</ul>
+
+
+											<div class="indicator"></div>
+
+
+
+
+											<div class="avatar hovercard">
+												<a href="http://disqus.com/pt0331/" class="user"
+													data-action="profile" data-user="74026840">
+													<img data-role="user-avatar" data-user="74026840"
+														src="//a.disquscdn.com/1413230218/images/noavatar92.png"
+														alt="Avatar">
+												</a>
+											</div>
+
+
+											<div class="post-body">
+												<header>
+													<span class="post-byline">
+
+														<span class="author publisher-anchor-color">
+															<a href="#" data-action="profile" data-user="74026840"
+																data-role="username">PTee</a>
+														</span>
+
+
+
+
+
+
+														<span>
+															<a
+																href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635623049"
+																class="parent-link" data-role="parent-link">
+																<i aria-hidden="true" class="icon-forward" title="in reply to"></i>
+																Mr_Data
+															</a>
+														</span>
+
+													</span>
+
+													<span class="post-meta">
+														<span class="bullet time-ago-bullet" aria-hidden="true">•
+														</span>
+
+
+														<a
+															href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635633381"
+															data-role="relative-time" class="time-ago"
+															title="Tuesday, October 14, 2014 9:42 PM">an hour ago</a>
+
+													</span>
+
+
+												</header>
+
+
+												<div class="post-body-inner">
+
+													<div class="post-message-container" data-role="message-container">
+
+														<div class="publisher-anchor-color" data-role="message-content">
+															<div class="post-message " data-role="message" dir="auto">
+
+																<p>Android users know about them unlike the predominant
+																	users of Snapchat or iCloud...</p>
+
+															</div>
+
+															<span class="post-media">
+																<ul data-role="post-media-list"></ul>
+															</span>
+														</div>
+													</div>
+													<a class="see-more hidden" title="see more" data-action="see-more">see
+														more</a>
+												</div>
+
+												<footer>
+													<menu>
+
+														<li class="voting" data-role="voting">
+
+															<a href="#" class="vote-up  count-0" data-action="upvote"
+																title="Vote up">
+																<span class="updatable count" data-role="likes">0</span>
+																<span class="control">
+																	<i aria-hidden="true" class="icon icon-arrow-2"></i>
+																</span>
+															</a>
+															<span role="button" class="vote-down  count-0" href="#"
+																data-action="downvote" title="Vote down">
+																<span class="control">
+																	<i aria-hidden="true" class="icon icon-arrow"></i>
+																</span>
+
+															</span>
+
+														</li>
+														<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+														<li class="reply" data-role="reply-link">
+															<a href="#" data-action="reply">
+																<i class="icon icon-mobile icon-reply"></i>
+																<span class="text">Reply</span>
+															</a>
+														</li>
+														<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+														<li class="share">
+															<a class="toggle">
+																<i class="icon icon-mobile icon-share"></i>
+																<span class="text">Share ›</span>
+															</a>
+															<ul>
+																<li class="twitter">
+																	<a href="#" data-action="share:twitter">Twitter</a>
+																</li>
+																<li class="facebook">
+																	<a href="#" data-action="share:facebook">Facebook</a>
+																</li>
+																<li class="link">
+																	<a
+																		href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635633381">Link</a>
+																</li>
+															</ul>
+														</li>
+
+
+
+														<li class="realtime" data-role="realtime-notification:1635633381">
+															<span style="display:none;" class="realtime-replies"></span>
+															<a style="display:none;" href="#" class="btn btn-small"></a>
+
+														</li>
+
+
+
+													</menu>
+												</footer>
+											</div>
+
+
+											<div data-role="blacklist-form"></div>
+											<div class="reply-form-container" data-role="reply-form"></div>
+										</div>
+
+
+										<ul data-role="children" class="children"></ul>
+
+
+									</li>
+								</ul>
+
+
+							</li>
+						</ul>
+
+
+					</li>
+				</ul>
+
+
+			</li>
+			<li class="post" id="post-1635199840">
+				<div role="alert"></div>
+
+				<div data-role="post-content" class="post-content">
+
+
+					<ul class="post-menu dropdown" data-role="menu">
+						<li class="collapse">
+							<a href="#" data-action="collapse" title="Collapse">
+								<span>−</span>
+							</a>
+						</li>
+						<li class="expand">
+							<a href="#" data-action="collapse" title="Expand">
+								<span>+</span>
+							</a>
+						</li>
+
+
+						<li class="" role="menu">
+
+
+							<a class="dropdown-toggle" href="#" data-action="flag"
+								data-role="flag" title="Flag as inappropriate">
+								<i aria-hidden="true" class="icon icon-flag"></i>
+							</a>
+
+
+						</li>
+
+					</ul>
+
+
+					<div class="indicator"></div>
+
+
+
+
+					<div class="avatar hovercard">
+						<a href="http://disqus.com/mgrexx/" class="user" data-action="profile"
+							data-user="56325565">
+							<img data-role="user-avatar" data-user="56325565"
+								src="//a.disquscdn.com/1413230218/images/noavatar92.png" alt="Avatar">
+						</a>
+					</div>
+
+
+					<div class="post-body">
+						<header>
+							<span class="post-byline">
+
+								<span class="author publisher-anchor-color">
+									<a href="#" data-action="profile" data-user="56325565"
+										data-role="username">mgrexx</a>
+								</span>
+
+
+
+
+
+
+							</span>
+
+							<span class="post-meta">
+								<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+
+								<a
+									href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635199840"
+									data-role="relative-time" class="time-ago"
+									title="Tuesday, October 14, 2014 6:05 PM">5 hours ago</a>
+
+							</span>
+
+
+						</header>
+
+
+						<div class="post-body-inner">
+
+							<div class="post-message-container" data-role="message-container">
+
+								<div class="publisher-anchor-color" data-role="message-content">
+									<div class="post-message " data-role="message" dir="auto">
+
+										<p>
+											Android is like a young college female. Open to new ideas and
+											curious.
+											<br>iOS is like and old hag. Closed minded and stubborn.
+										</p>
+
+									</div>
+
+									<span class="post-media">
+										<ul data-role="post-media-list"></ul>
+									</span>
+								</div>
+							</div>
+							<a class="see-more hidden" title="see more" data-action="see-more">see
+								more</a>
+						</div>
+
+						<footer>
+							<menu>
+
+								<li class="voting" data-role="voting">
+
+									<a href="#" class="vote-up  count-2" data-action="upvote"
+										title="">
+										<span class="updatable count" data-role="likes">2</span>
+										<span class="control">
+											<i aria-hidden="true" class="icon icon-arrow-2"></i>
+										</span>
+									</a>
+									<span role="button" class="vote-down  count-0" href="#"
+										data-action="downvote" title="Vote down">
+										<span class="control">
+											<i aria-hidden="true" class="icon icon-arrow"></i>
+										</span>
+
+									</span>
+
+								</li>
+								<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+								<li class="reply" data-role="reply-link">
+									<a href="#" data-action="reply">
+										<i class="icon icon-mobile icon-reply"></i>
+										<span class="text">Reply</span>
+									</a>
+								</li>
+								<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+								<li class="share">
+									<a class="toggle">
+										<i class="icon icon-mobile icon-share"></i>
+										<span class="text">Share ›</span>
+									</a>
+									<ul>
+										<li class="twitter">
+											<a href="#" data-action="share:twitter">Twitter</a>
+										</li>
+										<li class="facebook">
+											<a href="#" data-action="share:facebook">Facebook</a>
+										</li>
+										<li class="link">
+											<a
+												href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635199840">Link</a>
+										</li>
+									</ul>
+								</li>
+
+
+
+								<li class="realtime" data-role="realtime-notification:1635199840">
+									<span style="display:none;" class="realtime-replies"></span>
+									<a style="display:none;" href="#" class="btn btn-small"></a>
+
+								</li>
+
+
+
+							</menu>
+						</footer>
+					</div>
+
+
+					<div data-role="blacklist-form"></div>
+					<div class="reply-form-container" data-role="reply-form"></div>
+				</div>
+
+
+				<ul data-role="children" class="children">
+					<li class="post" id="post-1635608471">
+						<div role="alert"></div>
+
+						<div data-role="post-content" class="post-content">
+
+
+							<ul class="post-menu dropdown" data-role="menu">
+								<li class="collapse">
+									<a href="#" data-action="collapse" title="Collapse">
+										<span>−</span>
+									</a>
+								</li>
+								<li class="expand">
+									<a href="#" data-action="collapse" title="Expand">
+										<span>+</span>
+									</a>
+								</li>
+
+
+								<li class="" role="menu">
+
+
+									<a class="dropdown-toggle" href="#" data-action="flag"
+										data-role="flag" title="Flag as inappropriate">
+										<i aria-hidden="true" class="icon icon-flag"></i>
+									</a>
+
+
+								</li>
+
+							</ul>
+
+
+							<div class="indicator"></div>
+
+
+
+
+							<div class="avatar hovercard">
+								<a href="http://disqus.com/JunitoNH/" class="user"
+									data-action="profile" data-user="7009652">
+									<img data-role="user-avatar" data-user="7009652"
+										src="//a.disquscdn.com/1413230218/images/noavatar92.png" alt="Avatar">
+								</a>
+							</div>
+
+
+							<div class="post-body">
+								<header>
+									<span class="post-byline">
+
+										<span class="author publisher-anchor-color">
+											<a href="#" data-action="profile" data-user="7009652"
+												data-role="username">JunitoNH</a>
+										</span>
+
+
+
+
+
+
+										<span>
+											<a
+												href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635199840"
+												class="parent-link" data-role="parent-link">
+												<i aria-hidden="true" class="icon-forward" title="in reply to"></i>
+												mgrexx
+											</a>
+										</span>
+
+									</span>
+
+									<span class="post-meta">
+										<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+
+										<a
+											href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635608471"
+											data-role="relative-time" class="time-ago"
+											title="Tuesday, October 14, 2014 9:32 PM">an hour ago</a>
+
+									</span>
+
+
+								</header>
+
+
+								<div class="post-body-inner">
+
+									<div class="post-message-container" data-role="message-container">
+
+										<div class="publisher-anchor-color" data-role="message-content">
+											<div class="post-message " data-role="message" dir="auto">
+
+												<p>You forgot one detail about the young college girls and
+													your Android analogy, opening her legs to anyone. Even if
+													his name is Mall_ ware, and likes using "trojans_horse".
+												</p>
+
+											</div>
+
+											<span class="post-media">
+												<ul data-role="post-media-list"></ul>
+											</span>
+										</div>
+									</div>
+									<a class="see-more hidden" title="see more" data-action="see-more">see
+										more</a>
+								</div>
+
+								<footer>
+									<menu>
+
+										<li class="voting" data-role="voting">
+
+											<a href="#" class="vote-up  count-2" data-action="upvote"
+												title="">
+												<span class="updatable count" data-role="likes">2</span>
+												<span class="control">
+													<i aria-hidden="true" class="icon icon-arrow-2"></i>
+												</span>
+											</a>
+											<span role="button" class="vote-down  count-1" href="#"
+												data-action="downvote" title="Vote down">
+												<span class="control">
+													<i aria-hidden="true" class="icon icon-arrow"></i>
+												</span>
+
+											</span>
+
+										</li>
+										<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+										<li class="reply" data-role="reply-link">
+											<a href="#" data-action="reply">
+												<i class="icon icon-mobile icon-reply"></i>
+												<span class="text">Reply</span>
+											</a>
+										</li>
+										<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+										<li class="share">
+											<a class="toggle">
+												<i class="icon icon-mobile icon-share"></i>
+												<span class="text">Share ›</span>
+											</a>
+											<ul>
+												<li class="twitter">
+													<a href="#" data-action="share:twitter">Twitter</a>
+												</li>
+												<li class="facebook">
+													<a href="#" data-action="share:facebook">Facebook</a>
+												</li>
+												<li class="link">
+													<a
+														href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635608471">Link</a>
+												</li>
+											</ul>
+										</li>
+
+
+
+										<li class="realtime" data-role="realtime-notification:1635608471">
+											<span style="display:none;" class="realtime-replies"></span>
+											<a style="display:none;" href="#" class="btn btn-small"></a>
+
+										</li>
+
+
+
+									</menu>
+								</footer>
+							</div>
+
+
+							<div data-role="blacklist-form"></div>
+							<div class="reply-form-container" data-role="reply-form"></div>
+						</div>
+
+
+						<ul data-role="children" class="children">
+							<li class="post" id="post-1635618860">
+								<div role="alert"></div>
+
+								<div data-role="post-content" class="post-content">
+
+
+									<ul class="post-menu dropdown" data-role="menu">
+										<li class="collapse">
+											<a href="#" data-action="collapse" title="Collapse">
+												<span>−</span>
+											</a>
+										</li>
+										<li class="expand">
+											<a href="#" data-action="collapse" title="Expand">
+												<span>+</span>
+											</a>
+										</li>
+
+
+										<li class="" role="menu">
+
+
+											<a class="dropdown-toggle" href="#" data-action="flag"
+												data-role="flag" title="Flag as inappropriate">
+												<i aria-hidden="true" class="icon icon-flag"></i>
+											</a>
+
+
+										</li>
+
+									</ul>
+
+
+									<div class="indicator"></div>
+
+
+
+
+									<div class="avatar hovercard">
+										<a href="http://disqus.com/pt0331/" class="user"
+											data-action="profile" data-user="74026840">
+											<img data-role="user-avatar" data-user="74026840"
+												src="//a.disquscdn.com/1413230218/images/noavatar92.png"
+												alt="Avatar">
+										</a>
+									</div>
+
+
+									<div class="post-body">
+										<header>
+											<span class="post-byline">
+
+												<span class="author publisher-anchor-color">
+													<a href="#" data-action="profile" data-user="74026840"
+														data-role="username">PTee</a>
+												</span>
+
+
+
+
+
+
+												<span>
+													<a
+														href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635608471"
+														class="parent-link" data-role="parent-link">
+														<i aria-hidden="true" class="icon-forward" title="in reply to"></i>
+														JunitoNH
+													</a>
+												</span>
+
+											</span>
+
+											<span class="post-meta">
+												<span class="bullet time-ago-bullet" aria-hidden="true">•
+												</span>
+
+
+												<a
+													href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635618860"
+													data-role="relative-time" class="time-ago"
+													title="Tuesday, October 14, 2014 9:36 PM">an hour ago</a>
+
+											</span>
+
+
+										</header>
+
+
+										<div class="post-body-inner">
+
+											<div class="post-message-container" data-role="message-container">
+
+												<div class="publisher-anchor-color" data-role="message-content">
+													<div class="post-message " data-role="message" dir="auto">
+
+														<p>
+															No, many younger women today are well educated and
+															practice safety. Oh and older women are more prone to the
+															dangerous virus Shingles apart from having a
+															<b>weaker immune system.</b>
+														</p>
+
+													</div>
+
+													<span class="post-media">
+														<ul data-role="post-media-list"></ul>
+													</span>
+												</div>
+											</div>
+											<a class="see-more hidden" title="see more" data-action="see-more">see
+												more</a>
+										</div>
+
+										<footer>
+											<menu>
+
+												<li class="voting" data-role="voting">
+
+													<a href="#" class="vote-up  count-1" data-action="upvote"
+														title="">
+														<span class="updatable count" data-role="likes">1</span>
+														<span class="control">
+															<i aria-hidden="true" class="icon icon-arrow-2"></i>
+														</span>
+													</a>
+													<span role="button" class="vote-down  count-1" href="#"
+														data-action="downvote" title="Vote down">
+														<span class="control">
+															<i aria-hidden="true" class="icon icon-arrow"></i>
+														</span>
+
+													</span>
+
+												</li>
+												<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+												<li class="reply" data-role="reply-link">
+													<a href="#" data-action="reply">
+														<i class="icon icon-mobile icon-reply"></i>
+														<span class="text">Reply</span>
+													</a>
+												</li>
+												<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+												<li class="share">
+													<a class="toggle">
+														<i class="icon icon-mobile icon-share"></i>
+														<span class="text">Share ›</span>
+													</a>
+													<ul>
+														<li class="twitter">
+															<a href="#" data-action="share:twitter">Twitter</a>
+														</li>
+														<li class="facebook">
+															<a href="#" data-action="share:facebook">Facebook</a>
+														</li>
+														<li class="link">
+															<a
+																href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635618860">Link</a>
+														</li>
+													</ul>
+												</li>
+
+
+
+												<li class="realtime" data-role="realtime-notification:1635618860">
+													<span style="display:none;" class="realtime-replies"></span>
+													<a style="display:none;" href="#" class="btn btn-small"></a>
+
+												</li>
+
+
+
+											</menu>
+										</footer>
+									</div>
+
+
+									<div data-role="blacklist-form"></div>
+									<div class="reply-form-container" data-role="reply-form"></div>
+								</div>
+
+
+								<ul data-role="children" class="children"></ul>
+
+
+							</li>
+							<li class="post" id="post-1635669035">
+								<div role="alert"></div>
+
+								<div data-role="post-content" class="post-content">
+
+
+									<ul class="post-menu dropdown" data-role="menu">
+										<li class="collapse">
+											<a href="#" data-action="collapse" title="Collapse">
+												<span>−</span>
+											</a>
+										</li>
+										<li class="expand">
+											<a href="#" data-action="collapse" title="Expand">
+												<span>+</span>
+											</a>
+										</li>
+
+
+										<li class="" role="menu">
+
+
+											<a class="dropdown-toggle" href="#" data-action="flag"
+												data-role="flag" title="Flag as inappropriate">
+												<i aria-hidden="true" class="icon icon-flag"></i>
+											</a>
+
+
+										</li>
+
+									</ul>
+
+
+									<div class="indicator"></div>
+
+
+
+
+									<div class="avatar hovercard">
+										<a href="http://disqus.com/mgrexx/" class="user"
+											data-action="profile" data-user="56325565">
+											<img data-role="user-avatar" data-user="56325565"
+												src="//a.disquscdn.com/1413230218/images/noavatar92.png"
+												alt="Avatar">
+										</a>
+									</div>
+
+
+									<div class="post-body">
+										<header>
+											<span class="post-byline">
+
+												<span class="author publisher-anchor-color">
+													<a href="#" data-action="profile" data-user="56325565"
+														data-role="username">mgrexx</a>
+												</span>
+
+
+
+
+
+
+												<span>
+													<a
+														href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635608471"
+														class="parent-link" data-role="parent-link">
+														<i aria-hidden="true" class="icon-forward" title="in reply to"></i>
+														JunitoNH
+													</a>
+												</span>
+
+											</span>
+
+											<span class="post-meta">
+												<span class="bullet time-ago-bullet" aria-hidden="true">•
+												</span>
+
+
+												<a
+													href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635669035"
+													data-role="relative-time" class="time-ago"
+													title="Tuesday, October 14, 2014 9:56 PM">an hour ago</a>
+
+											</span>
+
+
+										</header>
+
+
+										<div class="post-body-inner">
+
+											<div class="post-message-container" data-role="message-container">
+
+												<div class="publisher-anchor-color" data-role="message-content">
+													<div class="post-message " data-role="message" dir="auto">
+
+														<p>Don't forget about iworm, there buuuuuudy!</p>
+
+													</div>
+
+													<span class="post-media">
+														<ul data-role="post-media-list"></ul>
+													</span>
+												</div>
+											</div>
+											<a class="see-more hidden" title="see more" data-action="see-more">see
+												more</a>
+										</div>
+
+										<footer>
+											<menu>
+
+												<li class="voting" data-role="voting">
+
+													<a href="#" class="vote-up  count-0" data-action="upvote"
+														title="Vote up">
+														<span class="updatable count" data-role="likes">0</span>
+														<span class="control">
+															<i aria-hidden="true" class="icon icon-arrow-2"></i>
+														</span>
+													</a>
+													<span role="button" class="vote-down  count-0" href="#"
+														data-action="downvote" title="Vote down">
+														<span class="control">
+															<i aria-hidden="true" class="icon icon-arrow"></i>
+														</span>
+
+													</span>
+
+												</li>
+												<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+												<li class="reply" data-role="reply-link">
+													<a href="#" data-action="reply">
+														<i class="icon icon-mobile icon-reply"></i>
+														<span class="text">Reply</span>
+													</a>
+												</li>
+												<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+												<li class="share">
+													<a class="toggle">
+														<i class="icon icon-mobile icon-share"></i>
+														<span class="text">Share ›</span>
+													</a>
+													<ul>
+														<li class="twitter">
+															<a href="#" data-action="share:twitter">Twitter</a>
+														</li>
+														<li class="facebook">
+															<a href="#" data-action="share:facebook">Facebook</a>
+														</li>
+														<li class="link">
+															<a
+																href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635669035">Link</a>
+														</li>
+													</ul>
+												</li>
+
+
+
+												<li class="realtime" data-role="realtime-notification:1635669035">
+													<span style="display:none;" class="realtime-replies"></span>
+													<a style="display:none;" href="#" class="btn btn-small"></a>
+
+												</li>
+
+
+
+											</menu>
+										</footer>
+									</div>
+
+
+									<div data-role="blacklist-form"></div>
+									<div class="reply-form-container" data-role="reply-form"></div>
+								</div>
+
+
+								<ul data-role="children" class="children"></ul>
+
+
+							</li>
+						</ul>
+
+
+					</li>
+				</ul>
+
+
+			</li>
+			<li class="post" id="post-1635234718">
+				<div role="alert"></div>
+
+				<div data-role="post-content" class="post-content">
+
+
+					<ul class="post-menu dropdown" data-role="menu">
+						<li class="collapse">
+							<a href="#" data-action="collapse" title="Collapse">
+								<span>−</span>
+							</a>
+						</li>
+						<li class="expand">
+							<a href="#" data-action="collapse" title="Expand">
+								<span>+</span>
+							</a>
+						</li>
+
+
+						<li class="" role="menu">
+
+
+							<a class="dropdown-toggle" href="#" data-action="flag"
+								data-role="flag" title="Flag as inappropriate">
+								<i aria-hidden="true" class="icon icon-flag"></i>
+							</a>
+
+
+						</li>
+
+					</ul>
+
+
+					<div class="indicator"></div>
+
+
+
+
+					<div class="avatar hovercard">
+						<a href="http://disqus.com/mgrexx/" class="user" data-action="profile"
+							data-user="56325565">
+							<img data-role="user-avatar" data-user="56325565"
+								src="//a.disquscdn.com/1413230218/images/noavatar92.png" alt="Avatar">
+						</a>
+					</div>
+
+
+					<div class="post-body">
+						<header>
+							<span class="post-byline">
+
+								<span class="author publisher-anchor-color">
+									<a href="#" data-action="profile" data-user="56325565"
+										data-role="username">mgrexx</a>
+								</span>
+
+
+
+
+
+
+							</span>
+
+							<span class="post-meta">
+								<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+
+								<a
+									href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635234718"
+									data-role="relative-time" class="time-ago"
+									title="Tuesday, October 14, 2014 6:28 PM">4 hours ago</a>
+
+							</span>
+
+
+						</header>
+
+
+						<div class="post-body-inner">
+
+							<div class="post-message-container" data-role="message-container">
+
+								<div class="publisher-anchor-color" data-role="message-content">
+									<div class="post-message " data-role="message" dir="auto">
+
+										<p>Yes...it's good to have an Android device, huh iSheep? How
+											do you like them apples? Lol!</p>
+
+									</div>
+
+									<span class="post-media">
+										<ul data-role="post-media-list"></ul>
+									</span>
+								</div>
+							</div>
+							<a class="see-more hidden" title="see more" data-action="see-more">see
+								more</a>
+						</div>
+
+						<footer>
+							<menu>
+
+								<li class="voting" data-role="voting">
+
+									<a href="#" class="vote-up  count-0" data-action="upvote"
+										title="Vote up">
+										<span class="updatable count" data-role="likes">0</span>
+										<span class="control">
+											<i aria-hidden="true" class="icon icon-arrow-2"></i>
+										</span>
+									</a>
+									<span role="button" class="vote-down  count-0" href="#"
+										data-action="downvote" title="Vote down">
+										<span class="control">
+											<i aria-hidden="true" class="icon icon-arrow"></i>
+										</span>
+
+									</span>
+
+								</li>
+								<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+								<li class="reply" data-role="reply-link">
+									<a href="#" data-action="reply">
+										<i class="icon icon-mobile icon-reply"></i>
+										<span class="text">Reply</span>
+									</a>
+								</li>
+								<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+								<li class="share">
+									<a class="toggle">
+										<i class="icon icon-mobile icon-share"></i>
+										<span class="text">Share ›</span>
+									</a>
+									<ul>
+										<li class="twitter">
+											<a href="#" data-action="share:twitter">Twitter</a>
+										</li>
+										<li class="facebook">
+											<a href="#" data-action="share:facebook">Facebook</a>
+										</li>
+										<li class="link">
+											<a
+												href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635234718">Link</a>
+										</li>
+									</ul>
+								</li>
+
+
+
+								<li class="realtime" data-role="realtime-notification:1635234718">
+									<span style="display:none;" class="realtime-replies"></span>
+									<a style="display:none;" href="#" class="btn btn-small"></a>
+
+								</li>
+
+
+
+							</menu>
+						</footer>
+					</div>
+
+
+					<div data-role="blacklist-form"></div>
+					<div class="reply-form-container" data-role="reply-form"></div>
+				</div>
+
+
+				<ul data-role="children" class="children"></ul>
+
+
+			</li>
+			<li class="post" id="post-1635507690">
+				<div role="alert"></div>
+
+				<div data-role="post-content" class="post-content">
+
+
+					<ul class="post-menu dropdown" data-role="menu">
+						<li class="collapse">
+							<a href="#" data-action="collapse" title="Collapse">
+								<span>−</span>
+							</a>
+						</li>
+						<li class="expand">
+							<a href="#" data-action="collapse" title="Expand">
+								<span>+</span>
+							</a>
+						</li>
+
+
+						<li class="" role="menu">
+
+
+							<a class="dropdown-toggle" href="#" data-action="flag"
+								data-role="flag" title="Flag as inappropriate">
+								<i aria-hidden="true" class="icon icon-flag"></i>
+							</a>
+
+
+						</li>
+
+					</ul>
+
+
+					<div class="indicator"></div>
+
+
+
+
+					<div class="avatar hovercard">
+						<a href="http://disqus.com/sp12/" class="user" data-action="profile"
+							data-user="13140861">
+							<img data-role="user-avatar" data-user="13140861"
+								src="//a.disquscdn.com/1413230218/images/noavatar92.png" alt="Avatar">
+						</a>
+					</div>
+
+
+					<div class="post-body">
+						<header>
+							<span class="post-byline">
+
+								<span class="author publisher-anchor-color">
+									<a href="#" data-action="profile" data-user="13140861"
+										data-role="username">sp12</a>
+								</span>
+
+
+
+
+
+
+							</span>
+
+							<span class="post-meta">
+								<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+
+								<a
+									href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635507690"
+									data-role="relative-time" class="time-ago"
+									title="Tuesday, October 14, 2014 8:28 PM">2 hours ago</a>
+
+							</span>
+
+
+						</header>
+
+
+						<div class="post-body-inner">
+
+							<div class="post-message-container" data-role="message-container">
+
+								<div class="publisher-anchor-color" data-role="message-content">
+									<div class="post-message " data-role="message" dir="auto">
+
+										<p>The title should read, 10 things someone who's never used
+											an Android phone didn't know it could do.</p>
+
+									</div>
+
+									<span class="post-media">
+										<ul data-role="post-media-list"></ul>
+									</span>
+								</div>
+							</div>
+							<a class="see-more hidden" title="see more" data-action="see-more">see
+								more</a>
+						</div>
+
+						<footer>
+							<menu>
+
+								<li class="voting" data-role="voting">
+
+									<a href="#" class="vote-up  count-1" data-action="upvote"
+										title="">
+										<span class="updatable count" data-role="likes">1</span>
+										<span class="control">
+											<i aria-hidden="true" class="icon icon-arrow-2"></i>
+										</span>
+									</a>
+									<span role="button" class="vote-down  count-0" href="#"
+										data-action="downvote" title="Vote down">
+										<span class="control">
+											<i aria-hidden="true" class="icon icon-arrow"></i>
+										</span>
+
+									</span>
+
+								</li>
+								<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+								<li class="reply" data-role="reply-link">
+									<a href="#" data-action="reply">
+										<i class="icon icon-mobile icon-reply"></i>
+										<span class="text">Reply</span>
+									</a>
+								</li>
+								<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+								<li class="share">
+									<a class="toggle">
+										<i class="icon icon-mobile icon-share"></i>
+										<span class="text">Share ›</span>
+									</a>
+									<ul>
+										<li class="twitter">
+											<a href="#" data-action="share:twitter">Twitter</a>
+										</li>
+										<li class="facebook">
+											<a href="#" data-action="share:facebook">Facebook</a>
+										</li>
+										<li class="link">
+											<a
+												href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635507690">Link</a>
+										</li>
+									</ul>
+								</li>
+
+
+
+								<li class="realtime" data-role="realtime-notification:1635507690">
+									<span style="display:none;" class="realtime-replies"></span>
+									<a style="display:none;" href="#" class="btn btn-small"></a>
+
+								</li>
+
+
+
+							</menu>
+						</footer>
+					</div>
+
+
+					<div data-role="blacklist-form"></div>
+					<div class="reply-form-container" data-role="reply-form"></div>
+				</div>
+
+
+				<ul data-role="children" class="children"></ul>
+
+
+			</li>
+			<li class="post" id="post-1635729125">
+				<div role="alert"></div>
+
+				<div data-role="post-content" class="post-content">
+
+
+					<ul class="post-menu dropdown" data-role="menu">
+						<li class="collapse">
+							<a href="#" data-action="collapse" title="Collapse">
+								<span>−</span>
+							</a>
+						</li>
+						<li class="expand">
+							<a href="#" data-action="collapse" title="Expand">
+								<span>+</span>
+							</a>
+						</li>
+
+
+						<li class="" role="menu">
+
+
+							<a class="dropdown-toggle" href="#" data-action="flag"
+								data-role="flag" title="Flag as inappropriate">
+								<i aria-hidden="true" class="icon icon-flag"></i>
+							</a>
+
+
+						</li>
+
+					</ul>
+
+
+					<div class="indicator"></div>
+
+
+
+
+					<div class="avatar hovercard">
+						<a href="http://disqus.com/mkmilan/" class="user" data-action="profile"
+							data-user="50247690">
+							<img data-role="user-avatar" data-user="50247690"
+								src="//a.disquscdn.com/1413230218/images/noavatar92.png" alt="Avatar">
+						</a>
+					</div>
+
+
+					<div class="post-body">
+						<header>
+							<span class="post-byline">
+
+								<span class="author publisher-anchor-color">
+									<a href="#" data-action="profile" data-user="50247690"
+										data-role="username">mkmilan</a>
+								</span>
+
+
+
+
+
+
+							</span>
+
+							<span class="post-meta">
+								<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+
+								<a
+									href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635729125"
+									data-role="relative-time" class="time-ago"
+									title="Tuesday, October 14, 2014 10:33 PM">21 minutes ago</a>
+
+							</span>
+
+
+						</header>
+
+
+						<div class="post-body-inner">
+
+							<div class="post-message-container" data-role="message-container">
+
+								<div class="publisher-anchor-color" data-role="message-content">
+									<div class="post-message " data-role="message" dir="auto">
+
+										<p>Not all features are available on all manufacturers'
+											versions</p>
+
+									</div>
+
+									<span class="post-media">
+										<ul data-role="post-media-list"></ul>
+									</span>
+								</div>
+							</div>
+							<a class="see-more hidden" title="see more" data-action="see-more">see
+								more</a>
+						</div>
+
+						<footer>
+							<menu>
+
+								<li class="voting" data-role="voting">
+
+									<a href="#" class="vote-up  count-0" data-action="upvote"
+										title="Vote up">
+										<span class="updatable count" data-role="likes">0</span>
+										<span class="control">
+											<i aria-hidden="true" class="icon icon-arrow-2"></i>
+										</span>
+									</a>
+									<span role="button" class="vote-down  count-0" href="#"
+										data-action="downvote" title="Vote down">
+										<span class="control">
+											<i aria-hidden="true" class="icon icon-arrow"></i>
+										</span>
+
+									</span>
+
+								</li>
+								<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+								<li class="reply" data-role="reply-link">
+									<a href="#" data-action="reply">
+										<i class="icon icon-mobile icon-reply"></i>
+										<span class="text">Reply</span>
+									</a>
+								</li>
+								<li class="bullet" aria-hidden="true">•</li>
+
+
+
+
+
+								<li class="share">
+									<a class="toggle">
+										<i class="icon icon-mobile icon-share"></i>
+										<span class="text">Share ›</span>
+									</a>
+									<ul>
+										<li class="twitter">
+											<a href="#" data-action="share:twitter">Twitter</a>
+										</li>
+										<li class="facebook">
+											<a href="#" data-action="share:facebook">Facebook</a>
+										</li>
+										<li class="link">
+											<a
+												href="http://bgr.com/2014/10/14/android-tips-and-tricks-10-secret-features/#comment-1635729125">Link</a>
+										</li>
+									</ul>
+								</li>
+
+
+
+								<li class="realtime" data-role="realtime-notification:1635729125">
+									<span style="display:none;" class="realtime-replies"></span>
+									<a style="display:none;" href="#" class="btn btn-small"></a>
+
+								</li>
+
+
+
+							</menu>
+						</footer>
+					</div>
+
+
+					<div data-role="blacklist-form"></div>
+					<div class="reply-form-container" data-role="reply-form"></div>
+				</div>
+
+
+				<ul data-role="children" class="children"></ul>
+
+
+			</li>
+		</ul>
+
+		<div class="load-more" data-role="more" style="display: none;">
+			<a href="#" data-action="more-posts" class="btn">Load more comments</a>
+		</div>
+	</div>
+
+</section>

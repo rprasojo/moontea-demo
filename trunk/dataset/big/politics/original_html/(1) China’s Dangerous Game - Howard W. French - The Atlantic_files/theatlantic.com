@@ -1,0 +1,1 @@
+PARSELY.pInit({"apikey":"theatlantic.com","settings":{"debug":false,"widget":false,"tracker":true},"customizations":null,"track_ip_addresses":true,"bundle":"/code/slim_v06.js","track_third_party_cookies":true,"uuid":"ee102b03-659d-4df0-84f3-6d2f83b5764c"});
